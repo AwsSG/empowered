@@ -240,7 +240,7 @@ Team 3 of the January Hackathon 2022:
 * [Aws Sabah Gheni](https://github.com/AwsSG)
 * [Theo Wright](https://github.com/theopmw)
 * [Kera Cudmore](https://github.com/kera-cudmore)
-* [Anna](https://github.com/)
+* [Anna](https://github.com/ANNAhabANNA)
 
 ### Acknowledgments
 
