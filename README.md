@@ -78,7 +78,14 @@ Add the w3c validator shields badge here - is there a badge for python validator
 
 ### Colour Scheme
 
-Image of colour scheme to go here (use coolors?)
+![Colour Scheme for the Website](static/documents/colourscheme.png)
+
+We researched colour theory and colour psychology to find what colour palettes may be beneficial to someone who may be struggling with their mental health. We discovered that light blues are associated with peace, sincerity and gentleness. Darker blues are representative of power, strength and dependability. Greens are associated with growth and have a calming presence.  
+
+We feel that this colour palette has a nice balance between the blues and greens to promote calm and peacefulness on the site. The choice of green also ties in with the use of the colour green in the mental health awareness ribbon.
+
+[Psychology of Color Explained](https://www.masterclass.com/articles/psychology-of-color-explained#4-examples-of-color-psychology)
+ | [Colour Psychology - Green](https://www.verywellmind.com/color-psychology-green-2795817) | [Colour Psychology - Blue](https://www.verywellmind.com/the-color-psychology-of-blue-2795815)
 
 ### Typography
 
