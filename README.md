@@ -66,11 +66,11 @@ Add the w3c validator shields badge here - is there a badge for python validator
 
 ### User Stories
 
-#### First Time Visitor Goals
-
-#### Returning Visitor Goals
-
-#### Frequent Visitor Goals
+1. As a user I want to be able to easily find out what the site does.
+2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
+3. As a user I want to be able to choose an appropriate emoticon to select as my emotional status for that day.
+4. As a user I would like to be able to add additional notes to my emoticon to allow me to express my state of mind.
+5. As a user I want to be able to view my previous emoticons and notes over a selected time frame to get an overview of my mental health.
 
 - - -
 
