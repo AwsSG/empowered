@@ -1,4 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
 
+<section class="calendar"></section>
+<section class="blog">
+  <div class="blog__heading">
+    <h3 class="blog__heading--day">Today is " ---- "</h3>
+    <div class="blog__heading--scale">
+      <p class="scale__text">Please, click on the emoji to sum up your today's feeling!</p>
+      <ul class="scale__emojis">
+        <li class="scale__emoji">
+          <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
+          <span class="scale__emoji--text">angry</span>
+        </li>
+
+        <li class="scale__emoji">
+          <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji">
+          <span class="scale__emoji--text">angry</span>
+        </li>
+
+        <li class="scale__emoji">
+          <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji">
+          <span class="scale__emoji--text">stressed</span>
+        </li>
+
+        <li class="scale__emoji">
+          <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji">
+          <span class="scale__emoji--text">content</span>
+        </li>
+
+        <li class="scale__emoji">
+          <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
+          <span class="scale__emoji--text">happy</span>
+        </li>
+
+        <li class="scale__emoji">
+          <img src="{{ url_for('static', filename='images/emojis/excited.png') }}" alt="excited emoji">
+          <span class="scale__emoji--text">excited</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="blog__container">
+  <h4 class="blog__container--title">Leave some notes to explain why you feel so!</h4>
+  <form method="POST" class="blog__form" action="">
+    <p class="form__input">
+      <label for="content" class="form__label">Entry content:</label>
+      <textarea name="content" id="content" class="form__textarea" aria-label="Entry content"></textarea>
+    </p>
+    <button type="submit" class="form__submit">Add Note</button>
+  </form>
+</section>
 {% endblock %}
