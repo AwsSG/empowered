@@ -24,15 +24,29 @@
 
       <!-- Navbar items -->
       <ul class="navbar__components">
-        <li class="navbar__item"><a href="#">Home</a> </li>
-        <li class="navbar__item"><a href="#">Profile</a></li>
+        <li class="navbar__item">
+          <a href="{{ url_for('home') }}">Home</a>
+        </li>
+        {% if session.user %}
+        <li class="navbar__item">
+          <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ url_for('logout') }}">Log Out</a>
+        </li>
+        {% else %}
         <li class="navbar__item dropdown" id="dropdown">
           Login / Register
           <ul class="nav__options">
-            <li class=" btn btn__login"><a href="#">Login</a></li>
-            <li class=" btn btn__register"><a href="#">Register</a></li>
+            <li class="btn__login">
+              <a href="{{ url_for('login') }}">Login</a>
+            </li>
+            <li class="btn__register">
+              <a href="{{ url_for('register') }}">Register</a>
+            </li>
           </ul>
         </li>
+        {% endif %}
       </ul>
       <!-- Navbar hamburger for mobile screens -->
       <div class="hamburger__container" id="hamburger">
@@ -40,10 +54,24 @@
       </div>
       <!-- Navbar for mobile screens -->
       <ul class="navbar__components--mobile" id="mobile-menu">
-        <li class="navbar__item"><a href="#">Home</a> </li>
-        <li class="navbar__item"><a href="#">Profile</a> </li>
-        <li class="navbar__item btn btn__login"><a href="#">Login</a></li>
-        <li class="navbar__item btn btn__Register"><a href="#">Register</a></li>
+        <li class="navbar__item">
+          <a href="{{ url_for('home') }}">Home</a>
+        </li>
+        {% if session.user %}
+        <li class="navbar__item">
+          <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ url_for('logout') }}">Log Out</a>
+        </li>
+        {% else %}
+        <li class="navbar__item btn__login">
+          <a href="{{ url_for('login') }}">Login</a>
+        </li>
+        <li class="navbar__item btn__Register">
+          <a href="{{ url_for('register') }}">Register</a>
+        </li>
+        {% endif %}
       </ul>
 
     </nav>
@@ -55,7 +83,7 @@
     </div>
   </main>
 
-<!--Footer-->
+  <!--Footer-->
   <footer class="footer">
     <div class="footer__team">
       <div class="team__name">Inside Out</div>
@@ -64,7 +92,8 @@
           <a href="https://github.com/AwsSG" target="_blank" rel="noopener"
             aria-label="Visit Aws Sabah Gheni github page">
             <div class="image_holder">
-              <img src="{{ url_for('static', filename='images/coders/aws.jpeg') }}" alt="Aws Sabah Gheni photo" class="photo">
+              <img src="{{ url_for('static', filename='images/coders/aws.jpeg') }}" alt="Aws Sabah Gheni photo"
+                class="photo">
             </div>
             <div class="coder_name">Aws Sabah Gheni</div>
           </a>
@@ -74,7 +103,8 @@
           <a href="https://github.com/theopmw" target="_blank" rel="noopener"
             aria-label="Visit Theo Wright github page">
             <div class="image_holder">
-              <img src="{{ url_for('static', filename='images/coders/theo.jpeg') }}" alt="Theo Wright photo" class="photo">
+              <img src="{{ url_for('static', filename='images/coders/theo.jpeg') }}" alt="Theo Wright photo"
+                class="photo">
             </div>
             <div class="coder_name">Theo Wright</div>
           </a>
@@ -93,7 +123,8 @@
           <a href="https://github.com/kera-cudmore" target="_blank" rel="noopener"
             aria-label="Visit Kera Cudmore github page">
             <div class="image_holder">
-              <img src="{{ url_for('static', filename='images/coders/kera.jpg') }}" alt="Kera Cudmore photo" class="photo">
+              <img src="{{ url_for('static', filename='images/coders/kera.jpg') }}" alt="Kera Cudmore photo"
+                class="photo">
             </div>
             <div class="coder_name">Kera Cudmore</div>
           </a>
