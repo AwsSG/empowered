@@ -31,17 +31,17 @@
         <li class="navbar__item">
           <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
         </li>
-        <li class="btn btn__logout">
+        <li class="navbar__item">
           <a href="{{ url_for('logout') }}">Log Out</a>
         </li>
         {% else %}
         <li class="navbar__item dropdown" id="dropdown">
           Login / Register
           <ul class="nav__options">
-            <li class=" btn btn__login">
+            <li class="btn__login">
               <a href="{{ url_for('login') }}">Login</a>
             </li>
-            <li class="btn btn__register">
+            <li class="btn__register">
               <a href="{{ url_for('register') }}">Register</a>
             </li>
           </ul>
@@ -61,14 +61,14 @@
         <li class="navbar__item">
           <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
         </li>
-        <li class="btn btn__logout">
+        <li class="navbar__item">
           <a href="{{ url_for('logout') }}">Log Out</a>
         </li>
         {% else %}
-        <li class="navbar__item btn btn__login">
+        <li class="navbar__item btn__login">
           <a href="{{ url_for('login') }}">Login</a>
         </li>
-        <li class="navbar__item btn btn__Register">
+        <li class="navbar__item btn__Register">
           <a href="{{ url_for('register') }}">Register</a>
         </li>
         {% endif %}
