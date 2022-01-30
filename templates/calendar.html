@@ -1,11 +1,56 @@
 {% extends "base.html" %}
 {% block content %}
 
+
 {% for emoji in emoji_tracker %}
-    <p>Date/time: {{ emoji.datetime }}</p>
-    <p>Emoji number: {{ emoji.emoji }}</p>
-    <p>Note:{{ emoji.note }}</p>
-        <br>
+
+<p>Date/time: {{ emoji.datetime }}</p>
+<div id="mydiv" data-geocode='{{ emoji.datetime|tojson }}'>
+</div>
+<p>Emoji number: {{ emoji.emoji }}</p>
+<p>Note:{{ emoji.note }}</p>
+<br>
+
 {% endfor %}
+
+
+<section class="blog">
+    <div id="previousSelector-a">
+        <button id="previousSelector-a-previous" style="padding:10px; margin: 2em;">
+            Previous </button> &nbsp
+        <button id="previousSelector-a-next" style="padding:10px; margin: 2em;"> Next </button>
+    </div>
+    <div style="padding:10px; margin: 2em;">
+        <span id="onClick-placeholder">Click a date on the calendar</span>
+    </div>
+    <div style="padding:10px; margin: 2em;">
+
+        <div id="cal-heatmap">
+
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+
+    let data222 = {};
+    let date0;
+    let emoji_number;
+
+    {% for emoji in emoji_tracker %}
+
+    date0 = {{ emoji.datetime }}
+    emoji_number = {{ emoji.emoji }}
+    data222[`${date0}`] = emoji_number
+
+    {% endfor %}
+
+
+    
+
+
+</script>
 
 {% endblock %}
