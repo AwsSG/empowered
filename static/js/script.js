@@ -27,7 +27,7 @@ $(document).ready(function () {
       $('.nav__options').slideUp();
     }
   });
-  $('.emojis-container > li').each(function () {
+  $('#emojis-container > li').each(function () {
     $(this).click(function () {
       $('#blog-container').css('display', 'flex')
     })
