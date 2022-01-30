@@ -91,7 +91,7 @@ def logout():
 
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
-    
+    today = datetime.now().strftime("%d/%m/%y")
     if request.method == "POST":
         # to create a check if there is already a record for the day
         emoji = {
@@ -103,7 +103,7 @@ def profile():
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
 
-    return render_template("profile.html")
+    return render_template("profile.html", today=today)
 
 
 @app.route("/calendar")
@@ -113,13 +113,6 @@ def calendar():
 
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
-
-# @app.route("/api", methods=["GET", "POST"])
-# def api():
-#     if request.method == "GET":
-#         emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
-#         response = jsonify(emoji_tracker)
-#         return response
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

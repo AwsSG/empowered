@@ -282,7 +282,6 @@ body.light .dropdown ul {
 .scale__emojis {
   display: flex;
   flex-direction: column;
-  /* width: 5rem; */
   align-items: center;
   box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
   -webkit-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
@@ -411,6 +410,9 @@ select {
   max-width: 3rem;
   padding-bottom: 1.2em;
 
+  width: 100%;
+  margin: 0 auto;
+
 }
 
 .calendar__text--click {
@@ -418,11 +420,45 @@ select {
   padding-bottom: 1.2em;
 }
 
+.cal-heatmap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.calendar__text--click {
+  font-size: 1.4rem;
+  padding-bottom: 1.2em;
+}
+
+.content {
+  min-width: 400px;
+}
+
+#calendar {
+  width: 839px;
+}
 
 
 
 
+@media all and (max-width: 1400px) {
+  #calendar {
+    width: 626px;
+  }
+}
 
+@media all and (max-width: 730px) {
+  #calendar {
+    width: 365px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  #calendar {
+    width: 191px;
+  }
+}
 
 
 
