@@ -99,7 +99,7 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 ### Colour Scheme
 
-![Colour Scheme for the Website](static/documents/colourscheme.png)
+![Colour Scheme for the Website](documentation/colourscheme.png)
 
 We researched colour theory and colour psychology to find what colour palettes may be beneficial to someone who may be struggling with their mental health. We discovered that light blues are associated with peace, sincerity and gentleness. Darker blues are representative of power, strength and dependability. Greens are associated with growth and have a calming presence.  
 
@@ -118,11 +118,11 @@ We have used sans-serif as our font.
 
 Wireframes were created for mobile, tablet and desktop.
 
-![Home Page Wireframe](static/documents/wireframes/homewireframe.png)
-![Log in Page Wireframe](static/documents/wireframes/loginwireframe.png)
-![Register Page Wireframe](static/documents/wireframes/registerwireframe.png)
-![Calendar Page Wireframe](static/documents/wireframes/calendarwireframe.png)
-![Profile Page Wireframe](static/documents/wireframes/profilewireframe.png)
+![Home Page Wireframe](documentation/wireframes/homewireframe.png)
+![Log in Page Wireframe](documentation/wireframes/loginwireframe.png)
+![Register Page Wireframe](documentation/wireframes/registerwireframe.png)
+![Calendar Page Wireframe](documentation/wireframes/calendarwireframe.png)
+![Profile Page Wireframe](documentation/wireframes/profilewireframe.png)
 
 ### Features
 
