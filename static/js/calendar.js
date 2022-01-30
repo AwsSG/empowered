@@ -17,6 +17,7 @@ cal.init({
   domainGutter: 10,
   domainMargin: [30, 90, 30, 90],
   domainDynamicDimension: true,
+  subDomain: "x_day",
   legend: [1, 2, 3, 4, 5],
   legendCellSize: 35,
   legendVerticalPosition: "top",
