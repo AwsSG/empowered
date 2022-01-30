@@ -286,6 +286,7 @@ body.light .dropdown ul {
   box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
   -webkit-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
   -moz-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
+  padding: 2em 0;
 }
 
 .scale__emoji:not(:last-child) {
