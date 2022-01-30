@@ -90,20 +90,17 @@ def logout():
 
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
-    # Check whether the user has already submitted form for today
-    if mongo.db.tracker.find({"$exists": {"username": session["user"], "datetime": datetime.now()}}):
-        return redirect(url_for("home", username=session["user"]))
-    else:
-        if request.method == "POST":
-            # to create a check if there is already a record for the day
-            emoji = {
-                "user": session["user"],
-                "datetime": datetime.now(),
-                "emoji": request.form.get("emoji"),
-                "note": request.form.get("note"),
-            }
-            mongo.db.tracker.insert_one(emoji)
-            flash("Your feelings were recorded successfully!")
+    
+    if request.method == "POST":
+        # to create a check if there is already a record for the day
+        emoji = {
+            "user": session["user"],
+            "datetime": datetime.now(),
+            "emoji": request.form.get("emoji"),
+            "note": request.form.get("note"),
+        }
+        mongo.db.tracker.insert_one(emoji)
+        flash("Your feelings were recorded successfully!")
 
     return render_template("profile.html")
 

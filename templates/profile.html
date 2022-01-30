@@ -9,11 +9,7 @@
 </section>
 <section class="scale">
   <h4 class="scale__text">Which of these emojis best describe how you feel today?</h4>
-
-
-
-
-  <div class="scale__emojis emojis-container" id="emoji" name="emoji">
+  <div class="scale__emojis emojis-container">
     <ul class="scale__emojis" id="emojis-container">
       <li class="scale__emoji">
         <div class="emoji__image--holder">
@@ -42,7 +38,6 @@
         </div>
         <span class="scale__emoji--text">content</span>
       </li>
-
       <li class="scale__emoji">
         <div class="emoji__image--holder">
           <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
@@ -63,7 +58,7 @@
 
 
     <select id="emoji" name="emoji" required>
-      <option value="" disabled selected>Choose</option>
+      <option value="" disabled selected>Choose emoji</option>
       <option value="1">Angry</option>
       <option value="2">Depressed</option>
       <option value="3">Stressed</option>
@@ -72,7 +67,7 @@
     </select>
     <br>
 
-    <section class="blog__container" id="blog-container">
+    <div class="blog__container" id="blog-container">
       <h4 class="blog__container--title">Leave some notes to explain why you feel so!</h4>
       <div class="blog__form">
         <p class="blog__input">
@@ -85,8 +80,7 @@
           <button type="submit" class="btn blog__btn--submit">Add Note</button>
         </div>
       </div>
-    </section>
-
+    </div>
   </form>
 
   <section class="data__link">
