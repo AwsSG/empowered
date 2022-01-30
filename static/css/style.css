@@ -403,10 +403,11 @@ footer {
 }
 
 .team__collaborators {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 1rem;
+
 }
 
 .photo {
