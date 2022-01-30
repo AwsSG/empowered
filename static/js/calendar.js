@@ -25,14 +25,23 @@ cal.init({
   previousSelector: "#previousSelector-a-previous",
   nextSelector: "#previousSelector-a-next",
   onClick: function (date, nb) {
-    $("#onClick-placeholder").html("It was  <b>" +
-      date.getDate() + ' / ' + (date.getMonth() + 1) + ' / ' + date.getFullYear() +
-      "</b> <br/>with <b>" +
-      (nb === null ? "you didn't share your feelings" : nb) +
-      "</b> emoji<br/>" +
-      " <b>" + "Here what notes you have left: " + "</b> <br/>" +
-      " <b>" + "{{content fo the post}}" + "</b> "
+    if (nb === null) {
+      $("#onClick-placeholder").html(`It was ${date.toLocaleDateString("en-US")}
+        when you didn't share your feelings`
 
-    );
+      );
+    }
+
+    if (nb === 1) {
+      $("#onClick-placeholder").html(`"It was ${date.toLocaleDateString("en-US")}
+        with 
+        <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
+        emoji 
+        " <b>" + "Here what notes you have left: " + "</b> <br/>" +
+        " <b>" + "{{content fo the post}}" + "</b> "`
+
+      );
+    }
+
   }
 });
