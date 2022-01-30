@@ -21,6 +21,23 @@
     <a href="{{ url_for('register') }}" class="amber-text text-darken-4">Register now!</a>
 </p>
 
+<!-- keras form starts here -->
 
+<section class="register__container">
+    <h1 class="register__title">Log in to Empower</h1>
+
+    <form class="form__container">
+    <label for="username" class="form__input--label">Username: </label>
+    <input id="username" type="text" name="username" required>
+    <br>
+    <label for="password" class="form__input--label">Password: </label>
+    <input id="password" type="password" name="password" required>
+    <br>
+    <button type="Submit" class="form__button">Log in</button>
+    </form>
+    
+    
+    <p class="register__paragraph">Don't have a profile? <a href="{{ url_for('register') }}">Register here.</a></p>
+    </section>
 
 {% endblock %}
