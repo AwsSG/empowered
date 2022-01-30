@@ -562,6 +562,8 @@ button.form__button {
 padding: 0.5rem;
 background-color: var(--clr-primary--300);
 border-radius: 15%;
+text-transform: uppercase;
+color: var(--clr-neutral--900);
 
 }
 /* ----- Footer ----- */
