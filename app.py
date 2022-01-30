@@ -1,5 +1,3 @@
-
-  
 import os
 from flask import (
     Flask, flash, render_template,
@@ -96,7 +94,7 @@ def profile():
         emoji = {
             "user": session["user"],
             "datetime": datetime.now(),
-            "emoji": request.form.get("emoji"),
+            "emoji": int(request.form.get("emoji")),
             "note": request.form.get("note"),
         }
         mongo.db.tracker.insert_one(emoji)

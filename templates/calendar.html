@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-
+{{emoji_tracker}}
 {% for emoji in emoji_tracker %}
 <p>Date/time: {{ emoji.datetime }}</p>
 <p>Emoji number: {{ emoji.emoji }}</p>
 <p>Note:{{ emoji.note }}</p>
 <br>
-
+{% endfor %}
 
 <div id="previousSelector-a">
   <button id="previousSelector-a-previous" style="padding:10px; margin: 2em;">
@@ -25,6 +25,6 @@
 </div>
 
 
-{% endfor %}
+
 
 {% endblock %}
