@@ -59,6 +59,7 @@
 
   let data222 = {};
   let date0;
+  let dataArray = []
   let emoji_number;
 
   {% for emoji in emoji_tracker %}
@@ -67,12 +68,18 @@
   emoji_number = {{ emoji.emoji }}
   data222[`${date0}`] = emoji_number
 
+
   {% endfor %}
 
+  {% for emoji in emoji_tracker %}
+  dataArray.push({
+    date: {{ emoji.datetime }},
+    emoji: {{ emoji.emoji }},
+    note: "{{ emoji.note }}"
+  })
+  {% endfor %}
 
-
-
-
+  console.log(dataArray)
 </script>
 
 {% endblock %}
