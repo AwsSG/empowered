@@ -117,7 +117,11 @@ We have used sans-serif as our font.
 
 Wireframes were created for mobile, tablet and desktop.
 
-Wireframes links/images to go here
+![Home Page Wireframe](static/documents/wireframes/homewireframe.png)
+![Log in Page Wireframe](static/documents/wireframes/loginwireframe.png)
+![Register Page Wireframe](static/documents/wireframes/registerwireframe.png)
+![Calendar Page Wireframe](static/documents/wireframes/calendarwireframe.png)
+![Profile Page Wireframe](static/documents/wireframes/profilewireframe.png)
 
 ### Features
 
