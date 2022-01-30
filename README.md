@@ -86,6 +86,7 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 ### User Stories
 
+
 1. As a user I want to be able to easily find out what the site does.
 2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
 3. As a user I want to be able to choose an appropriate emoticon to select as my emotional status for that day.
@@ -117,13 +118,19 @@ We have used sans-serif as our font.
 
 Wireframes were created for mobile, tablet and desktop.
 
-Wireframes links/images to go here
+![Home Page Wireframe](static/documents/wireframes/homewireframe.png)
+![Log in Page Wireframe](static/documents/wireframes/loginwireframe.png)
+![Register Page Wireframe](static/documents/wireframes/registerwireframe.png)
+![Calendar Page Wireframe](static/documents/wireframes/calendarwireframe.png)
+![Profile Page Wireframe](static/documents/wireframes/profilewireframe.png)
 
 ### Features
 
 The website is comprised of …
 
 * All Pages on the website have:
+  * A navigation bar
+  * A footer
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
@@ -170,7 +177,9 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-[Shields.io](https://shields.io/) To add badges to the README
+[Shields.io](https://shields.io/) To add badges to the README.
+
+[Canva](https://www.canva.com/) To edit images.
 
 - - -
 
@@ -254,9 +263,14 @@ We also went through each page using Google Chrome developer tools to ensure tha
 
 ### Media
 
+[Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
+[emojis on the hero image](https://www.canva.com/)
+
+All team images used in footer belong to the team member.
+
 ### Collaborators
 
-Team 3 of the January Hackathon 2022:
+Team Inside Out members of the January Hackathon 2022:
 
 * [Iuliia Konovalova](https://github.com/IuliiaKonovalova)
 * [Aws Sabah Gheni](https://github.com/AwsSG)
@@ -269,3 +283,4 @@ Team 3 of the January Hackathon 2022:
 We would like to acknowledge the following people who helped us along the way in completing this project:
 
 * [Dave Bowers](https://github.com/dnlbowers), our hackathon facilitator.
+* Our families - for their patience and support while we disappeared for another long weekend of coding.
