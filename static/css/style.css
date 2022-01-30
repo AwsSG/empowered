@@ -409,6 +409,8 @@ select {
 .calendar__emoji--click {
   max-width: 3rem;
   padding-bottom: 1.2em;
+  width: 100%;
+  margin: 0 auto;
 
 }
 
@@ -431,6 +433,7 @@ select {
 #calendar {
   width: 839px;
 }
+
 
 
 
