@@ -2,10 +2,29 @@
 {% block content %}
 
 {% for emoji in emoji_tracker %}
-    <p>Date/time: {{ emoji.datetime }}</p>
-    <p>Emoji number: {{ emoji.emoji }}</p>
-    <p>Note:{{ emoji.note }}</p>
-        <br>
+<p>Date/time: {{ emoji.datetime }}</p>
+<p>Emoji number: {{ emoji.emoji }}</p>
+<p>Note:{{ emoji.note }}</p>
+<br>
+
+
+<div id="previousSelector-a">
+  <button id="previousSelector-a-previous" style="padding:10px; margin: 2em;">
+    Previous </button> &nbsp
+  <button id="previousSelector-a-next" style="padding:10px; margin: 2em;"> Next </button>
+</div>
+<div style="padding:10px; margin: 2em;">
+  <span id="onClick-placeholder">Click a date on the calendar</span>
+</div>
+<div style="padding:10px; margin: 2em;">
+
+  <div id="cal-heatmap">
+
+  </div>
+
+</div>
+
+
 {% endfor %}
 
 {% endblock %}
