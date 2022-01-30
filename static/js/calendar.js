@@ -39,7 +39,7 @@ cal.init({
     }
     if (nb === null) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")} ${date.getTime()/1000}</h3>
+      It was <span>${date.toLocaleDateString("en-US")}</span></h3>
       <div class="calendar__text--click">when you haven't left any notes</div>
       `);
     }
@@ -47,17 +47,17 @@ cal.init({
     if (nb === 1) {
 
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")} </h3>
+      It was <span>${date.toLocaleDateString("en-US")}</span></h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/angry.png" alt="angry emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-      ${getNote}`);
+      <div class="calendar__note--click">" ${getNote} "</div>`);
     }
 
     if (nb === 2) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")}</h3>
+      It was <span>${date.toLocaleDateString("en-US")}</span></h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/depressed.png" alt="depressed emoji">
       </div>
@@ -67,7 +67,7 @@ cal.init({
 
     if (nb === 3) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")}</h3>
+      It was <span>${date.toLocaleDateString("en-US")}</span></h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/stressed.png" alt="stressed emoji">
       </div>
@@ -77,7 +77,7 @@ cal.init({
 
     if (nb === 4) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")}</h3>
+      It was <span>${date.toLocaleDateString("en-US")}</span></h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/content.png" alt="content emoji">
       </div>
@@ -87,7 +87,7 @@ cal.init({
 
     if (nb === 5) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")}</h3>
+      It was <span>${date.toLocaleDateString("en-US")}</span></h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/happy.png" alt="happy emoji">
       </div>
