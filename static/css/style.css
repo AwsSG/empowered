@@ -488,7 +488,6 @@ select {
   align-items: center;
   padding: 2em 2em;
   margin: 3em 0 2em 0;
-  width: 100%;
 }
 
 .home__title {
@@ -496,9 +495,8 @@ select {
   padding-bottom: 3rem;
 }
 
-.home__heroimg {}
-
 .about__title {
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -510,6 +508,7 @@ select {
   text-align: center;
   line-height: 1.75rem;
   padding-bottom: 5rem;
+  max-width: 70rem;
 }
 
 /* ----- Footer ----- */
