@@ -549,6 +549,13 @@ select {
   margin: 3em 0 2em 0;
 }
 
+.about__section--paragraph {
+  text-align: center;
+  line-height: 1.75rem;
+  padding-bottom: 5rem;
+  max-width: 70rem;
+}
+
 .form__input--label {
 padding-bottom: 1rem;
 }
