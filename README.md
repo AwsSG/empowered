@@ -128,6 +128,8 @@ Wireframes were created for mobile, tablet and desktop.
 The website is comprised of …
 
 * All Pages on the website have:
+  * A navigation bar
+  * A footer
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
