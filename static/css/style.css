@@ -482,28 +482,33 @@ select {
 /* ----- Home Page ----- */
 
 
-.home_container {
+.home__container {
   display: flex;
-  margin: 3em 0 2em 0;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   padding: 2em 2em;
+  margin: 3em 0 2em 0;
 }
 
-.home--page--title {
-  font-size: 3rem;
+.home__title {
+  font-size: 6rem;
   padding-bottom: 3rem;
 }
 
-.home--heroimg {}
-
-.home--about--title {
-  padding-bottom: 1em;
+.about__title {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.home--about--paragraph {
-  padding-bottom: 3rem;
+.about__section--title {
+  padding-bottom: 1rem;
+}
+
+.about__section--paragraph {
+  text-align: center;
+  line-height: 1.75rem;
+  padding-bottom: 5rem;
+  max-width: 70rem;
 }
 
 /* ----- Footer ----- */
@@ -513,21 +518,37 @@ footer {
   background-color: var(--clr-primary--500);
 }
 
+.team__name {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 0.75rem;
+}
+
 .team__collaborators {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1rem;
+  padding: 0.5em 6em;
+}
 
+.contact__github {
+text-align: center;
+font-size: 0.75rem;
 }
 
 .photo {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
 }
 
-
+.coder__name {
+  text-align: center;
+}
 
 /* ----- Media ----- */
 
