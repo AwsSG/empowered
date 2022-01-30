@@ -1,10 +1,13 @@
+from crypt import methods
 import os
 from flask import (
-    Flask, flash, render_template,
+    Flask, flash, render_template, 
     redirect, request, session, url_for)
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 from datetime import datetime
+import json
+import time
 
 if os.path.exists("env.py"):
     import env
@@ -88,23 +91,26 @@ def logout():
 
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
+    today = datetime.now().strftime("%d/%m/%y")
     if request.method == "POST":
         # to create a check if there is already a record for the day
         emoji = {
             "user": session["user"],
-            "datetime": datetime.now(),
-            "emoji": request.form.get("emoji"),
+            "datetime": int(time.mktime(datetime.today().timetuple())),
+            "emoji": int(request.form.get("emoji")),
             "note": request.form.get("note"),
         }
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
 
-    return render_template("profile.html")
+    return render_template("profile.html", today=today)
 
 
 @app.route("/calendar")
 def calendar():
     emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
+    emoji_tracker_dates_emojis = []
+
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
 
