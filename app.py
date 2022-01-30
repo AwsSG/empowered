@@ -93,7 +93,7 @@ def profile():
         # to create a check if there is already a record for the day
         emoji = {
             "user": session["user"],
-            "datetime": datetime.now(),
+            "datetime": int(datetime.today().replace(microsecond=0).timestamp()),
             "emoji": int(request.form.get("emoji")),
             "note": request.form.get("note"),
         }
