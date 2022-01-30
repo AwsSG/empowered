@@ -1,7 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Our app name is EMPOWERED</h1>
+<h1>Empower</h1>
 {% for user in users %}
 <p>User: {{ user.username }}</p>
 {% endfor %}
+
+<h2>About Us</h2>
+
+<h3>What is Empower?</h3>
+<p>Empower is a site that allows you to log your emotional state every day. You can also choose to add a journal entry 
+    which allows you to expand on why you have chosen your selected emoji.</p>
+
+<h3>Why should I use Empower?</h3>
+<p>Our emotional health is a very important part of our overall health. By becoming more aware of our 
+    emotions can help us talk about our feelings, avoid or resolve conflicts in our lives better and help us to 
+    move past difficult feelings. Empower allows you to take a moment out of each day to check in and log your emotions. 
+    You are then able to track your emotional health over a period of time using the calendar function in your profile. 
+    The calendar feature can also be used to provide evidence of your emotional health should you need to seek help from 
+    professionals.</p>
+
+<h3>Can anyone else see my information?</h3>
+<p>No. Your privacy is very important to us. In order to log your emotional health you will need to register with the 
+    Empower site. This allows you to keep all your information confidential.</p>
+
 {% endblock %}
