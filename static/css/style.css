@@ -493,15 +493,18 @@ select {
 .home__title {
   font-size: 6rem;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .about__title {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .about__section--title {
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .about__section--paragraph {
@@ -511,6 +514,56 @@ select {
   max-width: 70rem;
 }
 
+/* ----- Register Page ----- */
+
+.register__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em;
+  margin: 3em 0 2em 0;
+}
+
+.register__title {
+  font-size: 6rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.register__paragraph {
+  text-align: center;
+  line-height: 1.75rem;
+  padding-bottom: 2rem;
+  max-width: 70rem;
+}
+
+/* ----- Form container ----- */
+
+.form__container {
+  display: flex;
+  width: 100%;
+  max-width: 70rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em;
+  margin: 3em 0 2em 0;
+}
+
+.form__input--label {
+padding-bottom: 1rem;
+}
+
+form > input {
+  height: 2rem;
+  width: 50rem;
+}
+
+button.form__button {
+padding: 0.5rem;
+background-color: var(--clr-primary--300);
+border-radius: 15%;
+
+}
 /* ----- Footer ----- */
 
 footer {
@@ -536,6 +589,7 @@ footer {
 }
 
 .contact__github {
+align-items: center;
 text-align: center;
 font-size: 0.75rem;
 }
