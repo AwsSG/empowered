@@ -62,7 +62,7 @@ cal.init({
         <img src="static/images/emojis/depressed.png" alt="depressed emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-      ${getNote}`);
+      <div class="calendar__note--click">" ${getNote} "</div>`);
     }
 
     if (nb === 3) {
@@ -72,7 +72,7 @@ cal.init({
         <img src="static/images/emojis/stressed.png" alt="stressed emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-      ${getNote}`);
+      <div class="calendar__note--click">" ${getNote} "</div>`);
     }
 
     if (nb === 4) {
@@ -82,7 +82,7 @@ cal.init({
         <img src="static/images/emojis/content.png" alt="content emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-      ${getNote}`);
+      <div class="calendar__note--click">" ${getNote} "</div>`);
     }
 
     if (nb === 5) {
@@ -92,7 +92,7 @@ cal.init({
         <img src="static/images/emojis/happy.png" alt="happy emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-      ${getNote}`);
+      <div class="calendar__note--click">" ${getNote} "</div>`);
     }
   }
 });
