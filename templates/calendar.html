@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
+{% for emoji in emoji_tracker %}
+    <p>Date/time: {{ emoji.datetime }}</p>
+    <p>Emoji number: {{ emoji.emoji }}</p>
+    <p>Note:{{ emoji.note }}</p>
+        <br>
+{% endfor %}
 
 {% endblock %}
