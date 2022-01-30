@@ -400,7 +400,6 @@ select {
 
 
 /* ----- Calendar Page ----- */
-
 .calendar__title--click {
   padding-bottom: 1em;
   font-size: 1.6rem;
@@ -409,54 +408,15 @@ select {
 .calendar__emoji--click {
   max-width: 3rem;
   padding-bottom: 1.2em;
-
   width: 100%;
   margin: 0 auto;
-
 }
+
 
 .calendar__text--click {
   font-size: 1.4rem;
   padding-bottom: 1.2em;
 }
-
-.cal-heatmap {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.calendar__text--click {
-  font-size: 1.4rem;
-  padding-bottom: 1.2em;
-}
-
-.content {
-  min-width: 400px;
-}
-
-#calendar {
-  width: 839px;
-}
-
-
-
-
-@media all and (max-width: 1400px) {
-  #calendar {
-    width: 626px;
-  }
-}
-
-@media all and (max-width: 730px) {
-  #calendar {
-    width: 365px;
-  }
-}
-
-@media all and (max-width: 420px) {
-  #calendar {
-    width: 191px;
-  }
 
 /* ----- Home Page ----- */
 
@@ -471,13 +431,11 @@ select {
 }
 
 .home--page--title {
-font-size: 3rem;
-padding-bottom: 3rem;
+  font-size: 3rem;
+  padding-bottom: 3rem;
 }
 
-.home--heroimg {
-  
-}
+.home--heroimg {}
 
 .home--about--title {
   padding-bottom: 1em;
@@ -507,8 +465,6 @@ footer {
   height: 5rem;
   border-radius: 50%;
 }
-
-
 
 
 
