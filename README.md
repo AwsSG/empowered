@@ -86,6 +86,7 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 ### User Stories
 
+
 1. As a user I want to be able to easily find out what the site does.
 2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
 3. As a user I want to be able to choose an appropriate emoticon to select as my emotional status for that day.
