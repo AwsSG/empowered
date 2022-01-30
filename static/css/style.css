@@ -451,12 +451,12 @@ select {
   margin: 0 auto;
 }
 
-
 .calendar__text--click {
   font-size: 1.2rem;
   padding-bottom: 1.2em;
   color: var(--clr-accent--900);
 }
+
 
 .calendar__note--click {
   font-style: italic;
@@ -477,6 +477,7 @@ select {
   background-color: var(--clr-primary--300);
   color: var(--clr-neutral--900);
 }
+
 
 /* ----- Home Page ----- */
 
@@ -541,7 +542,5 @@ footer {
   }
 
 
-  /* .navbar__components--mobile.open-menu {
-  display: block;
-  } */
+
 }
