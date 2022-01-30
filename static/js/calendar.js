@@ -20,6 +20,7 @@ cal.init({
   subDomain: "x_day",
   legend: [1, 2, 3, 4, 5],
   legendCellSize: 35,
+  legendMargin: [50, 0, 50, 90],
   legendVerticalPosition: "top",
   legendColors: ["#fff", "#232181"],
   legendTitleFormat: {

@@ -330,6 +330,10 @@ select {
   padding-bottom: 1em;
 }
 
+.calendar__btns--container {
+  margin: 2em 0;
+}
+
 .blog__form {
   display: flex;
   flex-direction: column;
@@ -416,7 +420,7 @@ select {
 }
 
 .calendar__scale {
-  margin-left: 2em;
+  margin-left: 130px;
   display: flex;
   justify-content: left;
   align-items: center;
