@@ -311,19 +311,11 @@ body.light .dropdown ul {
   font-weight: 600;
 }
 
-
 select {
   font-size: 1.5rem;
   padding: 1em;
   background-color: var(--clr-accent--100);
 }
-
-.emoji__submit {
-  margin-top: 2em;
-  background-color: var(--clr-accent--300);
-  color: var(--clr-neutral--900);
-}
-
 
 /* Profile Blog Styling */
 .blog__container {

@@ -27,19 +27,7 @@ $(document).ready(function () {
       $('.nav__options').slideUp();
     }
   });
-  // $('#emojis-container > li').each(function () {
-  //   $(this).click(function () {
-  //     $('#blog-container').css('display', 'flex')
-  //   })
-  // })
-  // $('#emojis-btn').click(function () {
-  //   $('#blog-container').css('display', 'flex')
-  // })
-  // $('#emoji option').each(function () {
-  //   if ($(this.selected)) {
-  //     $('#blog-container').css('display', 'flex')
-  //   }
-  // })
+
   $('#emoji').change(function () {
     if ($(this).val() == "") {
       $('#blog-container').css('display', 'none')
