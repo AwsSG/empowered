@@ -61,25 +61,28 @@
   let date0;
   let dataArray = []
   let emoji_number;
+  let tempDate;
 
   {% for emoji in emoji_tracker %}
 
   date0 = {{ emoji.datetime }}
   emoji_number = {{ emoji.emoji }}
   data222[`${date0}`] = emoji_number
-
+  console.log(data222)
 
   {% endfor %}
 
   {% for emoji in emoji_tracker %}
+  tempDate = new Date({{ emoji.datetime }} * 1000)
   dataArray.push({
-    date: {{ emoji.datetime }},
+    date: tempDate.toLocaleDateString("en-US"),
     emoji: {{ emoji.emoji }},
     note: "{{ emoji.note }}"
   })
   {% endfor %}
 
   console.log(dataArray)
+
 </script>
 
 {% endblock %}

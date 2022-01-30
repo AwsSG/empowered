@@ -40,7 +40,7 @@ cal.init({
 
     if (nb === 1) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")}</h3>
+      It was ${date.toLocaleDateString("en-US")} ${date.getTime()}</h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/angry.png" alt="angry emoji">
       </div>
