@@ -4,7 +4,7 @@ var cal = new CalHeatMap();
 cal.init({
   itemSelector: "#previousSelector-a",
   start: new Date(2022, 0), // January 1, 2022
-  range: 3,
+  range: 5,
   subDomainTextFormat: "%d",
   cellSize: 35,
   cellPadding: 0,
@@ -14,7 +14,9 @@ cal.init({
   data: data222,
   minDate: new Date(2022, 0),
   maxDate: new Date(2023, 0),
-  domainGutter: 0,
+  domainGutter: 10,
+  domainMargin: [30, 90, 30, 90],
+  domainDynamicDimension: true,
   legend: [1, 2, 3, 4, 5],
   legendColors: ["#fff", "#232181"],
   legendTitleFormat: {
@@ -29,9 +31,7 @@ cal.init({
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
       It was ${date.toLocaleDateString("en-US")}</h3>
       <div class="calendar__text--click">when you haven't left any notes</div>
-      `
-
-      );
+      `);
     }
 
     if (nb === 1) {
