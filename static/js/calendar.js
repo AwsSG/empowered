@@ -31,6 +31,12 @@ cal.init({
   previousSelector: "#previousSelector-a-previous",
   nextSelector: "#previousSelector-a-next",
   onClick: function (date, nb) {
+    let getNote
+    for (let item of dataArray) {
+      if (item.date === date.toLocaleDateString("en-US")) {
+        getNote = item.note
+      }
+    }
     if (nb === null) {
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
       It was ${date.toLocaleDateString("en-US")} ${date.getTime()/1000}</h3>
@@ -39,13 +45,14 @@ cal.init({
     }
 
     if (nb === 1) {
+
       $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
-      It was ${date.toLocaleDateString("en-US")} ${date.getTime()}</h3>
+      It was ${date.toLocaleDateString("en-US")} </h3>
       <div class="calendar__emoji--click">
         <img src="static/images/emojis/angry.png" alt="angry emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-        " <b>" + "{{content fo the post}}" + "</b> "`);
+      ${getNote}`);
     }
 
     if (nb === 2) {
@@ -55,7 +62,7 @@ cal.init({
         <img src="static/images/emojis/depressed.png" alt="depressed emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-        " <b>" + "{{content fo the post}}" + "</b> "`);
+      ${getNote}`);
     }
 
     if (nb === 3) {
@@ -65,7 +72,7 @@ cal.init({
         <img src="static/images/emojis/stressed.png" alt="stressed emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-        " <b>" + "{{content fo the post}}" + "</b> "`);
+      ${getNote}`);
     }
 
     if (nb === 4) {
@@ -75,7 +82,7 @@ cal.init({
         <img src="static/images/emojis/content.png" alt="content emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-        " <b>" + "{{content fo the post}}" + "</b> "`);
+      ${getNote}`);
     }
 
     if (nb === 5) {
@@ -85,7 +92,7 @@ cal.init({
         <img src="static/images/emojis/happy.png" alt="happy emoji">
       </div>
       <div class="calendar__text--click">Here what notes you have left:</div>
-        " <b>" + "{{content fo the post}}" + "</b> "`);
+      ${getNote}`);
     }
   }
 });
