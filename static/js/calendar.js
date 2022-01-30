@@ -44,5 +44,44 @@ cal.init({
         " <b>" + "{{content fo the post}}" + "</b> "`);
     }
 
+    if (nb === 2) {
+      $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
+      It was ${date.toLocaleDateString("en-US")}</h3>
+      <div class="calendar__emoji--click">
+        <img src="static/images/emojis/depressed.png" alt="depressed emoji">
+      </div>
+      <div class="calendar__text--click">Here what notes you have left:</div>
+        " <b>" + "{{content fo the post}}" + "</b> "`);
+    }
+
+    if (nb === 3) {
+      $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
+      It was ${date.toLocaleDateString("en-US")}</h3>
+      <div class="calendar__emoji--click">
+        <img src="static/images/emojis/stressed.png" alt="stressed emoji">
+      </div>
+      <div class="calendar__text--click">Here what notes you have left:</div>
+        " <b>" + "{{content fo the post}}" + "</b> "`);
+    }
+
+    if (nb === 4) {
+      $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
+      It was ${date.toLocaleDateString("en-US")}</h3>
+      <div class="calendar__emoji--click">
+        <img src="static/images/emojis/content.png" alt="content emoji">
+      </div>
+      <div class="calendar__text--click">Here what notes you have left:</div>
+        " <b>" + "{{content fo the post}}" + "</b> "`);
+    }
+
+    if (nb === 5) {
+      $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
+      It was ${date.toLocaleDateString("en-US")}</h3>
+      <div class="calendar__emoji--click">
+        <img src="static/images/emojis/happy.png" alt="happy emoji">
+      </div>
+      <div class="calendar__text--click">Here what notes you have left:</div>
+        " <b>" + "{{content fo the post}}" + "</b> "`);
+    }
   }
 });
