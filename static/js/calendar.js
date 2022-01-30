@@ -1,7 +1,6 @@
 var cal = new CalHeatMap();
 
-
-
+// Initiate library
 cal.init({
   itemSelector: "#previousSelector-a",
   start: new Date(2022, 0), // January 1, 2022
@@ -23,15 +22,8 @@ cal.init({
     inner: "between {down} and {up} {name}",
     upper: "more than {max} {name}"
   },
-
-
-  // considerMissingDataAsZero: 1,
-
   previousSelector: "#previousSelector-a-previous",
   nextSelector: "#previousSelector-a-next",
-
-
-
   onClick: function (date, nb) {
     $("#onClick-placeholder").html("It was  <b>" +
       date.getDate() + ' / ' + (date.getMonth() + 1) + ' / ' + date.getFullYear() +
@@ -44,28 +36,3 @@ cal.init({
     );
   }
 });
-
-
-// $("#minDate-previous").on("click", function (e) {
-//   e.preventDefault();
-//   if (!cal.previous()) {
-//     alert("No more domains to load");
-//   }
-// });
-
-// $("#minDate-next").on("click", function (e) {
-//   e.preventDefault();
-//   if (!cal.next()) {
-//     alert("No more domains to load");
-//   }
-// });
-
-
-
-var date = new Date("2022-01-30");
-console.log(date);
-var seconds = date.getTime() / 1000;
-
-console.log(`"${seconds}": 29,`)
-
-console.log(dataSo)
