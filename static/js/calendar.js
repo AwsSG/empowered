@@ -18,6 +18,8 @@ cal.init({
   domainMargin: [30, 90, 30, 90],
   domainDynamicDimension: true,
   legend: [1, 2, 3, 4, 5],
+  legendCellSize: 35,
+  legendVerticalPosition: "top",
   legendColors: ["#fff", "#232181"],
   legendTitleFormat: {
     lower: "less than {min} {name}",
