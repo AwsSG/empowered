@@ -9,6 +9,25 @@
 </section>
 <section class="scale">
   <h4 class="scale__text">Please, click on the emoji to sum up your today's feeling!</h4>
+
+  <form method="POST" action="{{ url_for('profile') }}">
+
+    <select id="emoji" name="emoji" required>
+      <option value="" disabled selected>Choose</option>
+      <option value="1">Angry</option>
+      <option value="2">Depressed</option>
+      <option value="3">Stressed</option>
+      <option value="4">Content</option>
+      <option value="5">Happy</option>
+    </select>
+    <br>
+    <textarea id="note" name="note" rows="4" cols="50">
+    </textarea>
+    <br>
+    <button type="submit">Add note</button>
+
+  </form>
+
   <ul class="scale__emojis" id="emojis-container">
     <li class="scale__emoji">
       <div class="emoji__image--holder">
