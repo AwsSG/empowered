@@ -114,13 +114,6 @@ def calendar():
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
 
-# @app.route("/api", methods=["GET", "POST"])
-# def api():
-#     if request.method == "GET":
-#         emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
-#         response = jsonify(emoji_tracker)
-#         return response
-
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
