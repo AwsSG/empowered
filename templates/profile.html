@@ -1,4 +1,95 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% endblock %}
+<section class="blog">
+  <div class="blog__heading">
+    <h3 class="blog__heading--incentive">How do you feel today?</h3>
+    <p class="blog__heading--day">Today is <span>" 29.01.2022 "</span></p>
+  </div>
+</section>
+<section class="scale">
+  <h4 class="scale__text">Please, click on the emoji to sum up your today's feeling!</h4>
+
+  <form method="POST" action="{{ url_for('profile') }}">
+
+    <select id="emoji" name="emoji" required>
+      <option value="" disabled selected>Choose</option>
+      <option value="1">Angry</option>
+      <option value="2">Depressed</option>
+      <option value="3">Stressed</option>
+      <option value="4">Content</option>
+      <option value="5">Happy</option>
+    </select>
+    <br>
+    <textarea id="note" name="note" rows="4" cols="50">
+    </textarea>
+    <br>
+    <button type="submit">Add note</button>
+
+  </form>
+
+  <ul class="scale__emojis" id="emojis-container">
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
+      </div>
+      <span class="scale__emoji--text">angry</span>
+    </li>
+
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji">
+      </div>
+      <span class="scale__emoji--text">depressed</span>
+    </li>
+
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji">
+      </div>
+      <span class="scale__emoji--text">stressed</span>
+    </li>
+
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji">
+      </div>
+      <span class="scale__emoji--text">content</span>
+    </li>
+
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
+      </div>
+      <span class="scale__emoji--text">happy</span>
+    </li>
+
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/excited.png') }}" alt="excited emoji">
+      </div>
+      <span class="scale__emoji--text">excited</span>
+    </li>
+  </ul>
+
+
+  <section class="blog__container" id="blog-container">
+    <h4 class="blog__container--title">Leave some notes to explain why you feel so!</h4>
+    <form method="POST" class="blog__form" action="">
+      <p class="blog__input">
+        <label for="content" class="blog__label">Add your thought here:</label>
+        <textarea name="content" id="content" class="blog__textarea" aria-label="Entry content"></textarea>
+      </p>
+      <div class="blog__submit">
+        <button type="submit" class="btn blog__btn--submit">Add Note</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="data__link">
+    <h4 class="data__link--title">Would you like to look how you are doing during these days?</h4>
+    <div class="data__link--check">
+      <a href="#" class="btn btn__calendar--link">Calendar Data</a>
+    </div>
+  </section>
+  {% endblock %}

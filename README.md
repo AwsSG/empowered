@@ -1,18 +1,20 @@
-# Empower Website
+# Empowered
 
-Information about the website and hackathon to go here.
+Empowered was developed as part of the January 2022 Hackathon: Accelerating the future of workforce well-being and mindfulness
+- presented by Code Institute and Soda Social.
 
 Add site responsive screenshot here
 
-Link to deployed site to go here
+[Click Here to view the deployed site.](https://empowere.herokuapp.com/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/AwsSG/empowered?color=red)
 ![GitHub contributors](https://img.shields.io/github/contributors/AwsSG/empowered?color=orange)
 ![GitHub language count](https://img.shields.io/github/languages/count/AwsSG/empowered?color=yellow)
 ![GitHub top language](https://img.shields.io/github/languages/top/AwsSG/empowered?color=green)
 ![GitHub forks](https://img.shields.io/github/forks/AwsSG/empowered?style=social)
+![W3C Validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fempowere.herokuapp.com%2F)
 
-Add the w3c validator shields badge here - is there a badge for python validator?
+Is there a relevent shield for python? any others that need adding?
 
 ## CONTENTS
 
@@ -62,9 +64,28 @@ Add the w3c validator shields badge here - is there a badge for python validator
 
 ### Initial Discussion
 
+The theme brief for the January 2022 Hackathon was to rethink solutions to help build an iniative to improve different aspects of mental health and well-being in 2022.
+
+The judging criteria:
+
+* Provides a clear and substantial value to the user. 
+* Uses an original or innovative idea, design or implementation.
+* Has well structured and completed documentation (README and wireframes).
+* Is well planned and executed using GitHub projects.
+* Focus is realistic and has an overall sense of completeness. 
+
 #### Key information for the site
 
+We discussed several ideas for our project and decided to create a site that would allow the user to record their emotional state daily by choosing the emoji that best depicts how they are feeling. The user would also be able to add a journal entry to expand on their choice of emoji and to note anything they feel is having an effect on their mental health. 
+
+Users would then be able to view their previous emojis on a calendar which would allow them to track their well-being. It would also be a useful tool to be able to show to professionals should the user decide to seek further help. When the user selects an emoji logged in the calendar they would then be shown their journal entry for that day. 
+
+As this would be quite personal information it was important that the user be able to make a profile to keep this information private. By registering a profile the user would then be able to utilise the calendar feature.
+
+When a user selects their emoji we will then provide a personalised recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to destress. 
+
 ### User Stories
+
 
 1. As a user I want to be able to easily find out what the site does.
 2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
@@ -89,21 +110,30 @@ We feel that this colour palette has a nice balance between the blues and greens
 
 ### Typography
 
+We have used sans-serif as our font.
+
 ### Imagery
 
 ### Wireframes
 
 Wireframes were created for mobile, tablet and desktop.
 
-Wireframes links/images to go here
+![Home Page Wireframe](static/documents/wireframes/homewireframe.png)
+![Log in Page Wireframe](static/documents/wireframes/loginwireframe.png)
+![Register Page Wireframe](static/documents/wireframes/registerwireframe.png)
+![Calendar Page Wireframe](static/documents/wireframes/calendarwireframe.png)
+![Profile Page Wireframe](static/documents/wireframes/profilewireframe.png)
 
 ### Features
 
 The website is comprised of …
 
 * All Pages on the website have:
+  * A navigation bar
+  * A footer
 
 * Future Implementations.
+  * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
 
 ### Accessibility
 
@@ -136,19 +166,20 @@ Materialize - For the framework.
 Flask -
 
 Mongo DB -
+
 ? Font Awesome - For the iconography on the website.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-? [Tiny PNG](https://tinypng.com/) To compress images.
+[Tiny PNG](https://tinypng.com/) To compress images.
 
-? [Birme](https://www.birme.net/) To resize images and change to webp format.
-
-? [Favicon.io](https://favicon.io/) To create favicon.
+[Favicon.io](https://favicon.io/) To create favicon.
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-[Shields.io](https://shields.io/) To add badges to the README
+[Shields.io](https://shields.io/) To add badges to the README.
+
+[Canva](https://www.canva.com/) To edit images.
 
 - - -
 
@@ -232,9 +263,14 @@ We also went through each page using Google Chrome developer tools to ensure tha
 
 ### Media
 
+[Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
+[emojis on the hero image](https://www.canva.com/)
+
+All team images used in footer belong to the team member.
+
 ### Collaborators
 
-Team 3 of the January Hackathon 2022:
+Team Inside Out members of the January Hackathon 2022:
 
 * [Iuliia Konovalova](https://github.com/IuliiaKonovalova)
 * [Aws Sabah Gheni](https://github.com/AwsSG)
@@ -247,3 +283,4 @@ Team 3 of the January Hackathon 2022:
 We would like to acknowledge the following people who helped us along the way in completing this project:
 
 * [Dave Bowers](https://github.com/dnlbowers), our hackathon facilitator.
+* Our families - for their patience and support while we disappeared for another long weekend of coding.

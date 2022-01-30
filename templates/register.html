@@ -1,4 +1,51 @@
 {% extends "base.html" %}
 {% block content %}
 
+<form method="POST" action="{{ url_for('register') }}">
+    <!-- Username -->
+    <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
+        class="validate" required>
+    <label for="username">Username</label>
+    <!-- password -->
+
+    <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
+        class="validate" required>
+    <label for="password">Password</label>
+    <!-- register -->
+    <button type="submit">
+        Register
+    </button>
+</form>
+
+<p>
+    Already registered? Log In
+    <a href="{{ url_for('login') }}">here!</a>
+</p>
+
+<h1>Register for Empower!</h1>
+
+<p>Please fill in the form below to register a profile. 
+<p>By registering for a profile you will be able to store and view your history of emotions and journal entries.</p>
+<p>Don't worry, your data is safe - We will never share your information with third parties.</p>
+
+
+<form>
+<label for="username">Username: </label>
+<input id="username" type="text" name="username" placeholder="Choose a username" required>
+<br>
+<label for="email">Email: </label>
+<input id="email" type="text" name="email" placeholder="Enter your email address" required>
+<br>
+<label for="password">Password: </label>
+<input id="password" type="password" name="password" placeholder="Choose a password" required>
+<br>
+<label for="password2">Re-enter password: </label>
+<input id="password2" type="password" name="password2" placeholder="re-enter your password" required>
+<br>
+<button type="Submit">Register</button>
+</form>
+
+
+<p>Already have a profile? <a href="{{ url_for('login') }}">Log in here</a></p>
+
 {% endblock %}
