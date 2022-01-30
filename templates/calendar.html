@@ -14,41 +14,78 @@
 {% endfor %}
 
 
-<section class="blog">
-    <div id="previousSelector-a">
-        <button id="previousSelector-a-previous" style="padding:10px; margin: 2em;">
-            Previous </button> &nbsp
-        <button id="previousSelector-a-next" style="padding:10px; margin: 2em;"> Next </button>
-    </div>
-    <div style="padding:10px; margin: 2em;">
-        <span id="onClick-placeholder">Click a date on the calendar</span>
-    </div>
-    <div style="padding:10px; margin: 2em;">
+<section class="calendar">
+  <h2 class="calendar__heading">Here is your records</h2>
+  <ul class="scale__emojis">
+    <li class="calendar__legend--scale">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
+      </div>
+      <span class="scale__emoji--text">angry</span>
+    </li>
 
-        <div id="cal-heatmap">
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji">
+      </div>
+      <span class="scale__emoji--text">depressed</span>
+    </li>
 
-        </div>
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji">
+      </div>
+      <span class="scale__emoji--text">stressed</span>
+    </li>
+
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji">
+      </div>
+      <span class="scale__emoji--text">content</span>
+    </li>
+    <li class="scale__emoji">
+      <div class="emoji__image--holder">
+        <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
+      </div>
+      <span class="scale__emoji--text">happy</span>
+    </li>
+  </ul>
+  <div id="previousSelector-a">
+    <button id="previousSelector-a-previous" style="padding:10px; margin: 2em;">
+      Previous </button> &nbsp
+    <button id="previousSelector-a-next" style="padding:10px; margin: 2em;"> Next </button>
+  </div>
+
+  <div style="padding:10px; margin: 2em;">
+    <span id="onClick-placeholder">Click a date on the calendar</span>
+  </div>
+  <div style="padding:10px; margin: 2em;">
+
+    <div id="cal-heatmap">
 
     </div>
+
+  </div>
 </section>
 
 
 <script>
 
-    let data222 = {};
-    let date0;
-    let emoji_number;
+  let data222 = {};
+  let date0;
+  let emoji_number;
 
-    {% for emoji in emoji_tracker %}
+  {% for emoji in emoji_tracker %}
 
-    date0 = {{ emoji.datetime }}
-    emoji_number = {{ emoji.emoji }}
-    data222[`${date0}`] = emoji_number
+  date0 = {{ emoji.datetime }}
+  emoji_number = {{ emoji.emoji }}
+  data222[`${date0}`] = emoji_number
 
-    {% endfor %}
+  {% endfor %}
 
 
-    
+
 
 
 </script>
