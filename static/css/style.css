@@ -402,7 +402,21 @@ select {
 
 /* ----- Calendar Page ----- */
 
+.calendar__title--click {
+  padding-bottom: 1em;
+  font-size: 1.6rem;
+}
 
+.calendar__emoji--click {
+  max-width: 3rem;
+  padding-bottom: 1.2em;
+
+}
+
+.calendar__text--click {
+  font-size: 1.4rem;
+  padding-bottom: 1.2em;
+}
 
 
 

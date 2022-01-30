@@ -26,21 +26,22 @@ cal.init({
   nextSelector: "#previousSelector-a-next",
   onClick: function (date, nb) {
     if (nb === null) {
-      $("#onClick-placeholder").html(`It was ${date.toLocaleDateString("en-US")}
-        when you didn't share your feelings`
+      $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
+      It was ${date.toLocaleDateString("en-US")}</h3>
+      <div class="calendar__text--click">when you haven't left any notes</div>
+      `
 
       );
     }
 
     if (nb === 1) {
-      $("#onClick-placeholder").html(`"It was ${date.toLocaleDateString("en-US")}
-        with 
-        <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
-        emoji 
-        " <b>" + "Here what notes you have left: " + "</b> <br/>" +
-        " <b>" + "{{content fo the post}}" + "</b> "`
-
-      );
+      $("#onClick-placeholder").html(`<h3 class="calendar__title--click">
+      It was ${date.toLocaleDateString("en-US")}</h3>
+      <div class="calendar__emoji--click">
+        <img src="static/images/emojis/angry.png" alt="angry emoji">
+      </div>
+      <div class="calendar__text--click">Here what notes you have left:</div>
+        " <b>" + "{{content fo the post}}" + "</b> "`);
     }
 
   }
