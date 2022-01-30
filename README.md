@@ -176,7 +176,9 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-[Shields.io](https://shields.io/) To add badges to the README
+[Shields.io](https://shields.io/) To add badges to the README.
+
+[Canva](https://www.canva.com/) To edit images.
 
 - - -
 
@@ -260,9 +262,14 @@ We also went through each page using Google Chrome developer tools to ensure tha
 
 ### Media
 
+[Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
+[emojis on the hero image](https://www.canva.com/)
+
+All team images used in footer belong to the team member.
+
 ### Collaborators
 
-Team 3 of the January Hackathon 2022:
+Team Inside Out members of the January Hackathon 2022:
 
 * [Iuliia Konovalova](https://github.com/IuliiaKonovalova)
 * [Aws Sabah Gheni](https://github.com/AwsSG)
@@ -275,3 +282,4 @@ Team 3 of the January Hackathon 2022:
 We would like to acknowledge the following people who helped us along the way in completing this project:
 
 * [Dave Bowers](https://github.com/dnlbowers), our hackathon facilitator.
+* Our families - for their patience and support while we disappeared for another long weekend of coding.
