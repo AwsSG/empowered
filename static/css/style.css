@@ -233,7 +233,7 @@ body.light .dropdown ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5em 0;
+  padding: 0;
   text-align: center;
   flex-direction: column;
 }
@@ -243,6 +243,7 @@ body.light .dropdown ul {
   margin: 1em auto;
   display: flex;
   background-color: var(--clr-accent--100);
+  padding: 2em;
   padding: 1em 0;
   display: flex;
   justify-content: center;
