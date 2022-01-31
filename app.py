@@ -92,6 +92,7 @@ def logout():
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     today = datetime.now().strftime("%d/%m/%y")
+
     suggestions = []
 
     if request.method == "POST":
@@ -109,9 +110,12 @@ def profile():
     return render_template("profile.html", today=today, suggestions=suggestions)
 
 
+
 @app.route("/calendar")
 def calendar():
     emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
+    emoji_tracker_dates_emojis = []
+
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
 

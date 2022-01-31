@@ -201,8 +201,13 @@ body.light .dropdown ul {
   display: block;
 }
 
+/* ----- Logo ----- */
 
-
+.logo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
 
 
 /* ----- Main ----- */
@@ -489,6 +494,31 @@ select {
   color: var(--clr-accent--900);
 }
 
+.calendar__title--click {
+  padding-bottom: 1em;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.calendar__note--click {
+  font-style: italic;
+  font-weight: 1.5rem;
+}
+
+.btn__calendar {
+  padding: 0.5em;
+  background-color: var(--clr-primary--100);
+  font-size: 1.2rem;
+  width: 5rem;
+  color: var(--clr-neutral--300);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn__calendar:hover {
+  background-color: var(--clr-primary--300);
+  color: var(--clr-neutral--900);
+}
 
 .calendar__note--click {
   font-style: italic;
@@ -757,7 +787,6 @@ footer {
     display: block;
   }
 
-
   .team__collaborators {
     flex-direction: column;
   }
@@ -771,4 +800,5 @@ footer {
     display: flex;
     justify-content: center;
   }
+
 }

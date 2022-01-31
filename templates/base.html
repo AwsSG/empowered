@@ -8,6 +8,13 @@
   <meta name="description" content="hackathon project on the topic the future of workforce well-being" />
   <meta name="keywords" content="hackathon, workforce well-being, soda" />
   <meta name="author" content="Theo, Anna, Aws Sabah Gheni, Kera Cudmore, Iuliia Konovalova" />
+
+  <!--favicon meta - link file paths to be changed-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}">
+  <link rel="manifest" href="{{ url_for('static', filename='favicon/site.webmanifest') }}">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -18,14 +25,14 @@
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-  <title>EMPOWERED</title>
+  <title>EMPOWER</title>
 </head>
 
 <body>
   <header class="header">
     <nav class="navbar" id="navbar">
       <div class="logo__container--top">
-        <h1>Logo</h1>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Woman stood in side profile. She has a green silk scarf covering her eyes and the wind is blowing the scarf straight out behind her. The word Empower has been superimposed onto the scarf." class="logo">
       </div>
 
       <!-- Navbar items -->
