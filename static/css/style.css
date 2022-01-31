@@ -634,10 +634,27 @@ button.form__button {
   border-radius: var(--br);
   text-transform: uppercase;
   color: var(--clr-neutral--900);
-
 }
 
+.invalid_username,
+.invalid_password {
+  color: rgb(233, 118, 24);
+  font-weight: 700;
+  font-style: italic;
+  position: absolute;
+  top: 6.2rem;
+  left: 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
 
+.invalid_password {}
+
+.username_hidden,
+.password_hidden {
+  /* display: none; */
+}
 
 
 
