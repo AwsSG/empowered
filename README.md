@@ -205,15 +205,56 @@ To clone the empowered repository:
 [Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
 ### Solved Bugs
 
+1. The cal-heatmap did not displayed data from mongoDB.
+
+    *Solution:* Add additional code to calendar.html as the extension of calendar.js to transform the data to required format:
+
+    ```javascript
+
+        let data222 = {};
+        let date0;
+        let emoji_number;
+
+        {% for emoji in emoji_tracker %}
+
+        date0 = {{ emoji.datetime }}
+        emoji_number = {{ emoji.emoji }}
+        data222[`${date0}`] = emoji_number
+        console.log(data222)
+
+        {% endfor %}
+
+        console.log(dataArray)
+    ```
+
+1. The didn't represent the data of notes when clicking  on the day:
+
+    *Solution:* Add code to calendar.html and calendar.js in order to connect data
+
+      ```javascript
+      let date0;
+      let dataArray = []
+      let emoji_number;
+      let tempDate;
+
+
+      {% for emoji in emoji_tracker %}
+      tempDate = new Date({{ emoji.datetime }} * 1000)
+      dataArray.push({
+        date: tempDate.toLocaleDateString("en-US"),
+        emoji: {{ emoji.emoji }},
+        note: "{{ emoji.note }}"
+      })
+      {% endfor %}
+
+      console.log(dataArray)
+      ```
+
 ### Known Bugs
 
-### Testing User Stories
+1. The cal-heatmap calendar is not responsive. There for the user can find it a bit messy, but to reduce misleading for the user, the navigation buttons were implemented
 
-* First Time Visitors
-
-* Returning Visitors
-
-* Frequent Visitors
+1. The user can only use select - options to pick an emoji as flask can retrieve data of value only from input, select when options are implemented.
 
 ### Lighthouse
 
