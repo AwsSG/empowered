@@ -35,19 +35,10 @@ Is there a relevent shield for python? any others that need adding?
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
 * [Deployment & Local Development](#Deployment-&-Local-Development)
-  * [Deployment](#Deployment)
-  * [Local Development](#Local-Development)
-    * [How to Fork](#How-to-Fork)
-    * [How to Clone](#How-to-Clone)
-
-* [Testing](#Testing)
-  
+* [Testing](#Testing)  
 * [Credits](#Credits)
-  * [Code Used](#Code-Used)
-  * [Content](#Content)
-  * [Media](#Media)
-  * [Collaborators](#Collaborators)
-  * [Acknowledgments](#Acknowledgments)
+* [Collaborators](#Collaborators)
+* [Acknowledgments](#Acknowledgments)
 
 - - -
 
