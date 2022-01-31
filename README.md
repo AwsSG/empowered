@@ -133,17 +133,22 @@ We have been mindful during coding to ensure that the website is as accessible f
 
 ### Languages Used
 
-HTML, CSS, Python
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - was used as markdown language.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+- [Python 3.8.5](https://www.python.org/downloads/release/python-385/) - used to manipulate the data.
 
-### Frameworks, Libraries & Programs Used
 
-Balsamiq - Used to create wireframes.
+### Frameworks, Libraries & Programs Used, etc
 
-Git - For version control.
-
-Github - To save and store the files for the website.
-
-Flask 
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/) was used as the foundation of the site.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) - was used to declaring global CSS variables and apply them throughout the project. 
+- [Balsamiq](https://balsamiq.com/) - was used to make wireframes for the website.
+- [VSCode](https://code.visualstudio.com/) - was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) - was used for the version control of the website.
+- [GitHub](https://github.com/) - was used to host the code of the website.
+- [GIMP](https://www.gimp.org/) - was used to make and resize images for the README file.
+* [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
 
 Mongo DB 
 
