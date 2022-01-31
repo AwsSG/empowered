@@ -622,12 +622,12 @@ footer {
 /* Team Name */
 .team__name {
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 0.02rem;
 }
 
 .team__name--title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-left: 0.5rem;
   color: var(--clr-neutral--900);
@@ -641,23 +641,35 @@ footer {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5em 2em;
+  padding: 2.5em 4em;
 }
 
 .contact__github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 0.75rem;
 }
 
-.photo {
+.image__holder {
+  width: inherit;
+  margin-bottom: 1.5em;
+}
+
+.image__holder img {
+  border-radius: 50%;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .coder__name {
   text-align: center;
+  font-size: 1.2rem;
+  color: var(--clr-neutral--900);
+  font-weight: 700;
 }
 
 /* ----- Media ----- */
