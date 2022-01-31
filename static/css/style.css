@@ -219,6 +219,37 @@ body.light .dropdown ul {
   flex-direction: column;
 }
 
+/* Flash messages */
+.flash__messages--container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5em 0;
+  text-align: center;
+  flex-direction: column;
+}
+
+.flash__messages {
+  width: 100%;
+  margin: 1em auto;
+  display: flex;
+  background-color: var(--clr-accent--100);
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flash__message--content {
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* ----- Blog ----- */
 .blog {
   padding: 2.5em 0;
   text-align: center;
@@ -557,22 +588,23 @@ select {
 }
 
 .form__input--label {
-padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
-form > input {
+form>input {
   height: 2rem;
   width: 50rem;
 }
 
 button.form__button {
-padding: 0.5rem;
-background-color: var(--clr-primary--300);
-border-radius: 15%;
-text-transform: uppercase;
-color: var(--clr-neutral--900);
+  padding: 0.5rem;
+  background-color: var(--clr-primary--300);
+  border-radius: 15%;
+  text-transform: uppercase;
+  color: var(--clr-neutral--900);
 
 }
+
 /* ----- Footer ----- */
 
 footer {
@@ -598,9 +630,9 @@ footer {
 }
 
 .contact__github {
-align-items: center;
-text-align: center;
-font-size: 0.75rem;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 .photo {
