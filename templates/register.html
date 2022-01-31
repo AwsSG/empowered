@@ -1,54 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form method="POST" action="{{ url_for('register') }}">
-    <!-- Username -->
-    <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
-        class="validate" required>
-    <label for="username">Username</label>
-    <!-- password -->
 
-    <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
-        class="validate" required>
-    <label for="password">Password</label>
-    <!-- register -->
-    <button type="submit">
-        Register
-    </button>
-</form>
-
-<p>
-    Already registered? Log In
-    <a href="{{ url_for('login') }}">here!</a>
-</p>
-
-<!-- keras form starts here -->
-
-<section class="register__container">
-<h1 class="register__title">Register for Empower!</h1>
-
-<p class="register__paragraph">Please fill in the form below to register a profile. 
-<p class="register__paragraph">By registering for a profile you will be able to store and view your history of emotions and journal entries.</p>
-<p class="register__paragraph">Don't worry, your data is safe - We will never share your information with third parties.</p>
+<div class="register__container">
+  <h2 class="register__title">Register for Empower!</h2>
+  <p class="register__paragraph">Please fill in the form below to register a profile.
+  <p class="register__paragraph">By registering for a profile you will be able to store and view your history of
+    emotions and journal entries.</p>
+  <p class="register__paragraph">Don't worry, your data is safe - We will never share your information with third
+    parties.</p>
 
 
-<form class="form__container">
-<label for="username" class="form__input--label">Username: </label>
-<input id="username" type="text" name="username" required>
-<br>
-<label for="email" class="form__input--label">Email: </label>
-<input id="email" type="text" name="email" required>
-<br>
-<label for="password" class="form__input--label">Password: </label>
-<input id="password" type="password" name="password" required>
-<br>
-<label for="password2" class="form__input--label">Re-enter password: </label>
-<input id="password2" type="password" name="password2" required>
-<br>
-<button type="Submit" class="form__button">Register</button>
-</form>
+  <form method="POST" action="{{ url_for('register') }}" class="form__container">
+    <label for="username" class="form__input--label">Username: </label>
+    <input id="username" type="text" name="username" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9_ ]{5,20}$"
+      required>
+    <br>
+    <!-- <label for="email" class="form__input--label">Email: </label>
+  <input id="email" type="text" name="email" required>
+  <br> -->
+    <label for="password" class="form__input--label">Password: </label>
+    <input id="password" type="password" name="password" minlength="8" maxlength="32"
+      pattern="^(?:(?=.*[a-z])(?:(?=.*[A-Z])(?=.*[\d\W])|(?=.*\W)(?=.*\d))|(?=.*\W)(?=.*[A-Z])(?=.*\d)).{8,32}$"
+      required>
+    <br>
+    <!-- <label for="password2" class="form__input--label">Re-enter password: </label>
+  <input id="password2" type="password" name="password2" required>
+  <br> -->
+    <button type="submit" class="form__button">Register</button>
+  </form>
+
+  <p class="register__paragraph">
+    Already have a profile?
+    <a href="{{ url_for('login') }}">Log in here</a>
+  </p>
+
+</div>
 
 
-<p class="register__paragraph">Already have a profile? <a href="{{ url_for('login') }}">Log in here</a></p>
-</section>
 {% endblock %}
