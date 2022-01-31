@@ -31,10 +31,10 @@ cal.init({
   previousSelector: "#previousSelector-a-previous",
   nextSelector: "#previousSelector-a-next",
   onClick: function (date, nb) {
-    let getNote
+    let getNote;
     for (let item of dataArray) {
       if (item.date === date.toLocaleDateString("en-US")) {
-        getNote = item.note
+        getNote = item.note;
       }
     }
     if (nb === null) {
