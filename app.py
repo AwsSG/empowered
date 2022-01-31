@@ -6,6 +6,7 @@ from flask import (
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 from datetime import datetime
+from bson.objectid import ObjectId
 import json
 import time
 
@@ -92,28 +93,27 @@ def logout():
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     today = datetime.now().strftime("%d/%m/%y")
-    # today_to_check = int(time.mktime(datetime.today().timetuple()))
-    
-    last_record = list(mongo.db.tracker.find({"user": session["user"]}).sort("_id", -1).limit(1))
-    # today_to_check = last_record[2].strftime("%d/%m/%y")
-    # user_to_check = session["user"]
-    print(print("------------------ something should print here hopefully: ", last_record, today))
-    
-    suggestions = []
-
+    user = list(mongo.db.tracker.find({"user": session["user"]}))
+    # check if the user has entry
+    if user:
+        last_entry = datetime.fromtimestamp(user[-1]["datetime"]).date().strftime("%d/%m/%y")
+        emoji_num = int(user[-1]["emoji"])
+        suggestions = list(mongo.db.resources.find({"emoji": emoji_num}))
+    else:
+        suggestions = []
+        last_entry = 0
     if request.method == "POST":
-        # to create a check if there is already a record for the day
         emoji = {
             "user": session["user"],
             "datetime": int(time.mktime(datetime.today().timetuple())),
             "emoji": int(request.form.get("emoji")),
             "note": request.form.get("note"),
         }
-        suggestions = list(mongo.db.resources.find({"emoji": int(request.form.get("emoji"))}))
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
+        redirect(url_for("profile", today=today, suggestions=suggestions, last_entry=last_entry))
 
-    return render_template("profile.html", today=today, suggestions=suggestions, last_record=last_record)
+    return render_template("profile.html", today=today, suggestions=suggestions, last_entry=last_entry)
 
 
 @app.route("/calendar")
