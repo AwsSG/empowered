@@ -589,10 +589,11 @@ select {
 .register__title,
 .login__title {
   font-size: 2.5rem;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-weight: 900;
   color: var(--clr-accent--900);
+  padding: 0 2em;
 }
 
 .register__paragraph,
@@ -600,8 +601,9 @@ select {
   text-align: center;
   font-size: 1.3rem;
   font-style: italic;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   max-width: 70rem;
+  padding: 0 2em;
 }
 
 .register__paragraph a,
@@ -797,6 +799,35 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+}
+
+@media all and (max-width: 550px) {
+
+  .register__title,
+  .login__title {
+    font-size: 1.9rem;
+  }
+
+  .register__paragraph,
+  .login__paragraph {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding-bottom: 0.5rem;
+    max-width: 70rem;
+    padding: 0 2em;
+  }
+
+  .form__container {
+    min-width: 15rem;
+    padding: 2em 1.2em;
+    margin: 2em 0 1em 0;
+  }
+
+  .form__button {
+    padding: 1em 1.5em;
   }
 
 }
