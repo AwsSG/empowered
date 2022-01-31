@@ -624,6 +624,9 @@ footer {
   padding: 1em;
   font-size: 1.3rem;
   letter-spacing: 0.02rem;
+  display: flex;
+  align-items: center;
+  align-items: center;
 }
 
 .team__name--title {
@@ -632,6 +635,7 @@ footer {
   margin-left: 0.5rem;
   color: var(--clr-neutral--900);
   font-weight: 900;
+  padding-bottom: 0.2em;
 }
 
 /* Team Members */
@@ -686,5 +690,17 @@ footer {
   }
 
 
+  .team__collaborators {
+    flex-direction: column;
+  }
 
+  .contact__github {
+    margin-bottom: 3em;
+  }
+
+  .team__name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
