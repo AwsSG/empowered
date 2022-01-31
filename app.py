@@ -92,10 +92,13 @@ def logout():
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     today = datetime.now().strftime("%d/%m/%y")
-
-    last_record = list(mongo.db.tracker.find().sort("datetime", 1).limit(1))
-    print(print("------------------ something should print here hopefully: ", last_record))
-
+    # today_to_check = int(time.mktime(datetime.today().timetuple()))
+    
+    last_record = list(mongo.db.tracker.find({"user": session["user"]}).sort("_id", -1).limit(1))
+    # today_to_check = last_record[2].strftime("%d/%m/%y")
+    # user_to_check = session["user"]
+    print(print("------------------ something should print here hopefully: ", last_record, today))
+    
     suggestions = []
 
     if request.method == "POST":
