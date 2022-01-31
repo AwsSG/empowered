@@ -47,19 +47,19 @@
 - No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator except jinja syntax.
 
     - Home page:
-* [HTML](https://validator.w3.org/nu/#textarea)
+* [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fempowere.herokuapp.com%2Fhome)
 
     - Log In page:
-* [HTML](https://validator.w3.org/nu/#textarea)
+* [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fempowere.herokuapp.com%2Flogin)
 
     - Register page:
-* [HTML](https://validator.w3.org/nu/#textarea)
+* [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fempowere.herokuapp.com%2Fregister)
 
     - Profile page:
-* [HTML](https://validator.w3.org/nu/#textarea)
+* [HTML](documentation/testing/profilehtmlvalidator.png)
 
     - Calendar page:
-* [HTML](https://validator.w3.org/nu/#textarea)
+* [HTML](documentation/testing/calendarhtmlvalidator.png)
 
 ### CSS Validation
 
