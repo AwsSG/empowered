@@ -552,20 +552,22 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 2em;
-  margin: 3em 0 2em 0;
+  margin-bottom: 2em;
 }
 
 .register__title {
-  font-size: 6rem;
-  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
   text-align: center;
+  font-weight: 900;
+  color: var(--clr-accent--900);
 }
 
 .register__paragraph {
   text-align: center;
-  line-height: 1.75rem;
-  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  padding-bottom: 0.5rem;
   max-width: 70rem;
 }
 
@@ -577,7 +579,7 @@ select {
   min-width: 23rem;
   flex-direction: column;
   align-items: center;
-  padding: 4em 2em;
+  padding: 3em 2em;
   margin: 3em 0 2em 0;
   background-color: var(--clr-neutral--200);
   border-radius: var(--br);
@@ -591,12 +593,12 @@ select {
   display: flex;
   flex-direction: column;
   width: 90%;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .form__input--label {
   padding-bottom: 1em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   width: 100%;
   display: flex;
@@ -642,6 +644,7 @@ input:not(:placeholder-shown) {
   color: black;
 }
 
+/* Error */
 .invalid__username,
 .invalid__password {
   color: rgb(233, 118, 24);
@@ -654,8 +657,6 @@ input:not(:placeholder-shown) {
   display: flex;
   justify-content: center;
 }
-
-.invalid_password {}
 
 .username__hidden,
 .password__hidden {
