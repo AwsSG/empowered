@@ -572,28 +572,32 @@ select {
 
 .form__container {
   display: flex;
-  width: 100%;
-  max-width: 70rem;
+  width: 60vw;
+  max-width: 40rem;
   flex-direction: column;
   align-items: center;
   padding: 2em 2em;
   margin: 3em 0 2em 0;
+  background-color: var(--clr-accent--100);
 }
 
-.about__section--paragraph {
-  text-align: center;
-  line-height: 1.75rem;
-  padding-bottom: 5rem;
-  max-width: 70rem;
+.form__input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 .form__input--label {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5em;
+  font-size: 1.2rem;
 }
 
-form>input {
+.form__input--textarea {
   height: 2rem;
-  width: 50rem;
+  max-width: 50vw;
+  min-width: 20rem;
 }
 
 button.form__button {
@@ -604,6 +608,25 @@ button.form__button {
   color: var(--clr-neutral--900);
 
 }
+
+.invalid_username,
+.invalid_password {
+  color: rgb(233, 118, 24);
+  /* padding-left: 3rem; */
+  font-weight: bold;
+  position: absolute;
+}
+
+.invalid_password {
+  /* padding-bottom: 2rem; */
+}
+
+.username_hidden,
+.password_hidden {
+  display: none;
+}
+
+
 
 /* ----- Footer ----- */
 
