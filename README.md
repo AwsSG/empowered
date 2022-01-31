@@ -35,28 +35,10 @@ Is there a relevent shield for python? any others that need adding?
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
 * [Deployment & Local Development](#Deployment-&-Local-Development)
-  * [Deployment](#Deployment)
-  * [Local Development](#Local-Development)
-    * [How to Fork](#How-to-Fork)
-    * [How to Clone](#How-to-Clone)
-
-* [Testing](#Testing)
-  * [W3C Validator](#W3C-Validator)
-  * [PEP8online Python Validator](PEP8online-Python-Validator)
-  * [Responsiveness](#Responsiveness)
-  * [Compatibility](#Compatibility)
-  * [Solved Bugs](#Solved-Bugs)
-  * [Known Bugs](#Known-Bugs)
-  * [Testing User Stories](#Testing-User-Stories)
-  * [Lighthouse](#Lighthouse)
-  * [Full Testing](#Full-Testing)
-  
+* [Testing](#Testing)  
 * [Credits](#Credits)
-  * [Code Used](#Code-Used)
-  * [Content](#Content)
-  * [Media](#Media)
-  * [Collaborators](#Collaborators)
-  * [Acknowledgments](#Acknowledgments)
+* [Collaborators](#Collaborators)
+* [Acknowledgments](#Acknowledgments)
 
 - - -
 
@@ -126,11 +108,13 @@ Wireframes were created for mobile, tablet and desktop.
 
 ### Features
 
-The website is comprised of …
+The website is comprised of a home page, a log in page, a registration page, a profile page and a calendar page. Each page of the site has been designed to be fully responsive on a range of devices.
 
 * All Pages on the website have:
-  * A navigation bar
-  * A footer
+  * A navigation bar which allows the user to navigate to the home page from every page on the website, and other navigational links.
+  ![Navbar image](documentation/navbar.png)
+  * A footer which contains the hackathon team name and images of the team which link to their GitHub accounts.
+  ![Footer image](documentation/footer.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
@@ -141,9 +125,7 @@ We have been mindful during coding to ensure that the website is as accessible f
 
 * Using semantic HTML.
 * Using descriptive alt attributes on images on the site.
-* Providing information for screen readers where there are icons used and no text.
 * Ensuring that there is a sufficient colour contrast throughout the site.
-* Ensuring menus are accessible by marking the current page as current for screen readers.
 
 - - -
 
@@ -151,21 +133,24 @@ We have been mindful during coding to ensure that the website is as accessible f
 
 ### Languages Used
 
-HTML, CSS, Python
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - was used as markdown language.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+- [Python 3.8.5](https://www.python.org/downloads/release/python-385/) - used to manipulate the data.
 
-### Frameworks, Libraries & Programs Used
 
-Balsamiq - Used to create wireframes.
+### Frameworks, Libraries & Programs Used, etc
 
-Git - For version control.
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/) was used as the foundation of the site.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) - was used to declaring global CSS variables and apply them throughout the project. 
+- [Balsamiq](https://balsamiq.com/) - was used to make wireframes for the website.
+- [VSCode](https://code.visualstudio.com/) - was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) - was used for the version control of the website.
+- [GitHub](https://github.com/) - was used to host the code of the website.
+- [GIMP](https://www.gimp.org/) - was used to make and resize images for the README file.
+* [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
 
-Github - To save and store the files for the website.
-
-Materialize - For the framework.
-
-Flask -
-
-Mongo DB -
+Mongo DB 
 
 ? Font Awesome - For the iconography on the website.
 
@@ -185,89 +170,177 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 ## Deployment & Local Development
 
-### Deployment
+---
+## Deployment
 
-The site is deployed using Heroku.
+- The program was deployed to [Heroku](https://dashboard.heroku.com).
+- The program can be reached by the [link](https://empowere.herokuapp.com/)
+### To deploy the project as an application that can be **run locally**:
 
-### Local Development
+*Note:*
+  1. This project requires you to have Python installed on your local PC:
+  - `sudo apt install python3`
 
-#### How to Fork
+  1. You will also need pip installed to allow the installation of modules the application uses.
+  - `sudo apt install python3-pip`
 
-To fork the empowered repository:
+Create a local copy of the GitHub repository by following one of the two processes below:
 
-1. Log in (or sign up) to Github.
-2. Go to the repository for this project, AwsSG/empowered.
-3. Click the Fork button in the top right corner.
+- Download ZIP file:
+  1. Go to the [GitHub Repository page](https://github.com/AwsSG/empowered).
+  1. Click the Code button and download the ZIP file containing the project.
+  1. Extract the ZIP file to a location on your PC.
 
-#### How to Clone
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/AwsSG/empowered.git`
 
-To clone the empowered repository:
+- Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, AwsSG/empowered.
-3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AwsSG/empowered)
 
-- - -
+  1. Install Python module dependencies:
+     
+      1. Navigate to the folder madlib_with_python by executing the command:
+      - `cd madlib_with_python`
+      1. Run the command pip install -r requirements.txt
+        - `pip3 install -r requirements.txt`
+     
+      
+### To deploy the project to Heroku so it can be run as a remote web application:
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/AwsSG/empowered.git`
 
+  1. Create your own GitHub repository to host the code.
+  1. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+
+  1. Push the files to your repository with the following command:
+  `git push`
+  1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
+  1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+
+      - ![New Heroku App](documentation/deployment/new_heroku_app.png)
+
+  1. Go to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
+
+      - ![Deployment Method](documentation/deployment/deployment_method.png)
+
+  1. Link your GitHub account and connect the application to the repository you created.
+
+      - ![Link GitHub account](documentation/deployment/link_to_github.png)
+
+  1. Go to the Settings tab:
+  
+      - ![Settings Tab](documentation/deployment/settings_tab.png)
+
+  1. Click "Add buildpack":
+
+      - ![Add Buildpack](documentation/deployment/add_buildpack.png)
+
+  1. Add the Python and Node.js buildpacks in the following order:
+
+      - ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
+
+  1. Click "Reveal Config Vars."
+
+      - ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
+
+  1. Add 1 new Config Vars:
+      - Key: PORT Value: 8000
+      - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+
+  1. Go back to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
+
+  1. Click "Deploy Branch":
+
+      - ![Deploy Branch](documentation/deployment/deploy_branch.png)
+
+      - Wait for the completion of the deployment.
+
+      - ![Deploying Branch](documentation/deployment/deploying_branch.png)
+
+  1. Click "Open app" to launch the application inside a web page.
+
+      - ![View Button](documentation/deployment/view_app.png)
+
+---
 ## Testing
 
-Testing was ongoing throughout the entire build. We utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as we went along.
+[Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
 
-### W3C Validator
+---
 
-The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
-
-W3C validator images or links to go here
-
-### PEP8online Python Validator
-
-### Responsiveness
-
-Add in screenshots/gifs of responsiveness.
-
-### Compatibility
-
-Add in screenshots of compatibility.
-
+## Bugs
 ### Solved Bugs
+
+1. The cal-heatmap did not displayed data from mongoDB.
+
+    *Solution:* Add additional code to calendar.html as the extension of calendar.js to transform the data to required format:
+
+    ```javascript
+
+        let data222 = {};
+        let date0;
+        let emoji_number;
+
+        {% for emoji in emoji_tracker %}
+
+        date0 = {{ emoji.datetime }}
+        emoji_number = {{ emoji.emoji }}
+        data222[`${date0}`] = emoji_number
+        console.log(data222)
+
+        {% endfor %}
+
+        console.log(dataArray)
+    ```
+
+1. The didn't represent the data of notes when clicking  on the day:
+
+    *Solution:* Add code to calendar.html and calendar.js in order to connect data
+
+      ```javascript
+      let date0;
+      let dataArray = []
+      let emoji_number;
+      let tempDate;
+
+
+      {% for emoji in emoji_tracker %}
+      tempDate = new Date({{ emoji.datetime }} * 1000)
+      dataArray.push({
+        date: tempDate.toLocaleDateString("en-US"),
+        emoji: {{ emoji.emoji }},
+        note: "{{ emoji.note }}"
+      })
+      {% endfor %}
+
+      console.log(dataArray)
+      ```
 
 ### Known Bugs
 
-### Testing User Stories
+1. The cal-heatmap calendar is not responsive. There for the user can find it a bit messy, but to reduce misleading for the user, the navigation buttons were implemented
 
-* First Time Visitors
+1. The user can only use select - options to pick an emoji as flask can retrieve data of value only from input, select when options are implemented.
 
-* Returning Visitors
-
-* Frequent Visitors
-
-### Lighthouse
-
-We used Lighthouse within the Chrome Developer Tools to allow us to test the performance, accessibility, best practices and SEO of the website.
-
-### Full Testing
-
-To fully test my website we performed the following testing using a number of browsers (Google Chrome, Safari, Firefox, Brave) and devices (Macbook Pro 14 inch, iPhone 13 pro, …).
-
-We also went through each page using Google Chrome developer tools to ensure that they responsive on all different screen sizes.
-
-- - -
-
+---
 ## Credits
 
-### Code Used
+* [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
+* [SheCodes](https://www.csscolorpalettes.com/palettes/1268) for providing a myriad of color scheme to choose from as we did;
+* [Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
+* [emojis on the hero image](https://www.canva.com/)
+* [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness) All team images used in footer belong to the respective team member.
 
-### Content
-
-### Media
-
-[Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
-[emojis on the hero image](https://www.canva.com/)
-
-All team images used in footer belong to the team member.
-
+---
 ### Collaborators
 
 Team Inside Out members of the January Hackathon 2022:
@@ -278,6 +351,7 @@ Team Inside Out members of the January Hackathon 2022:
 * [Kera Cudmore](https://github.com/kera-cudmore)
 * [Anna](https://github.com/ANNAhabANNA)
 
+---
 ### Acknowledgments
 
 We would like to acknowledge the following people who helped us along the way in completing this project:

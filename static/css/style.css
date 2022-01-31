@@ -502,7 +502,6 @@ select {
 
 .calendar__note--click {
   font-style: italic;
-  font-weight: 1.5rem;
 }
 
 .btn__calendar {
@@ -522,7 +521,6 @@ select {
 
 .calendar__note--click {
   font-style: italic;
-  font-weight: 1.5rem;
 }
 
 .btn__calendar {
@@ -576,7 +574,9 @@ select {
   max-width: 70rem;
 }
 
+
 /* ----- Register/Login Page ----- */
+
 
 .register__container,
 .login__container {
@@ -700,8 +700,6 @@ input:not(:placeholder-shown) {
 .password__hidden {
   display: none;
 }
-
-
 
 /* ----- Footer ----- */
 
