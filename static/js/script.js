@@ -28,6 +28,7 @@ $(document).ready(function () {
     }
   });
 
+  // Control blog notes input
   $('#emoji').change(function () {
     if ($(this).val() == "") {
       $('#blog-container').css('display', 'none')
@@ -35,6 +36,7 @@ $(document).ready(function () {
     $('#blog-container').css('display', 'flex')
   })
 
+  // Control username validation
   $(".username__container").change(function () {
     if ($(this).is(":invalid")) {
       $(".invalid__username").removeClass("username__hidden")
@@ -42,6 +44,8 @@ $(document).ready(function () {
       $(".invalid__username").addClass("username__hidden")
     }
   });
+
+  // Control password validation
   $(".password__container").change(function () {
     if ($(this).is(":invalid")) {
       $(".invalid__password").removeClass("password__hidden")
