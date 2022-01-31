@@ -152,8 +152,6 @@ We have been mindful during coding to ensure that the website is as accessible f
 
 Mongo DB 
 
-? Font Awesome - For the iconography on the website.
-
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 [Tiny PNG](https://tinypng.com/) To compress images.
