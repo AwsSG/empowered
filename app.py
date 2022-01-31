@@ -1,7 +1,7 @@
 from crypt import methods
 import os
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
@@ -93,6 +93,9 @@ def logout():
 def profile():
     today = datetime.now().strftime("%d/%m/%y")
 
+    last_record = list(mongo.db.tracker.find().sort("datetime", 1).limit(1))
+    print(print("------------------ something should print here hopefully: ", last_record))
+
     suggestions = []
 
     if request.method == "POST":
@@ -107,15 +110,12 @@ def profile():
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
 
-    return render_template("profile.html", today=today, suggestions=suggestions)
-
+    return render_template("profile.html", today=today, suggestions=suggestions, last_record=last_record)
 
 
 @app.route("/calendar")
 def calendar():
     emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
-    emoji_tracker_dates_emojis = []
-
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
 

@@ -13,7 +13,7 @@ $(document).ready(function () {
   $(window).on('resize', function () {
     var win = $(this);
     if (win.width() >= 1000) {
-      $('.navbar__components--mobile').css('display', 'none')
+      $('.navbar__components--mobile').css('display', 'none');
     }
   });
 
@@ -31,26 +31,26 @@ $(document).ready(function () {
   // Control blog notes input
   $('#emoji').change(function () {
     if ($(this).val() == "") {
-      $('#blog-container').css('display', 'none')
+      $('#blog-container').css('display', 'none');
     }
-    $('#blog-container').css('display', 'flex')
-  })
+    $('#blog-container').css('display', 'flex');
+  });
 
   // Control username validation
   $(".username__container").change(function () {
     if ($(this).is(":invalid")) {
-      $(".invalid__username").removeClass("username__hidden")
+      $(".invalid__username").removeClass("username__hidden");
     } else {
-      $(".invalid__username").addClass("username__hidden")
+      $(".invalid__username").addClass("username__hidden");
     }
   });
 
   // Control password validation
   $(".password__container").change(function () {
     if ($(this).is(":invalid")) {
-      $(".invalid__password").removeClass("password__hidden")
+      $(".invalid__password").removeClass("password__hidden");
     } else {
-      $(".invalid__password").addClass("password__hidden")
+      $(".invalid__password").addClass("password__hidden");
     }
   });
   $('.datepicker').datepicker({
@@ -61,4 +61,4 @@ $(document).ready(function () {
       done: "Select"
     }
   });
-})
+});

@@ -41,15 +41,6 @@ Is there a relevent shield for python? any others that need adding?
     * [How to Clone](#How-to-Clone)
 
 * [Testing](#Testing)
-  * [W3C Validator](#W3C-Validator)
-  * [PEP8online Python Validator](PEP8online-Python-Validator)
-  * [Responsiveness](#Responsiveness)
-  * [Compatibility](#Compatibility)
-  * [Solved Bugs](#Solved-Bugs)
-  * [Known Bugs](#Known-Bugs)
-  * [Testing User Stories](#Testing-User-Stories)
-  * [Lighthouse](#Lighthouse)
-  * [Full Testing](#Full-Testing)
   
 * [Credits](#Credits)
   * [Code Used](#Code-Used)
@@ -211,24 +202,7 @@ To clone the empowered repository:
 
 ## Testing
 
-Testing was ongoing throughout the entire build. We utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as we went along.
-
-### W3C Validator
-
-The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
-
-W3C validator images or links to go here
-
-### PEP8online Python Validator
-
-### Responsiveness
-
-Add in screenshots/gifs of responsiveness.
-
-### Compatibility
-
-Add in screenshots of compatibility.
-
+[Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
 ### Solved Bugs
 
 ### Known Bugs
