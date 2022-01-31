@@ -263,10 +263,10 @@ We also went through each page using Google Chrome developer tools to ensure tha
 
 ### Media
 
-[Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
-[emojis on the hero image](https://www.canva.com/)
-
-All team images used in footer belong to the team member.
+* [Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
+* [emojis on the hero image](https://www.canva.com/)
+* [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness)
+* All team images used in footer belong to the respective team member.
 
 ### Collaborators
 
