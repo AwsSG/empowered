@@ -198,11 +198,16 @@ To clone the empowered repository:
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-- - -
 
+
+---
 ## Testing
 
 [Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
+
+---
+
+## Bugs
 ### Solved Bugs
 
 1. The cal-heatmap did not displayed data from mongoDB.
@@ -256,31 +261,16 @@ To clone the empowered repository:
 
 1. The user can only use select - options to pick an emoji as flask can retrieve data of value only from input, select when options are implemented.
 
-### Lighthouse
-
-We used Lighthouse within the Chrome Developer Tools to allow us to test the performance, accessibility, best practices and SEO of the website.
-
-### Full Testing
-
-To fully test my website we performed the following testing using a number of browsers (Google Chrome, Safari, Firefox, Brave) and devices (Macbook Pro 14 inch, iPhone 13 pro, …).
-
-We also went through each page using Google Chrome developer tools to ensure that they responsive on all different screen sizes.
-
-- - -
-
+---
 ## Credits
 
-### Code Used
-
-### Content
-
-### Media
-
+* [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
+* [SheCodes](https://www.csscolorpalettes.com/palettes/1268) for providing a myriad of color scheme to choose from as we did;
 * [Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
 * [emojis on the hero image](https://www.canva.com/)
-* [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness)
-* All team images used in footer belong to the respective team member.
+* [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness) All team images used in footer belong to the respective team member.
 
+---
 ### Collaborators
 
 Team Inside Out members of the January Hackathon 2022:
@@ -291,6 +281,7 @@ Team Inside Out members of the January Hackathon 2022:
 * [Kera Cudmore](https://github.com/kera-cudmore)
 * [Anna](https://github.com/ANNAhabANNA)
 
+---
 ### Acknowledgments
 
 We would like to acknowledge the following people who helped us along the way in completing this project:
