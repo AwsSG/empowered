@@ -1,11 +1,88 @@
 {% extends "base.html" %}
 {% block content %}
 
+
 {% for emoji in emoji_tracker %}
-    <p>Date/time: {{ emoji.datetime }}</p>
-    <p>Emoji number: {{ emoji.emoji }}</p>
-    <p>Note:{{ emoji.note }}</p>
-        <br>
+
+<p>Date/time: {{ emoji.datetime }}</p>
+<div id="mydiv" data-geocode='{{ emoji.datetime|tojson }}'>
+</div>
+<p>Emoji number: {{ emoji.emoji }}</p>
+<p>Note:{{ emoji.note }}</p>
+<br>
+
 {% endfor %}
+
+
+<section class="calendar">
+  <h2 class="calendar__heading">Here is your records</h2>
+
+  <ul class="calendar__scale">
+    <li class="calendar__scale--emoji">
+      <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
+    </li>
+
+    <li class="calendar__scale--emoji">
+      <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji">
+    </li>
+
+    <li class="calendar__scale--emoji">
+      <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji">
+    </li>
+
+    <li class="calendar__scale--emoji">
+      <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji">
+    </li>
+    <li class="calendar__scale--emoji">
+      <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
+    </li>
+  </ul>
+  <div id="previousSelector-a" class="calendar__btns--container">
+    <button id="previousSelector-a-previous" class="btn btn__calendar">Back </button> &nbsp
+    <button id="previousSelector-a-next" class="btn btn__calendar"> Next </button>
+  </div>
+
+  <div style="padding:10px; margin: 2em;">
+    <span id="onClick-placeholder">Click a date on the calendar</span>
+  </div>
+  <div style="padding:10px; margin: 2em;">
+
+    <div id="cal-heatmap">
+
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+
+  let data222 = {};
+  let date0;
+  let dataArray = []
+  let emoji_number;
+  let tempDate;
+
+  {% for emoji in emoji_tracker %}
+
+  date0 = {{ emoji.datetime }}
+  emoji_number = {{ emoji.emoji }}
+  data222[`${date0}`] = emoji_number
+  console.log(data222)
+
+  {% endfor %}
+
+  {% for emoji in emoji_tracker %}
+  tempDate = new Date({{ emoji.datetime }} * 1000)
+  dataArray.push({
+    date: tempDate.toLocaleDateString("en-US"),
+    emoji: {{ emoji.emoji }},
+    note: "{{ emoji.note }}"
+  })
+  {% endfor %}
+
+  console.log(dataArray)
+
+</script>
 
 {% endblock %}

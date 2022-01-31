@@ -22,30 +22,33 @@
     <a href="{{ url_for('login') }}">here!</a>
 </p>
 
-<h1>Register for Empower!</h1>
+<!-- keras form starts here -->
 
-<p>Please fill in the form below to register a profile. 
-<p>By registering for a profile you will be able to store and view your history of emotions and journal entries.</p>
-<p>Don't worry, your data is safe - We will never share your information with third parties.</p>
+<section class="register__container">
+<h1 class="register__title">Register for Empower!</h1>
+
+<p class="register__paragraph">Please fill in the form below to register a profile. 
+<p class="register__paragraph">By registering for a profile you will be able to store and view your history of emotions and journal entries.</p>
+<p class="register__paragraph">Don't worry, your data is safe - We will never share your information with third parties.</p>
 
 
-<form>
-<label for="username">Username: </label>
-<input id="username" type="text" name="username" placeholder="Choose a username" required>
+<form class="form__container">
+<label for="username" class="form__input--label">Username: </label>
+<input id="username" type="text" name="username" required>
 <br>
-<label for="email">Email: </label>
-<input id="email" type="text" name="email" placeholder="Enter your email address" required>
+<label for="email" class="form__input--label">Email: </label>
+<input id="email" type="text" name="email" required>
 <br>
-<label for="password">Password: </label>
-<input id="password" type="password" name="password" placeholder="Choose a password" required>
+<label for="password" class="form__input--label">Password: </label>
+<input id="password" type="password" name="password" required>
 <br>
-<label for="password2">Re-enter password: </label>
-<input id="password2" type="password" name="password2" placeholder="re-enter your password" required>
+<label for="password2" class="form__input--label">Re-enter password: </label>
+<input id="password2" type="password" name="password2" required>
 <br>
-<button type="Submit">Register</button>
+<button type="Submit" class="form__button">Register</button>
 </form>
 
 
-<p>Already have a profile? <a href="{{ url_for('login') }}">Log in here</a></p>
-
+<p class="register__paragraph">Already have a profile? <a href="{{ url_for('login') }}">Log in here</a></p>
+</section>
 {% endblock %}

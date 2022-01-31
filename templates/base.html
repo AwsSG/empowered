@@ -8,9 +8,22 @@
   <meta name="description" content="hackathon project on the topic the future of workforce well-being" />
   <meta name="keywords" content="hackathon, workforce well-being, soda" />
   <meta name="author" content="Theo, Anna, Aws Sabah Gheni, Kera Cudmore, Iuliia Konovalova" />
+
+  <!--favicon meta - link file paths to be changed-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
   <title>EMPOWERED</title>
 </head>
@@ -30,6 +43,9 @@
         {% if session.user %}
         <li class="navbar__item">
           <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ url_for('calendar') }}">Calendar</a>
         </li>
         <li class="navbar__item">
           <a href="{{ url_for('logout') }}">Log Out</a>
@@ -60,6 +76,9 @@
         {% if session.user %}
         <li class="navbar__item">
           <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ url_for('calendar') }}">Calendar</a>
         </li>
         <li class="navbar__item">
           <a href="{{ url_for('logout') }}">Log Out</a>
@@ -144,6 +163,7 @@
   <!--Jquery script-->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/calendar.js') }}"></script>
 </body>
 
 </html>
