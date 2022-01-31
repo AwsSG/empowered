@@ -1,9 +1,8 @@
 # Empowered
 
-Empowered was developed as part of the January 2022 Hackathon: Accelerating the future of workforce well-being and mindfulness
-- presented by Code Institute and Soda Social.
+Empowered was developed as part of the January 2022 Hackathon: Accelerating the future of workforce well-being and mindfulness, presented by Code Institute and Soda Social.
 
-Add site responsive screenshot here
+![Empower Website](static/images/empowerwebsite.png)
 
 [Click Here to view the deployed site.](https://empowere.herokuapp.com/)
 
@@ -14,7 +13,6 @@ Add site responsive screenshot here
 ![GitHub forks](https://img.shields.io/github/forks/AwsSG/empowered?style=social)
 ![W3C Validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fempowere.herokuapp.com%2F)
 
-Is there a relevent shield for python? any others that need adding?
 
 ## CONTENTS
 
@@ -151,8 +149,6 @@ We have been mindful during coding to ensure that the website is as accessible f
 * [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
 
 Mongo DB 
-
-? Font Awesome - For the iconography on the website.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 

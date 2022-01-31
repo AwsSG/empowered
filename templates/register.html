@@ -2,6 +2,7 @@
 {% block content %}
 
 <div class="register__container">
+  <!-- Registration heading -->
   <h2 class="register__title">Register for Empower!</h2>
   <p class="register__paragraph">Please fill in the form below to register a profile.
   <p class="register__paragraph">By registering for a profile you will be able to store and view your history of
@@ -9,8 +10,9 @@
   <p class="register__paragraph">Don't worry, your data is safe - We will never share your information with third
     parties.</p>
 
-
+  <!--Registration Form -->
   <form method="POST" action="{{ url_for('register') }}" class="form__container">
+    <!-- Input for the username -->
     <div class="form__input">
       <label for="username" class="form__input--label">Username: </label>
       <input id="username" type="text" name="username" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9_ ]{5,20}$"
@@ -18,9 +20,7 @@
       <br>
       <p class="username__hidden invalid__username">Enter at least 5 characters</p>
     </div>
-    <!-- <label for="email" class="form__input--label">Email: </label>
-  <input id="email" type="text" name="email" required>
-  <br> -->
+    <!-- Input for the password -->
     <div class="form__input">
       <label for="password" class="form__input--label">Password: </label>
       <input id="password" type="password" name="password" minlength="8" maxlength="32"
@@ -31,12 +31,10 @@
         numbers
       </p>
     </div>
-    <!-- <label for="password2" class="form__input--label">Re-enter password: </label>
-  <input id="password2" type="password" name="password2" required>
-  <br> -->
+    <!-- Submission button -->
     <button type="submit" class="form__button btn">Register</button>
   </form>
-
+  <!-- Link to login page -->
   <p class="register__paragraph">
     Already have a profile?
     <a href="{{ url_for('login') }}">Log in here</a>

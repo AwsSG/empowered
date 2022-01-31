@@ -4,55 +4,12 @@
 <section class="blog">
   <div class="blog__heading">
     <div class="blog__heading--day">Today is <span>{{ today }}</span></div>
+    {% if last_entry != today %}
     <h3 class="blog__heading--incentive">How do you feel today?</h3>
   </div>
 </section>
 <section class="scale">
 
-  <!-- <h4 class="scale__text">Which of these emojis best describe how you feel today?</h4>
-  <div class="emojis__container">
-    <ul class="scale__emojis" id="emojis-container">
-      <li class="scale__emoji">
-        <div class="emoji__image--holder">
-          <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
-        </div>
-        <span class="scale__emoji--text">angry</span>
-      </li>
-
-      <li class="scale__emoji">
-        <div class="emoji__image--holder">
-          <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji">
-        </div>
-        <span class="scale__emoji--text">depressed</span>
-      </li>
-
-      <li class="scale__emoji">
-        <div class="emoji__image--holder">
-          <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji">
-        </div>
-        <span class="scale__emoji--text">stressed</span>
-      </li>
-
-      <li class="scale__emoji">
-        <div class="emoji__image--holder">
-          <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji">
-        </div>
-        <span class="scale__emoji--text">content</span>
-      </li>
-      <li class="scale__emoji">
-        <div class="emoji__image--holder">
-          <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
-        </div>
-        <span class="scale__emoji--text">happy</span>
-      </li>
-    </ul>
-
-    
-user_to_check
-  </div> -->
-
-  {% if last_record.datetime != today_to_check %}
-  {% if last_record.user != user_to_check %}
   <form method="POST" action="{{ url_for('profile') }}" class="profile__form">
 
 
@@ -67,7 +24,7 @@ user_to_check
     <br>
 
     <div class="blog__container" id="blog-container">
-      <h4 class="blog__container--title">Leave some notes to explain why you feel so!</h4>
+      <h4 class="blog__container--title">Leave some notes to express why you feel so!</h4>
       <div class="blog__form">
         <p class="blog__input">
           <label for="content" class="blog__label">Add your thought here:</label>
@@ -81,7 +38,6 @@ user_to_check
       </div>
     </div>
   </form>
-  {% endif %}
   {% else %}
   <h4 class="data__link--title">Here are some suggestions based on how you feel today</h4>
   <ul>
@@ -89,13 +45,13 @@ user_to_check
     <li><a href="{{ suggestion.link }}">{{ suggestion.title }}</a></li><br>
     {% endfor %}
   </ul>
-
   {% endif %}
 
+
   <section class="data__link">
-    <h4 class="data__link--title">Would you like to look how you are doing during these days?</h4>
+    <h4 class="data__link--title">Review how your emotional history</h4>
     <div class="data__link--check">
-      <a href="{{ url_for('calendar') }}" class="btn btn__calendar--link">Calendar Data</a>
+      <a href="{{ url_for('calendar') }}" class="btn btn__calendar--link">View emotional history</a>
     </div>
   </section>
   {% endblock %}
