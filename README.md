@@ -126,11 +126,13 @@ Wireframes were created for mobile, tablet and desktop.
 
 ### Features
 
-The website is comprised of …
+The website is comprised of a home page, a log in page, a registration page, a profile page and a calendar page. Each page of the site has been designed to be fully responsive on a range of devices.
 
 * All Pages on the website have:
-  * A navigation bar
-  * A footer
+  * A navigation bar which allows the user to navigate to the home page from every page on the website, and other navigational links.
+  ![Navbar image](documentation/navbar.png)
+  * A footer which contains the hackathon team name and images of the team which link to their GitHub accounts.
+  ![Footer image](documentation/footer.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
@@ -141,9 +143,7 @@ We have been mindful during coding to ensure that the website is as accessible f
 
 * Using semantic HTML.
 * Using descriptive alt attributes on images on the site.
-* Providing information for screen readers where there are icons used and no text.
 * Ensuring that there is a sufficient colour contrast throughout the site.
-* Ensuring menus are accessible by marking the current page as current for screen readers.
 
 - - -
 
@@ -161,11 +161,9 @@ Git - For version control.
 
 Github - To save and store the files for the website.
 
-Materialize - For the framework.
+Flask 
 
-Flask -
-
-Mongo DB -
+Mongo DB 
 
 ? Font Awesome - For the iconography on the website.
 
