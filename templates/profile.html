@@ -42,7 +42,8 @@
   <h4 class="data__link--title">Here are some suggestions based on how you feel today</h4>
   <ul>
     {% for suggestion in suggestions %}
-    <li><a href="{{ suggestion.link }}">{{ suggestion.title }}</a></li><br>
+    <li><a href="{{ suggestion.link }}" target="_blank" rel="noopener" aria-label="Link to a suggestion website">{{
+        suggestion.title }}</a></li><br>
     {% endfor %}
   </ul>
   {% endif %}
