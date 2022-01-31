@@ -47,8 +47,12 @@
       </li>
     </ul>
 
+    
+user_to_check
   </div> -->
 
+  {% if last_record.datetime != today_to_check %}
+  {% if last_record.user != user_to_check %}
   <form method="POST" action="{{ url_for('profile') }}" class="profile__form">
 
 
@@ -77,12 +81,16 @@
       </div>
     </div>
   </form>
+  {% endif %}
+  {% else %}
   <h4 class="data__link--title">Here are some suggestions based on how you feel today</h4>
   <ul>
     {% for suggestion in suggestions %}
     <li><a href="{{ suggestion.link }}">{{ suggestion.title }}</a></li><br>
     {% endfor %}
   </ul>
+
+  {% endif %}
 
   <section class="data__link">
     <h4 class="data__link--title">Would you like to look how you are doing during these days?</h4>
