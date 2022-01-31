@@ -34,4 +34,27 @@ $(document).ready(function () {
     }
     $('#blog-container').css('display', 'flex')
   })
+
+  $(".username__container").change(function () {
+    if ($(this).is(":invalid")) {
+      $(".invalid__username").removeClass("username__hidden")
+    } else {
+      $(".invalid__username").addClass("username__hidden")
+    }
+  });
+  $(".password__container").change(function () {
+    if ($(this).is(":invalid")) {
+      $(".invalid__password").removeClass("password__hidden")
+    } else {
+      $(".invalid__password").addClass("password__hidden")
+    }
+  });
+  $('.datepicker').datepicker({
+    format: "dd mmmm, yyyy",
+    yearRange: 3,
+    showClearBtn: true,
+    i18n: {
+      done: "Select"
+    }
+  });
 })

@@ -15,9 +15,9 @@
     <div class="form__input">
       <label for="username" class="form__input--label">Username: </label>
       <input id="username" type="text" name="username" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9_ ]{5,20}$"
-        class="form__input--textarea" placeholder="Enter Your Name" required>
+        class="form__input--textarea username__container" placeholder="Enter Your Name" required>
       <br>
-      <p class="username_hidden invalid_username">Enter at least 5 characters</p>
+      <p class="username__hidden invalid__username">Enter at least 5 characters</p>
     </div>
     <!-- <label for="email" class="form__input--label">Email: </label>
   <input id="email" type="text" name="email" required>
@@ -26,9 +26,9 @@
       <label for="password" class="form__input--label">Password: </label>
       <input id="password" type="password" name="password" minlength="8" maxlength="32"
         pattern="^(?:(?=.*[a-z])(?:(?=.*[A-Z])(?=.*[\d\W])|(?=.*\W)(?=.*\d))|(?=.*\W)(?=.*[A-Z])(?=.*\d)).{8,32}$"
-        placeholder="Enter password" class="form__input--textarea" required>
+        placeholder="Enter password" class="form__input--textarea password__container" required>
       <br>
-      <p class="password_hidden invalid_password">Enter 8-32 characters including upper and lower case letters and
+      <p class="password__hidden invalid__password">Enter 8-32 characters including upper and lower case letters and
         numbers
       </p>
     </div>

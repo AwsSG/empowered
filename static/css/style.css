@@ -642,8 +642,8 @@ input:not(:placeholder-shown) {
   color: black;
 }
 
-.invalid_username,
-.invalid_password {
+.invalid__username,
+.invalid__password {
   color: rgb(233, 118, 24);
   font-weight: 700;
   font-style: italic;
@@ -657,9 +657,9 @@ input:not(:placeholder-shown) {
 
 .invalid_password {}
 
-.username_hidden,
-.password_hidden {
-  /* display: none; */
+.username__hidden,
+.password__hidden {
+  display: none;
 }
 
 
