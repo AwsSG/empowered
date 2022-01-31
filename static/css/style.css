@@ -572,59 +572,72 @@ select {
 
 .form__container {
   display: flex;
-  width: 60vw;
-  max-width: 40rem;
+  width: 40vw;
+  min-width: 23rem;
   flex-direction: column;
   align-items: center;
-  padding: 2em 2em;
+  padding: 4em 2em;
   margin: 3em 0 2em 0;
   background-color: var(--clr-accent--100);
+  border-radius: var(--br);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
 }
 
 .form__input {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 90%;
+  padding-bottom: 2em;
 }
 
-
-
 .form__input--label {
-  padding-bottom: 0.5em;
-  font-size: 1.2rem;
+  padding-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .form__input--textarea {
-  height: 2rem;
-  max-width: 50vw;
-  min-width: 20rem;
+  padding: 1em 1.5em;
+  border-radius: var(--br);
+  color: var(--clr-primary--100);
+  border: 1px solid var(--clr-primary--100);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--clr-neutral--300);
+  font-weight: 300;
+}
+
+input:placeholder-shown {
+  color: var(--clr-neutral--300);
+  font-weight: 300;
+}
+
+input:not(:placeholder-shown) {
+  color: var(--clr-neutral--900);
+  font-weight: 600;
 }
 
 button.form__button {
-  padding: 0.5rem;
   background-color: var(--clr-primary--300);
-  border-radius: 15%;
+  border-radius: var(--br);
   text-transform: uppercase;
   color: var(--clr-neutral--900);
 
 }
 
-.invalid_username,
-.invalid_password {
-  color: rgb(233, 118, 24);
-  /* padding-left: 3rem; */
-  font-weight: bold;
-  position: absolute;
-}
 
-.invalid_password {
-  /* padding-bottom: 2rem; */
-}
-
-.username_hidden,
-.password_hidden {
-  display: none;
-}
 
 
 
