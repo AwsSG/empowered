@@ -89,19 +89,28 @@
     </nav>
   </header>
   <section>
-    <!-- flash messages -->
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    {% for message in messages %}
-    <div>
-      <h6>{{ message }}</h6>
-    </div>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
+
   </section>
   <main class="main">
     <div class="content__container">
+
+      <!-- flash messages -->
+      <aside class="flash__messages--container">
+        {% with messages = get_flashed_messages() %}
+
+        {% if messages %}
+        <div class="flash__messages">
+          {% for message in messages %}
+          <div class="flash__message">
+            <div class="flash__message--content">{{ message }}</div>
+          </div>
+          {% endfor %}
+
+          {% endif %}
+        </div>
+        {% endwith %}
+      </aside>
+
       {% block content %}
       {% endblock %}
     </div>
@@ -110,55 +119,59 @@
   <!--Footer-->
   <footer class="footer">
     <div class="footer__team">
-      <div class="team__name">Inside Out</div>
+      <div class="team__name">
+        <div class="team__name--header">Team Name:</div>
+        <span class="team__name--title">Inside Out</span>
+      </div>
       <ul class="team__collaborators">
         <li class="contact__github">
           <a href="https://github.com/AwsSG" target="_blank" rel="noopener"
             aria-label="Visit Aws Sabah Gheni github page">
-            <div class="image_holder">
+            <div class="image__holder">
               <img src="{{ url_for('static', filename='images/coders/aws.jpeg') }}" alt="Aws Sabah Gheni photo"
                 class="photo">
             </div>
-            <div class="coder_name">Aws Sabah Gheni</div>
+            <div class="coder__name">Aws Sabah Gheni</div>
           </a>
         </li>
 
         <li class="contact__github">
           <a href="https://github.com/theopmw" target="_blank" rel="noopener"
             aria-label="Visit Theo Wright github page">
-            <div class="image_holder">
+            <div class="image__holder">
               <img src="{{ url_for('static', filename='images/coders/theo.jpeg') }}" alt="Theo Wright photo"
                 class="photo">
             </div>
-            <div class="coder_name">Theo Wright</div>
+            <div class="coder__name">Theo Wright</div>
           </a>
         </li>
+
         <li class="contact__github">
           <a href="https://github.com/IuliiaKonovalova" target="_blank" rel="noopener"
             aria-label="Visit Iuliia Konovalova github page">
-            <div class="image_holder">
+            <div class="image__holder">
               <img src="static/images/coders/iuliia.jpeg" alt="Iuliia Konovalova photo" class="photo">
             </div>
-            <div class="coder_name">Iuliia Konovalova</div>
+            <div class="coder__name">Iuliia Konovalova</div>
           </a>
         </li>
 
         <li class="contact__github">
           <a href="https://github.com/kera-cudmore" target="_blank" rel="noopener"
             aria-label="Visit Kera Cudmore github page">
-            <div class="image_holder">
+            <div class="image__holder">
               <img src="{{ url_for('static', filename='images/coders/kera.jpg') }}" alt="Kera Cudmore photo"
                 class="photo">
             </div>
-            <div class="coder_name">Kera Cudmore</div>
+            <div class="coder__name">Kera Cudmore</div>
           </a>
         </li>
         <li class="contact__github">
           <a href="https://github.com/ANNAhabANNA" target="_blank" rel="noopener" aria-label="Visit Anna github page">
-            <div class="image_holder">
+            <div class="image__holder">
               <img src="{{ url_for('static', filename='images/coders/anna.jpeg') }}" alt="Anna photo" class="photo">
             </div>
-            <div class="coder_name">Anna</div>
+            <div class="coder__name">Anna</div>
           </a>
         </li>
       </ul>

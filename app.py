@@ -93,6 +93,7 @@ def logout():
 def profile():
     today = datetime.now().strftime("%d/%m/%y")
     suggestions = []
+
     if request.method == "POST":
         # to create a check if there is already a record for the day
         emoji = {
@@ -111,8 +112,6 @@ def profile():
 @app.route("/calendar")
 def calendar():
     emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
-    emoji_tracker_dates_emojis = []
-
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
 
