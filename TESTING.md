@@ -95,7 +95,7 @@ No errors were found:
 
 ## Lighthouse Report
 
-![Lighthouse Report](documentation/)
+![Lighthouse Report](documentation/testing/lighthousehome.png)
 
 ## Compatibility:
 
@@ -113,9 +113,7 @@ No errors were found:
 
   ![Main Page](documentation/testing/browser_safari.gif)
   
-  - Brave:
 
-  ![Main Page](documentation/testing/browser_brave.png)
 ## Responsiveness:
 
 + The app was checked with [Responsive Website Design Tester](https://responsivedesignchecker.com/).
