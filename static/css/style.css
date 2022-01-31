@@ -200,8 +200,13 @@ body.light .dropdown ul {
   display: block;
 }
 
+/* ----- Logo ----- */
 
-
+.logo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
 
 
 /* ----- Main ----- */
