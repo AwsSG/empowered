@@ -2,18 +2,6 @@
 {% block content %}
 
 
-{% for emoji in emoji_tracker %}
-
-<p>Date/time: {{ emoji.datetime }}</p>
-<div id="mydiv" data-geocode='{{ emoji.datetime|tojson }}'>
-</div>
-<p>Emoji number: {{ emoji.emoji }}</p>
-<p>Note:{{ emoji.note }}</p>
-<br>
-
-{% endfor %}
-
-
 <section class="calendar">
   <h2 class="calendar__heading">Here is your records</h2>
 

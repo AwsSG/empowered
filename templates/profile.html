@@ -8,7 +8,8 @@
   </div>
 </section>
 <section class="scale">
-  <h4 class="scale__text">Which of these emojis best describe how you feel today?</h4>
+
+  <!-- <h4 class="scale__text">Which of these emojis best describe how you feel today?</h4>
   <div class="emojis__container">
     <ul class="scale__emojis" id="emojis-container">
       <li class="scale__emoji">
@@ -45,7 +46,8 @@
         <span class="scale__emoji--text">happy</span>
       </li>
     </ul>
-  </div>
+
+  </div> -->
 
   <form method="POST" action="{{ url_for('profile') }}" class="profile__form">
 
@@ -75,6 +77,12 @@
       </div>
     </div>
   </form>
+  <h4 class="data__link--title">Here are some suggestions based on how you feel today</h4>
+  <ul>
+    {% for suggestion in suggestions %}
+    <li><a href="{{ suggestion.link }}">{{ suggestion.title }}</a></li><br>
+    {% endfor %}
+  </ul>
 
   <section class="data__link">
     <h4 class="data__link--title">Would you like to look how you are doing during these days?</h4>

@@ -92,6 +92,9 @@ def logout():
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     today = datetime.now().strftime("%d/%m/%y")
+
+    suggestions = []
+
     if request.method == "POST":
         # to create a check if there is already a record for the day
         emoji = {
@@ -100,10 +103,12 @@ def profile():
             "emoji": int(request.form.get("emoji")),
             "note": request.form.get("note"),
         }
+        suggestions = list(mongo.db.resources.find({"emoji": int(request.form.get("emoji"))}))
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
 
-    return render_template("profile.html", today=today)
+    return render_template("profile.html", today=today, suggestions=suggestions)
+
 
 
 @app.route("/calendar")
