@@ -1,43 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form method="POST" action="{{ url_for('login') }}">
-    <!-- Username -->
-    <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
-        class="validate" required>
-    <label for="username">Username</label>
-    <!-- password -->
-    <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
-        class="validate" required>
-    <label for="password">Password</label>
-    <!-- Log in -->
-    <button type="submit">
-        Log In
-    </button>
-</form>
 
-<p class="center-align">
-    New here?
-    <a href="{{ url_for('register') }}" class="amber-text text-darken-4">Register now!</a>
-</p>
+<div class="login__container">
+  <h1 class="login__title">Log in to Empower</h1>
+  <form method="POST" action="{{ url_for('login') }}" class="form__container">
+    <div class="form__input">
+      <label for="username" class="form__input--label">Username: </label>
+      <input id="username" type="text" name="username" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9_ ]{5,20}$"
+        class="form__input--textarea username__container" placeholder="Enter your name" required>
+      <br>
+      <p class="username__hidden invalid__username">Enter at least 5 characters</p>
+    </div>
+    <div class="form__input">
+      <label for="password" class="form__input--label">Password: </label>
+      <input id="password" type="password" name="password" placeholder="Enter password" class="form__input--textarea"
+        required>
+      <br>
+    </div>
+    <button type="submit" class="form__button btn">Register</button>
+  </form>
 
-<!-- keras form starts here -->
+  <p class="login__paragraph">
+    Don't have a profile?
+    <a href="{{ url_for('register') }}">Register here.</a>
+  </p>
 
-<section class="register__container">
-    <h1 class="register__title">Log in to Empower</h1>
-
-    <form class="form__container">
-    <label for="username" class="form__input--label">Username: </label>
-    <input id="username" type="text" name="username" required>
-    <br>
-    <label for="password" class="form__input--label">Password: </label>
-    <input id="password" type="password" name="password" required>
-    <br>
-    <button type="Submit" class="form__button">Log in</button>
-    </form>
-    
-    
-    <p class="register__paragraph">Don't have a profile? <a href="{{ url_for('register') }}">Register here.</a></p>
-    </section>
+</div>
 
 {% endblock %}
