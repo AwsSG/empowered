@@ -727,12 +727,16 @@ footer {
   letter-spacing: 0.02rem;
   display: flex;
   align-items: center;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.team__name--header {
+  font-weight: 900;
 }
 
 .team__name--title {
   font-size: 1.8rem;
-  font-style: italic;
   margin-left: 0.5rem;
   color: var(--clr-neutral--900);
   font-weight: 900;
