@@ -53,13 +53,13 @@
 * [HTML](https://validator.w3.org/nu/#textarea)
 
     - Register page:
-* [HTML]()
+* [HTML](https://validator.w3.org/nu/#textarea)
 
     - Profile page:
-* [HTML]()
+* [HTML](https://validator.w3.org/nu/#textarea)
 
     - Calendar page:
-* [HTML]()
+* [HTML](https://validator.w3.org/nu/#textarea)
 
 ### CSS Validation
 
