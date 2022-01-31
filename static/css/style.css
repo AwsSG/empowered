@@ -574,7 +574,9 @@ select {
   max-width: 70rem;
 }
 
+
 /* ----- Register/Login Page ----- */
+
 
 .register__container,
 .login__container {
@@ -698,8 +700,6 @@ input:not(:placeholder-shown) {
 .password__hidden {
   display: none;
 }
-
-
 
 /* ----- Footer ----- */
 
