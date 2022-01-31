@@ -619,6 +619,7 @@ footer {
   padding: 3em 0;
 }
 
+/* Team Name */
 .team__name {
   padding: 1em;
   font-size: 1.2rem;
@@ -633,15 +634,14 @@ footer {
   font-weight: 900;
 }
 
+/* Team Members */
 .team__collaborators {
-  width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  max-width: 80rem;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5em 6em;
+  padding: 2.5em 2em;
 }
 
 .contact__github {
