@@ -639,7 +639,7 @@ footer {
   display: flex;
   max-width: 80rem;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 2.5em 4em;
 }
@@ -654,15 +654,15 @@ footer {
 }
 
 .image__holder {
-  width: inherit;
-  margin-bottom: 1.5em;
+  width: 4rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid var(--clr-neutral--300);
 }
 
 .image__holder img {
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto;
+  object-fit: cover;
 }
 
 .coder__name {
@@ -670,6 +670,7 @@ footer {
   font-size: 1.2rem;
   color: var(--clr-neutral--900);
   font-weight: 700;
+  margin-top: 1em;
 }
 
 /* ----- Media ----- */
