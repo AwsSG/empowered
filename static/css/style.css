@@ -276,6 +276,7 @@ body.light .dropdown ul {
   font-size: 1.8rem;
   text-align: left;
   padding-bottom: 1.2em;
+  margin-left: 2em;
 }
 
 .blog__heading--incentive {
