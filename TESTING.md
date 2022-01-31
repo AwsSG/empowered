@@ -93,13 +93,16 @@ No errors were found:
 
   - Chrome:
 
-  ![Main Page](documentation/testing/browser_chrome.png)
+  ![Main Page](documentation/testing/browser_chrome.gif)
   
   - Firefox:
 
-  ![Main Page](documentation/testing/browser_firefox.png)
+  ![Main Page](documentation/testing/browser_firefox.gif)
 
   - Safari:
+
+  ![Main Page](documentation/testing/browser_safari.gif)
+  - Brave:
 
   ![Main Page](documentation/testing/browser_brave.png)
 ## Responsiveness:
