@@ -428,11 +428,29 @@ select {
   color: var(--clr-neutral--100);
 }
 
+/* Suggestions */
+
+.suggestions {
+  background-color: var(--clr-accent--100);
+  padding: 2em 0 1em 0;
+}
+
+
 /* Profile link to Calendar Styling */
 .data__link {
   margin: 8em 0;
 }
 
+.suggestion a {
+  color: var(--clr-neutral--300);
+  text-decoration: underline;
+}
+
+.suggestion a:hover {
+  color: black;
+}
+
+/* Link to calendar */
 .btn__calendar--link {
   background-color: var(--clr-primary--100);
   color: var(--clr-neutral--900);
