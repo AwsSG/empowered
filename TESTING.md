@@ -24,14 +24,19 @@
 | Feature      | Expected          | Testing  | Result | Pass/Fail |
 |-------------|-------------|-----|----------|:----:|
 | Code-Vent Calendar Page Title | To redirect to home page | Clicked Code-Vent Calendar Page Title | Title navigates to home page | Pass |
-
-
-
-
-
-
-
-
+| Navbar - Home link - desktop view | Redirect to home page | Clicked link | Navigates to home page | Pass |
+|Navbar - Log in/register button - desktop view | open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
+| Navbar - Log in link in drop down menu - desktop view| Navigates to log in page | Clicked link | Taken to log in page | Pass |
+| Navbar - Register link in drop down menu - desktop view | Navigates to register page | Clicked link | Taken to register page | Pass |
+| Navbar - Hamburger Menu button - mobile view | Open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
+| Navbar - Home link in drop down menu - mobile view | Navigates to home page | Clicked link | Taken to home page | Pass |
+| Navbar - Log in link in drop down menu - mobile view | Navigates to log in page | Clicked link | Taken to log in page  | Pass |
+| Navbar - Register link in drop down menu - mobile view | Navigates to register page | Clicked Link | Taken to register page | Pass |
+| Footer - Team Image - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Iuliaa Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 
 
 
