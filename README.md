@@ -174,31 +174,105 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 ## Deployment & Local Development
 
-### Deployment
+---
+## Deployment
 
-The site is deployed using Heroku.
+- The program was deployed to [Heroku](https://dashboard.heroku.com).
+- The program can be reached by the [link](https://empowere.herokuapp.com/)
+### To deploy the project as an application that can be **run locally**:
 
-### Local Development
+*Note:*
+  1. This project requires you to have Python installed on your local PC:
+  - `sudo apt install python3`
 
-#### How to Fork
+  1. You will also need pip installed to allow the installation of modules the application uses.
+  - `sudo apt install python3-pip`
 
-To fork the empowered repository:
+Create a local copy of the GitHub repository by following one of the two processes below:
 
-1. Log in (or sign up) to Github.
-2. Go to the repository for this project, AwsSG/empowered.
-3. Click the Fork button in the top right corner.
+- Download ZIP file:
+  1. Go to the [GitHub Repository page](https://github.com/AwsSG/empowered).
+  1. Click the Code button and download the ZIP file containing the project.
+  1. Extract the ZIP file to a location on your PC.
 
-#### How to Clone
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/AwsSG/empowered.git`
 
-To clone the empowered repository:
+- Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, AwsSG/empowered.
-3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AwsSG/empowered)
 
+  1. Install Python module dependencies:
+     
+      1. Navigate to the folder madlib_with_python by executing the command:
+      - `cd madlib_with_python`
+      1. Run the command pip install -r requirements.txt
+        - `pip3 install -r requirements.txt`
+     
+      
+### To deploy the project to Heroku so it can be run as a remote web application:
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/AwsSG/empowered.git`
 
+  1. Create your own GitHub repository to host the code.
+  1. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+
+  1. Push the files to your repository with the following command:
+  `git push`
+  1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
+  1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+
+      - ![New Heroku App](documentation/deployment/new_heroku_app.png)
+
+  1. Go to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
+
+      - ![Deployment Method](documentation/deployment/deployment_method.png)
+
+  1. Link your GitHub account and connect the application to the repository you created.
+
+      - ![Link GitHub account](documentation/deployment/link_to_github.png)
+
+  1. Go to the Settings tab:
+  
+      - ![Settings Tab](documentation/deployment/settings_tab.png)
+
+  1. Click "Add buildpack":
+
+      - ![Add Buildpack](documentation/deployment/add_buildpack.png)
+
+  1. Add the Python and Node.js buildpacks in the following order:
+
+      - ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
+
+  1. Click "Reveal Config Vars."
+
+      - ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
+
+  1. Add 1 new Config Vars:
+      - Key: PORT Value: 8000
+      - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+
+  1. Go back to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
+
+  1. Click "Deploy Branch":
+
+      - ![Deploy Branch](documentation/deployment/deploy_branch.png)
+
+      - Wait for the completion of the deployment.
+
+      - ![Deploying Branch](documentation/deployment/deploying_branch.png)
+
+  1. Click "Open app" to launch the application inside a web page.
+
+      - ![View Button](documentation/deployment/view_app.png)
 
 ---
 ## Testing
