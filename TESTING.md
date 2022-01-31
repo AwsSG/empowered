@@ -102,6 +102,7 @@ No errors were found:
   - Safari:
 
   ![Main Page](documentation/testing/browser_safari.gif)
+  
   - Brave:
 
   ![Main Page](documentation/testing/browser_brave.png)
