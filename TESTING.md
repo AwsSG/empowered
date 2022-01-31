@@ -47,10 +47,10 @@
 - No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator except jinja syntax.
 
     - Home page:
-* [HTML]()
+* [HTML](https://validator.w3.org/nu/#textarea)
 
     - Log In page:
-* [HTML]()
+* [HTML](https://validator.w3.org/nu/#textarea)
 
     - Register page:
 * [HTML]()
