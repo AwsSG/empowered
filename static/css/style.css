@@ -612,10 +612,25 @@ footer {
   background-color: var(--clr-primary--500);
 }
 
+.footer__team {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
 .team__name {
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  font-size: 0.75rem;
+  padding: 1em;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+
+.team__name--title {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-left: 0.5rem;
+  color: var(--clr-neutral--900);
+  font-weight: 900;
 }
 
 .team__collaborators {
