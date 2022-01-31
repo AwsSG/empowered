@@ -13,7 +13,7 @@ cal.init({
   subDomain: "day",
   data: data222,
   minDate: new Date(2022, 0),
-  maxDate: new Date(2023, 0),
+  maxDate: new Date(2025, 0),
   domainGutter: 10,
   domainMargin: [30, 90, 30, 0],
   domainDynamicDimension: true,
