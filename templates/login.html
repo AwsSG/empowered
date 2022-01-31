@@ -3,8 +3,11 @@
 
 
 <div class="login__container">
+  <!-- Login header -->
   <h1 class="login__title">Log in to Empower</h1>
+  <!-- Login Form -->
   <form method="POST" action="{{ url_for('login') }}" class="form__container">
+    <!-- Input for the username -->
     <div class="form__input">
       <label for="username" class="form__input--label">Username: </label>
       <input id="username" type="text" name="username" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9_ ]{5,20}$"
@@ -12,15 +15,17 @@
       <br>
       <p class="username__hidden invalid__username">Enter at least 5 characters</p>
     </div>
+    <!-- Input for the password -->
     <div class="form__input">
       <label for="password" class="form__input--label">Password: </label>
       <input id="password" type="password" name="password" placeholder="Enter password" class="form__input--textarea"
         required>
       <br>
     </div>
+    <!-- Submission button -->
     <button type="submit" class="form__button btn">LogIn</button>
   </form>
-
+  <!-- Link to Register page -->
   <p class="login__paragraph">
     Don't have a profile?
     <a href="{{ url_for('register') }}">Register here.</a>

@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-
 <section class="calendar">
+  <!-- Calendar Header -->
   <h2 class="calendar__heading">Here is your records</h2>
-
+  <!-- Emojis scale -->
   <ul class="calendar__scale">
     <li class="calendar__scale--emoji">
       <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
@@ -25,16 +25,17 @@
       <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
     </li>
   </ul>
+  <!-- Calendar navigation buttons -->
   <div id="previousSelector-a" class="calendar__btns--container">
     <button id="previousSelector-a-previous" class="btn btn__calendar">Back </button> &nbsp
     <button id="previousSelector-a-next" class="btn btn__calendar"> Next </button>
   </div>
-
+  <!-- Click day container -->
   <div style="padding:10px; margin: 2em;">
     <span id="onClick-placeholder">Click a date on the calendar</span>
   </div>
   <div style="padding:10px; margin: 2em;">
-
+    <!-- Call-heatmap -->
     <div id="cal-heatmap">
 
     </div>
