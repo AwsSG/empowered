@@ -71,6 +71,7 @@ body {
   background-color: var(--clr-neutral--100);
   color: var(--clr-neutral--900);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .header {
@@ -232,7 +233,7 @@ body.light .dropdown ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5em 0;
+  padding: 0;
   text-align: center;
   flex-direction: column;
 }
@@ -242,6 +243,7 @@ body.light .dropdown ul {
   margin: 1em auto;
   display: flex;
   background-color: var(--clr-accent--100);
+  padding: 2em;
   padding: 1em 0;
   display: flex;
   justify-content: center;
@@ -275,6 +277,7 @@ body.light .dropdown ul {
   font-size: 1.8rem;
   text-align: left;
   padding-bottom: 1.2em;
+  margin-left: 2em;
 }
 
 .blog__heading--incentive {
@@ -425,11 +428,29 @@ select {
   color: var(--clr-neutral--100);
 }
 
+/* Suggestions */
+
+.suggestions {
+  background-color: var(--clr-accent--100);
+  padding: 2em 0 1em 0;
+}
+
+
 /* Profile link to Calendar Styling */
 .data__link {
   margin: 8em 0;
 }
 
+.suggestion a {
+  color: var(--clr-neutral--300);
+  text-decoration: underline;
+}
+
+.suggestion a:hover {
+  color: black;
+}
+
+/* Link to calendar */
 .btn__calendar--link {
   background-color: var(--clr-primary--100);
   color: var(--clr-neutral--900);
@@ -724,12 +745,16 @@ footer {
   letter-spacing: 0.02rem;
   display: flex;
   align-items: center;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.team__name--header {
+  font-weight: 900;
 }
 
 .team__name--title {
   font-size: 1.8rem;
-  font-style: italic;
   margin-left: 0.5rem;
   color: var(--clr-neutral--900);
   font-weight: 900;
