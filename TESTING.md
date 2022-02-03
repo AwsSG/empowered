@@ -24,17 +24,27 @@
 | Feature      | Expected          | Testing  | Result | Pass/Fail |
 |-------------|-------------|-----|----------|:----:|
 | Code-Vent Calendar Page Title | To redirect to home page | Clicked Code-Vent Calendar Page Title | Title navigates to home page | Pass |
-
-
-
-
-
-
-
-
-
-
-
+| Navbar - Home link - desktop view | Redirect to home page | Clicked link | Navigates to home page | Pass |
+|Navbar - Log in/register button - desktop view | open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
+| Navbar - Log in link in drop down menu - desktop view| Navigates to log in page | Clicked link | Taken to log in page | Pass |
+| Navbar - Register link in drop down menu - desktop view | Navigates to register page | Clicked link | Taken to register page | Pass |
+| Navbar - Log out link - desktop view | logs you out | clicked link | logged out of profile | Pass |
+| Navbar - Hamburger Menu button - mobile view | Open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
+| Navbar - Home link in drop down menu - mobile view | Navigates to home page | Clicked link | Taken to home page | Pass |
+| Navbar - Log in link in drop down menu - mobile view | Navigates to log in page | Clicked link | Taken to log in page  | Pass |
+| Navbar - Register link in drop down menu - mobile view | Navigates to register page | Clicked Link | Taken to register page | Pass |
+| Navbar - Log out link - mobile view | logs you out | clicked link | 
+| Footer - Team Image - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Iuliaa Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Profile Page - Choose emoji drown down menu | When a selection is made that choice is displayed | Clicked each menu option | Each option displated the choice made | Pass |
+| Profile page - add note button | adds note | clicked button | Banner displays showing "Your feelings were recorded successfully" | Pass |
+| Profile page - View emotional history button | Navigates to my history | Clicked button | Taken to calendar page | Pass |
+| Calendar Page - Back Button | Moves the calendar back in time | Clicked button | Moves calendar back | Pass |
+| Calendar Page - next button | Moves the calendar forward in time | Clicked button | Moves calendar forwards | Pass |
+| Calendar Page - Calendar dates | When a date is selected you are shown the emoji you chose for that day and your log entry if made | Clicked on a date | Emoji and log displayed | Pass |
 
 [Back to contents](#contents)
 
@@ -85,7 +95,7 @@ No errors were found:
 
 ## Lighthouse Report
 
-![Lighthouse Report](documentation/)
+![Lighthouse Report](documentation/testing/lighthousehome.png)
 
 ## Compatibility:
 
@@ -103,9 +113,7 @@ No errors were found:
 
   ![Main Page](documentation/testing/browser_safari.gif)
   
-  - Brave:
 
-  ![Main Page](documentation/testing/browser_brave.png)
 ## Responsiveness:
 
 + The app was checked with [Responsive Website Design Tester](https://responsivedesignchecker.com/).
