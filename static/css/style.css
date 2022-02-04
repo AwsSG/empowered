@@ -204,10 +204,20 @@ body.light .dropdown ul {
 
 /* ----- Logo ----- */
 
+.logo__container--top {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
+}
+
+.logo__title {
+  text-transform: uppercase;
+  margin-left: 1em;
 }
 
 
@@ -599,11 +609,11 @@ select {
   margin: 3em 0 2em 0;
 }
 
-.home__title {
+/* .home__title {
   font-size: 6rem;
   padding-bottom: 3rem;
   text-align: center;
-}
+} */
 
 .about__title {
   padding-top: 3rem;
