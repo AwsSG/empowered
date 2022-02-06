@@ -245,6 +245,7 @@ body {
 .logo__title {
   text-transform: uppercase;
   margin-left: 1em;
+  font-size: 2rem;
 }
 
 
@@ -884,12 +885,24 @@ footer {
 
 @media all and (max-width: 62.5em) {
 
+  .logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+
+  .logo__title {
+    font-size: 1.5rem;
+  }
+
   .navbar__components {
     display: none;
   }
 
   .hamburger__container {
     display: block;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .team__collaborators {
@@ -909,6 +922,12 @@ footer {
 }
 
 @media all and (max-width: 550px) {
+
+  .hamburger__container {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
 
   .register__title,
   .login__title {
@@ -935,4 +954,16 @@ footer {
     padding: 1em 1.5em;
   }
 
+}
+
+@media all and (max-width: 550px) {
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .logo__title {
+    display: none;
+  }
 }
