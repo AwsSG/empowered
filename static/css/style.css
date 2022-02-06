@@ -111,7 +111,8 @@ body {
   margin-right: 1em;
 }
 
-.navbar__item {
+.navbar__item,
+.nav__option a {
   position: relative;
 }
 
@@ -125,6 +126,7 @@ body {
 }
 
 .navbar__item a::before,
+.nav__options .nav__option a::before,
 .mobile__item a::before {
   content: "";
   position: absolute;
@@ -137,8 +139,13 @@ body {
 }
 
 .navbar__item a:hover::before,
+.nav__options .nav__option a:hover::before,
 .mobile__item a:hover::before {
   width: 115%;
+}
+
+.dropdown a:hover::before {
+  width: 0%;
 }
 
 
@@ -163,7 +170,7 @@ body {
 }
 
 .nav__options {
-  padding: 1em;
+  padding: 1.5em 1.3em 0.5em 1.3em;
   position: absolute;
   top: 107%;
   left: 0;
@@ -177,8 +184,8 @@ body {
   display: none;
 }
 
-.nav__options>*:hover {
-  color: var(--clr-neutral-900)
+.nav__option {
+  padding-bottom: 1em;
 }
 
 .nav__options .btn__login {

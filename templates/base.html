@@ -69,12 +69,12 @@
         </li>
         {% else %}
         <li class="navbar__item dropdown" id="dropdown">
-          Login / Register
+          get started
           <ul class="nav__options">
-            <li class="btn__login">
+            <li class="btn__login nav__option">
               <a href="{{ url_for('login') }}">Login</a>
             </li>
-            <li class="btn__register">
+            <li class="btn__register nav__option">
               <a href="{{ url_for('register') }}">Register</a>
             </li>
           </ul>
