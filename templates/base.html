@@ -87,24 +87,24 @@
       </div>
       <!-- Navbar for mobile screens -->
       <ul class="navbar__components--mobile" id="mobile-menu">
-        <li class="navbar__item">
+        <li class="mobile__item">
           <a href="{{ url_for('home') }}">Home</a>
         </li>
         {% if session.user %}
-        <li class="navbar__item">
+        <li class="mobile__item">
           <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
         </li>
-        <li class="navbar__item">
+        <li class="mobile__item">
           <a href="{{ url_for('calendar') }}">Calendar</a>
         </li>
-        <li class="navbar__item">
+        <li class="mobile__item">
           <a href="{{ url_for('logout') }}">Log Out</a>
         </li>
         {% else %}
-        <li class="navbar__item btn__login">
+        <li class="mobile__item btn__login">
           <a href="{{ url_for('login') }}">Login</a>
         </li>
-        <li class="navbar__item btn__Register">
+        <li class="mobile__item btn__register">
           <a href="{{ url_for('register') }}">Register</a>
         </li>
         {% endif %}
