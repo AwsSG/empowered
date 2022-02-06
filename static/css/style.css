@@ -2,7 +2,7 @@
   /* --clr-primary--100: #0494EC; */
   --clr-primary--100: #bc84dc;
   --clr-primary--300: #ad52e2;
-  --clr-primary--500: red;
+  --clr-primary--500: #fce484;
   --clr-primary--900: #4db158;
   --clr-neutral--100: #fafafa;
   --clr-neutral--200: #d9fbdd;
@@ -226,6 +226,9 @@ body {
 .main {
   width: 100%;
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content__container {
@@ -470,14 +473,14 @@ select {
 /* Suggestions */
 
 .suggestions {
-  background-color: var(--clr-accent--100);
+  background-color: var(--clr-primary--500);
   padding: 2em 0 1em 0;
 }
 
 
 /* Profile link to Calendar Styling */
 .data__link {
-  margin: 8em 0;
+  margin: 5em 0;
 }
 
 .suggestion a {
@@ -496,8 +499,9 @@ select {
 }
 
 .btn__calendar--link:hover {
-  background-color: var(--clr-primary--900);
+  background-color: var(--clr-primary--300);
   color: var(--clr-neutral--900);
+  color: white;
 }
 
 
@@ -659,7 +663,7 @@ select {
 .register__title,
 .login__title {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   text-align: center;
   font-weight: 900;
   color: var(--clr-accent--900);
@@ -690,8 +694,8 @@ select {
   flex-direction: column;
   align-items: center;
   padding: 3em 2em;
-  margin: 3em 0 2em 0;
-  background-color: #fce484;
+  margin: 2em 0 1em 0;
+  background-color: var(--clr-primary--500);
   border-radius: var(--br);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
@@ -707,7 +711,7 @@ select {
 }
 
 .form__input--label {
-  padding-bottom: 1em;
+  padding-bottom: 0.6em;
   font-size: 1.2rem;
   font-weight: 700;
   width: 100%;
@@ -720,7 +724,7 @@ select {
   padding: 1em 1.5em;
   border-radius: var(--br);
   color: var(--clr-primary--100);
-  border: 1px solid var(--clr-primary--100);
+  border: 2px solid var(--clr-primary--100);
 }
 
 input:focus {
