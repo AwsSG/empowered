@@ -659,6 +659,28 @@ select {
   background-size: cover;
 }
 
+.hero__content {
+  max-width: 120rem;
+  margin: 8em auto;
+  padding-left: 2em;
+  font-display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content--title {
+  font-size: 3rem;
+  padding-bottom: 1em;
+  color: #0494ec;
+  /* color: #74bb43; */
+}
+
+.hero__content--paragraph {
+  max-width: 50rem;
+  font-size: 1.5rem;
+}
+
 .about__title {
   padding-top: 3rem;
   padding-bottom: 3rem;
