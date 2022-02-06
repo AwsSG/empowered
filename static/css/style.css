@@ -6,8 +6,8 @@
   --clr-primary--900: #4db158;
   --clr-neutral--100: #fafafa;
   --clr-neutral--200: #d9fbdd;
-  --clr-neutral--300: #333232;
-  --clr-neutral--900: #333;
+  --clr-neutral--300: #333;
+  --clr-neutral--900: #141414;
   --clr-accent--100: #b3ebf7b6;
   --clr-accent--300: #80c0ce;
   --clr-accent--500: #467292;
@@ -111,14 +111,41 @@ body {
   margin-right: 1em;
 }
 
+.navbar__item {
+  position: relative;
+}
+
 .navbar__item a {
   text-transform: uppercase;
   color: var(--clr-neutral--300);
 }
 
 .navbar__item a:hover {
+  /* color: var(--clr-neutral--900); */
+  /* text-decoration: underline; */
+
+}
+
+
+.navbar__item a:hover {
   color: var(--clr-neutral--900);
 }
+
+.navbar__item a::before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-neutral--900);
+  height: 4px;
+  width: 0%;
+  left: -7%;
+  bottom: -10px;
+  transition: 350ms;
+}
+
+.navbar__item a:hover::before {
+  width: 115%;
+}
+
 
 /* Dropdown */
 .dropdown {
