@@ -26,12 +26,14 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
+    """ landing page view """
     users = mongo.db.users.find()
     return render_template("home.html", users=users)
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """ registration page view """
     if request.method == "POST":
         # check if the username already exist
         existing_user = mongo.db.users.find_one(
@@ -57,6 +59,7 @@ def register():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """ login page view """
     if request.method == "POST":
         # check if the user exists
         existing_user = mongo.db.users.find_one(
@@ -84,6 +87,7 @@ def login():
 
 @app.route("/logout")
 def logout():
+    """ logout function """
     # remove user from session cookie
     flash("You have been logged out successfully!")
     session.pop("user")
@@ -92,12 +96,19 @@ def logout():
 
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
+    """ profile page view """
+    # get todays date
     today = datetime.now().strftime("%d/%m/%y")
+    # get list of all user entries
     user = list(mongo.db.tracker.find({"user": session["user"]}))
     # check if the user has entry
     if user:
-        last_entry = datetime.fromtimestamp(user[-1]["datetime"]).date().strftime("%d/%m/%y")
+        # get last entry date
+        last_entry = datetime.fromtimestamp(
+            user[-1]["datetime"]).date().strftime("%d/%m/%y")
+        # get last entry emoji
         emoji_num = int(user[-1]["emoji"])
+        # get resources that corrosponds with emoji number
         suggestions = list(mongo.db.resources.find({"emoji": emoji_num}))
     else:
         suggestions = []
@@ -111,13 +122,15 @@ def profile():
         }
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
-        redirect(url_for("profile", today=today, suggestions=suggestions, last_entry=last_entry))
+        return redirect(url_for("profile", today=today,
+                 suggestions=suggestions, last_entry=last_entry))
 
     return render_template("profile.html", today=today, suggestions=suggestions, last_entry=last_entry)
 
 
 @app.route("/calendar")
 def calendar():
+    """ calendar and analytics page view """
     emoji_tracker = list(mongo.db.tracker.find({"user": session["user"]}))
     return render_template("calendar.html", emoji_tracker=emoji_tracker)
 
