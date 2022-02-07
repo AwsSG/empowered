@@ -123,7 +123,7 @@ def profile():
         mongo.db.tracker.insert_one(emoji)
         flash("Your feelings were recorded successfully!")
         return redirect(url_for("profile", today=today,
-                 suggestions=suggestions, last_entry=last_entry))
+                suggestions=suggestions, last_entry=last_entry))
 
     return render_template("profile.html", today=today, suggestions=suggestions, last_entry=last_entry)
 
