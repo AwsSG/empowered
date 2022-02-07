@@ -651,18 +651,18 @@ select {
 
 .hero__container {
   width: 100%;
-  min-height: 60rem;
+  min-height: 40rem;
   background-color: var(--clr-primary--500);
   background-image: url('../images/hero1.png');
-  background-position: center;
+  background-position: left 90%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero__content {
   max-width: 120rem;
-  margin: 8em auto;
-  padding-left: 2em;
+  margin: 4em auto;
+  padding-left: 8vw;
   font-display: flex;
   flex-direction: column;
   justify-content: center;
@@ -677,8 +677,9 @@ select {
 }
 
 .hero__content--paragraph {
-  max-width: 50rem;
+  max-width: 40rem;
   font-size: 1.5rem;
+
 }
 
 .about__title {
