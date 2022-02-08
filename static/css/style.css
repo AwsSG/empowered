@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rowdies:wght@300;400;700&display=swap');
+
 :root {
   /* --clr-primary--100: #0494EC; */
   --clr-primary--100: #bc84dc;
@@ -13,8 +15,8 @@
   --clr-accent--300: #80c0ce;
   --clr-accent--500: #467292;
   --clr-accent--900: #26465e;
-  --ff-primary: sans-serif;
-  --ff-accent: cursive;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Rowdies', cursive;
   --br: 0.4em;
   --br-elements: 0.8em;
 }
@@ -654,7 +656,7 @@ select {
 
 .hero__container {
   width: 100%;
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -665,7 +667,7 @@ select {
 .hero__image {
   width: 60%;
   background-image: url('../images/hero2.png');
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -674,26 +676,26 @@ select {
   width: 50%;
   margin-top: 12vh;
   margin-bottom: 12vh;
-  /* 0 8em 0; */
-  /* padding-left: 8vw; */
   font-display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-left: 6vw; */
 }
 
 .hero__content--title {
-  font-size: 3rem;
-  padding-bottom: 1em;
-  color: #0494ec;
-  /* color: #74bb43; */
+  font-size: 3.2rem;
+  padding-bottom: 0.5em;
+  color: var(--clr-primary--900);
+  font-family: var(--ff-accent);
+  font-weight: 900;
 }
 
 .hero__content--paragraph {
   max-width: 80%;
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 2.2rem;
+  margin-left: 0.2em;
 
 }
 
