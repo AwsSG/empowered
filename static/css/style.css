@@ -650,14 +650,11 @@ select {
 
 
 /* ----- Home Page ----- */
-
-
-
-
+/* Hero section */
 .hero__container {
   width: 100%;
   max-width: 110rem;
-  margin: 0 auto;
+  margin: 2em auto;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -675,8 +672,8 @@ select {
 }
 
 .hero__content--title {
-  font-size: 3.2rem;
-  padding-bottom: 0.5em;
+  font-size: 3.7rem;
+  padding-bottom: 5vh;
   color: var(--clr-primary--900);
   font-family: var(--ff-accent);
   font-weight: 900;
@@ -723,34 +720,90 @@ select {
   background-size: contain;
 }
 
-.home__container {
+/* About section */
+.about__container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
-  margin: 0;
+  margin: 2em auto;
   width: 100%;
-  background-color: #add2e9;
+  text-align: center;
 }
 
 .about__title {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5vh;
+  padding-bottom: 7vh;
   text-align: center;
+  font-size: 3.5rem;
+  color: var(--clr-primary--900);
+  font-family: var(--ff-accent);
 }
 
-.about__section--title {
+/* Reason to use */
+.reason,
+.usage,
+.privacy {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 2em 4em 4em 4em;
+}
+
+.reason__content,
+.usage__content,
+.privacy__content {
+  width: 50%;
+  margin: 2em 0;
+}
+
+.reason__image {
+  width: 50%;
+  background-image: url('../images/about1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.reason__section--title,
+.usage__section--title,
+.privacy__section--title {
   padding-bottom: 1rem;
   text-align: center;
+  font-size: 1.9rem;
+  font-family: var(--ff-accent);
+  padding-bottom: 1em;
 }
 
-.about__section--paragraph {
-  text-align: center;
-  line-height: 1.75rem;
+.reason__section--paragraph,
+.usage__section--paragraph,
+.privacy__section--paragraph {
+  font-size: 1.5rem;
+  line-height: 1.5;
   padding-bottom: 5rem;
   max-width: 70rem;
 }
 
+/* How to use */
+
+.usage__image {
+  width: 50%;
+  background-image: url('../images/about2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.privacy__image {
+  width: 50%;
+  background-image: url('../images/about3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 /* ----- Register/Login Page ----- */
 
