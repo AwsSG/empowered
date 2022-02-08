@@ -1,38 +1,119 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="home__container">
+<section class="hero__container">
+  <div class="hero__content">
+    <h2 class="hero__content--title">What is Empower?</h2>
+    <p class="hero__content--paragraph">
+      Empower is a site that allows you to log your emotional state every day. You
+      can also choose to add a journal entry
+      which allows you to expand on why you have chosen your selected emoji.
+    </p>
+    <div class="buttons__container">
+      <div class="btn__register btn">
+        <a href="{{ url_for('register') }}">Get started</a>
+      </div>
 
+    </div>
+  </div>
+  <div class="hero__image">
+    <!-- <img src="{{ url_for('static', filename='images/hero2.png') }}"> -->
+  </div>
 
-  <div class="hero__container">
-    <div class="hero__content">
-      <h2 class="hero__content--title">What is Empower?</h2>
-      <p class="hero__content--paragraph">
-        Empower is a site that allows you to log your emotional state every day. You
-        can also choose to add a journal entry
-        which allows you to expand on why you have chosen your selected emoji.
+</section>
+<section class="about__container">
+  <h3 class="about__title">About Us</h3>
+
+  <div class="reason">
+    <div class="reason__image"></div>
+    <div class="reason__content">
+
+      <h4 class="reason__section--title">Why should I use Empower?</h4>
+      <p class="reason__section--paragraph">
+        Our emotional health is a very important part of our overall health. By
+        becoming more aware of our
+        emotions can help us talk about our feelings, avoid or resolve conflicts in our lives better and help us to
+        move past difficult feelings.
       </p>
     </div>
   </div>
+  <div class="usage">
+    <div class="usage__content">
+      <h4 class="usage__section--title">How to use Impower?</h4>
+      <p class="usage__section--paragraph">
+        Empower allows you to take a moment out of each day to check in and log your emotions. You can then track your
+        emotional health over time using the calendar function in your profile. The calendar may provide your emotional
+        health history if you seek help from professionals.
+      </p>
+    </div>
+    <div class="usage__image"></div>
+  </div>
+  <div class="privacy">
+    <div class="privacy__image"></div>
+    <div class="privacy__content">
+      <h4 class="privacy__section--title">Can anyone else see my information?</h4>
+      <p class="privacy__section--paragraph">
+        No. Your privacy is essential to all of us. You will need to register with the Empower site to log your
+        emotional
+        health and add notes. The password to your account will never be revealed to anybody, even to us. This process
+        allows you to keep all your information confidential.
+      </p>
+    </div>
+</section>
 
-  <h3 class="about__title">About Us</h3>
+<section class="testimonials__container">
+  <h3 class="about__title">Those who trusts:</h3>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p class="description">
+        Not only has Empower helped me to notice and understand my emotions, but it has also helped me to understand
+        myself completely.
+      </p>
+      <div class="testimonial__author">
+        <div class="testimonial__author--image">
+          <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="Portrait of a woman">
+        </div>
+        <div class="testimonial__author--data">
+          <h4 class="testimonial__author--name">
+            Susan
+          </h4>
+        </div>
+      </div>
+    </div>
 
+    <div class="testimonial">
+      <p class="description">
+        While using Empower, I have found that I have become much more aware of my feeling and emotions. Now, I am able
+        to control them better.
+      </p>
+      <div class="testimonial__author">
+        <div class="testimonial__author--image">
+          <img src="{{ url_for('static', filename='images/profile2.jpg') }}" alt="Portrait of a man smiling">
+        </div>
+        <div class="testimonial__author--data">
+          <h4 class="testimonial__author--name">
+            Thomas
+          </h4>
+        </div>
+      </div>
+    </div>
 
-  <h4 class="about__section--title">Why should I use Empower?</h4>
-  <p class="about__section--paragraph">Our emotional health is a very important part of our overall health. By
-    becoming more aware of our
-    emotions can help us talk about our feelings, avoid or resolve conflicts in our lives better and help us to
-    move past difficult feelings. Empower allows you to take a moment out of each day to check in and log your
-    emotions.
-    You are then able to track your emotional health over a period of time using the calendar function in your
-    profile.
-    The calendar feature can also be used to provide evidence of your emotional health should you need to seek help
-    from
-    professionals.</p>
-
-  <h4 class="about__section--title">Can anyone else see my information?</h4>
-  <p class="about__section--paragraph">No. Your privacy is very important to us. In order to log your emotional health
-    you will need to register with the
-    Empower site. This allows you to keep all your information confidential.</p>
+    <div class="testimonial">
+      <p class="description">
+        As a psychologist, I recommend Empower as it has assisted many of my patients be independent and
+        confident in their lives.
+      </p>
+      <div class="testimonial__author">
+        <div class="testimonial__author--image">
+          <img src="{{ url_for('static', filename='images/profile3.jpg') }}" alt="Portrait of a woman">
+        </div>
+        <div class="testimonial__author--data">
+          <h4 class="testimonial__author--name">
+            Dr. Bright
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}
