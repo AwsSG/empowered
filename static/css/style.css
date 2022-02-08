@@ -3,6 +3,7 @@
   --clr-primary--100: #bc84dc;
   --clr-primary--300: #ad52e2;
   --clr-primary--500: #fce484;
+  --clr-primary--700: #44abeb;
   --clr-primary--900: #0494ec;
   --clr-neutral--100: #fafafa;
   --clr-neutral--200: #d9fbdd;
@@ -79,10 +80,7 @@ body {
 
 .header {
   width: 100%;
-  background: #AD52E2;
-  /* background: -webkit-linear-gradient(to top, #ad52e29b 0%, #BC84DC 50%, #ad52e29b 100%);
-  background: -moz-linear-gradient(to top, #ad52e29b 0%, #BC84DC 50%, #ad52e29b 100%); */
-  background: linear-gradient(to top, #ad52e2 0%, #d09cee 50%, #ad52e2 100%);
+  background: var(--clr-primary--900);
 }
 
 /* --- Navbar --- */
@@ -157,7 +155,7 @@ body {
 /* Dropdown */
 .dropdown {
   border-radius: var(--br);
-  background-color: var(--clr-primary--300);
+  background-color: var(--clr-primary--900);
   cursor: pointer;
   padding: 0.8em 2em 0.7em 2em;
   position: relative;
@@ -168,27 +166,22 @@ body {
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
-
-  background-image: linear-gradient(to top, #ad52e2 0%, #d09cee 50%, #ad52e2 100%);
-  transition: background-image .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
 }
 
 .dropdown:hover {
-  /* background-color: var(--clr-primary--100); */
-  background-image: linear-gradient(to top, #ad52e2 50%, #e3ccf0 50%, #ad52e27e 0%);
+  background-color: var(--clr-primary--700);
 }
 
 .nav__options {
-  padding: 1.5em 1.3em 0.5em 1.3em;
+  padding: 1.1em 1.3em 0.5em 0.9em;
   position: absolute;
   top: 107%;
   left: 0;
   width: 100%;
   z-index: 99;
   border-radius: var(--br);
-  background-color: var(--clr-primary--100);
-  background-image: linear-gradient(to top, #ad52e2 0%, #bc84dc 20%, #deb6f5 50%, #bc84dc 80%, #ad52e2 100%);
-  /* background: radial-gradient(circle farthest-corner at center center, #C996E6 45%, #AD52E2 100%); */
+  background-color: var(--clr-primary--700);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
@@ -201,8 +194,6 @@ body {
   font-weight: 600;
   text-transform: capitalize;
 }
-
-.nav__option a {}
 
 .nav__options .btn__login {
   margin-bottom: 1em;
@@ -228,7 +219,7 @@ body {
   right: 0.3em;
   z-index: 99;
   border-radius: var(--br);
-  background-color: var(--clr-primary--100);
+  background-color: var(--clr-primary--900);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
@@ -659,31 +650,37 @@ select {
 /* ----- Home Page ----- */
 
 
-.home__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0 2em 0;
-}
+
 
 .hero__container {
   width: 100%;
-  min-height: 40rem;
-  background-color: var(--clr-primary--500);
-  background-image: url('../images/hero1.png');
-  background-position: left 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  padding: 0 4em;
+}
+
+.hero__image {
+  width: 60%;
+  background-image: url('../images/hero2.png');
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .hero__content {
-  max-width: 120rem;
-  margin: 4em auto;
-  padding-left: 8vw;
+  width: 50%;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+  /* 0 8em 0; */
+  /* padding-left: 8vw; */
   font-display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* padding-left: 6vw; */
 }
 
 .hero__content--title {
@@ -694,9 +691,20 @@ select {
 }
 
 .hero__content--paragraph {
-  max-width: 40rem;
-  font-size: 1.5rem;
+  max-width: 80%;
+  font-size: 1.7rem;
+  font-weight: 600;
 
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  background-color: #add2e9;
 }
 
 .about__title {

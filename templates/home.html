@@ -1,20 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="home__container">
+<section class="hero__container">
 
 
-  <div class="hero__container">
-    <div class="hero__content">
-      <h2 class="hero__content--title">What is Empower?</h2>
-      <p class="hero__content--paragraph">
-        Empower is a site that allows you to log your emotional state every day. You
-        can also choose to add a journal entry
-        which allows you to expand on why you have chosen your selected emoji.
-      </p>
+
+  <div class="hero__content">
+    <h2 class="hero__content--title">What is Empower?</h2>
+    <p class="hero__content--paragraph">
+      Empower is a site that allows you to log your emotional state every day. You
+      can also choose to add a journal entry
+      which allows you to expand on why you have chosen your selected emoji.
+    </p>
+    <div class="buttons__ container">
+
+
+      <div class="btn__login nav__option">
+        <a href="{{ url_for('login') }}">Login</a>
+      </div>
+      <div class="btn__register nav__option">
+        <a href="{{ url_for('register') }}">Register</a>
+      </div>
+
     </div>
   </div>
+  <div class="hero__image">
+    <!-- <img src="{{ url_for('static', filename='images/hero2.png') }}"> -->
+  </div>
 
+</section>
+<section class="home__container">
   <h3 class="about__title">About Us</h3>
 
 
