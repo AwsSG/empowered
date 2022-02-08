@@ -664,14 +664,6 @@ select {
   padding: 0 4em;
 }
 
-.hero__image {
-  width: 60%;
-  background-image: url('../images/hero2.png');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .hero__content {
   width: 50%;
   margin-top: 12vh;
@@ -696,7 +688,39 @@ select {
   font-weight: 500;
   line-height: 2.2rem;
   margin-left: 0.2em;
+}
 
+.buttons__container {
+  display: flex;
+  margin-top: 3vh;
+  margin-left: 0.2em;
+}
+
+.btn__register {
+  background-color: var(--clr-primary--900);
+  transition: background-color .15s ease-in-out;
+}
+
+.btn__register a {
+  color: var(--clr-neutral--100);
+  font-size: 1.5rem;
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.btn__register:hover {
+  background-color: var(--clr-primary--700);
+}
+
+.btn__register a:hover {
+  color: var(--clr-neutral--300);
+}
+
+.hero__image {
+  width: 60%;
+  background-image: url('../images/hero2.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .home__container {
@@ -860,7 +884,7 @@ input:not(:placeholder-shown) {
 
 footer {
   width: 100%;
-  background-color: var(--clr-primary--100);
+  background-color: var(--clr-primary--900);
 }
 
 .footer__team {
