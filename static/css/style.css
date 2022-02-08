@@ -1020,16 +1020,11 @@ footer {
 }
 
 .team__name--header {
+  font-size: 1.8rem;
+  color: var(--clr-neutral--900);
   font-weight: 900;
 }
 
-.team__name--title {
-  font-size: 1.8rem;
-  margin-left: 0.5rem;
-  color: var(--clr-neutral--900);
-  font-weight: 900;
-  padding-bottom: 0.2em;
-}
 
 /* Team Members */
 .team__collaborators {
@@ -1051,10 +1046,10 @@ footer {
 }
 
 .image__holder {
-  width: 4rem;
+  width: 3rem;
   margin: 0 auto;
   border-radius: 50%;
-  border: 2px solid var(--clr-neutral--300);
+  border: 1px solid var(--clr-neutral--300);
 }
 
 .image__holder img {
@@ -1064,10 +1059,10 @@ footer {
 
 .coder__name {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--clr-neutral--900);
   font-weight: 700;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 /* ----- Media ----- */
