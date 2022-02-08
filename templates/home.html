@@ -61,57 +61,57 @@
     </div>
 </section>
 
-<section class="testimonials">
-  <div class="testimonial testimonial--1">
-    <p class="description">
-      Not only has Empower helped me to notice and understand my emotions, but it has also helped me to understand
-      myself completely.
-    </p>
-    <div class="testimonail__author">
-      <div class="testimonail__author--image">
-        <img src="assets/images/profile-1.jpg" alt="Portrait of a woman">
-      </div>
-      <div class="testimonail__author--data">
-        <h4 class="testimonail__author--name">
-          Susan
-        </h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="testimonial">
-    <p class="description">
-      While using Empower, I have found that I have become much more aware of my feeling and emotions. Now, I am able
-      to control them better.
-    </p>
-    <div class="testimonail__author">
-      <div class="testimonail__author--image">
-        <img src="assets/images/profile-2.jpg" alt="Portrait of a man smiling">
-      </div>
-      <div class="testimonail__author--data">
-        <h4 class="testimonail__author--name">
-          Thomas
-        </h4>
+<section class="testimonials__container">
+  <h3 class="about__title">Those who trusts:</h3>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p class="description">
+        Not only has Empower helped me to notice and understand my emotions, but it has also helped me to understand
+        myself completely.
+      </p>
+      <div class="testimonial__author">
+        <div class="testimonial__author--image">
+          <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="Portrait of a woman">
+        </div>
+        <div class="testimonial__author--data">
+          <h4 class="testimonial__author--name">
+            Susan
+          </h4>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="testimonial">
-    <p class="description">
-      As a professional psychologist, I recommend Empower as it has assisted many of my patients be independent and
-      confident in their lives.
-    </p>
-    <div class="testimonail__author">
-      <div class="testimonail__author--image">
-        <img src="assets/images/profile-3.jpg" alt="Portrait of a woman">
+    <div class="testimonial">
+      <p class="description">
+        While using Empower, I have found that I have become much more aware of my feeling and emotions. Now, I am able
+        to control them better.
+      </p>
+      <div class="testimonial__author">
+        <div class="testimonial__author--image">
+          <img src="{{ url_for('static', filename='images/profile2.jpg') }}" alt="Portrait of a man smiling">
+        </div>
+        <div class="testimonial__author--data">
+          <h4 class="testimonial__author--name">
+            Thomas
+          </h4>
+        </div>
       </div>
-      <div class="testimonail__author--data">
-        <h3 class="testimonail__author--name">
-          Dr. Bright
-        </h3>
-        <p class="testimonail__author--position">
-          Founder & CEO, Huddle
-        </p>
+    </div>
+
+    <div class="testimonial">
+      <p class="description">
+        As a psychologist, I recommend Empower as it has assisted many of my patients be independent and
+        confident in their lives.
+      </p>
+      <div class="testimonial__author">
+        <div class="testimonial__author--image">
+          <img src="{{ url_for('static', filename='images/profile3.jpg') }}" alt="Portrait of a woman">
+        </div>
+        <div class="testimonial__author--data">
+          <h4 class="testimonial__author--name">
+            Dr. Bright
+          </h4>
+        </div>
       </div>
     </div>
   </div>
