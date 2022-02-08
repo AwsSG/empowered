@@ -713,7 +713,7 @@ select {
 }
 
 .hero__image {
-  width: 60%;
+  width: 50%;
   background-image: url('../images/hero2.png');
   background-position: right;
   background-repeat: no-repeat;
