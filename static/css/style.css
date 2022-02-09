@@ -21,7 +21,7 @@
   --br-elements: 0.8em;
 }
 
-/* 91b199 */
+/* 5dbcd2 */
 
 
 /*------ Global Settings------*/
@@ -669,6 +669,7 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 2em;
 }
 
 .hero__content--title {
@@ -1067,87 +1068,117 @@ footer {
 
 /* ----- Media ----- */
 
-@media all and (max-width: 62.5em) {
-
-  .logo {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
+@media all and (max-width: 1348px) {
+  .hero__content--title {
+    font-size: 2.8rem;
+    padding-bottom: 4vh;
   }
 
-  .logo__title {
+  .hero__content--paragraph {
     font-size: 1.5rem;
+    line-height: 1.75rem;
+    max-width: 95%;
   }
 
-  .navbar__components {
-    display: none;
+  .about__title {
+    font-size: 2.8rem;
   }
-
-  .hamburger__container {
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .team__collaborators {
-    flex-direction: column;
-  }
-
-  .contact__github {
-    margin-bottom: 3em;
-  }
-
-  .team__name {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
 }
 
-@media all and (max-width: 550px) {
-
-  .hamburger__container {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .register__title,
-  .login__title {
-    font-size: 1.9rem;
-  }
-
-  .register__paragraph,
-  .login__paragraph {
-    text-align: center;
+@media all and (max-width: 1039px) {
+  .btn__register a {
     font-size: 1.2rem;
-    font-style: italic;
-    padding-bottom: 0.5rem;
-    max-width: 70rem;
-    padding: 0 2em;
   }
 
-  .form__container {
-    min-width: 15rem;
-    padding: 2em 1.2em;
-    margin: 2em 0 1em 0;
+  .hero__container {
+    padding: 2em;
   }
 
-  .form__button {
-    padding: 1em 1.5em;
+  .hero__content {
+    /* padding-left: 0; */
   }
 
-}
+  @media all and (max-width: 62.5em) {
 
-@media all and (max-width: 550px) {
+    .logo {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+    }
 
-  .logo {
-    width: 3rem;
-    height: 3rem;
+    .logo__title {
+      font-size: 1.5rem;
+    }
+
+    .navbar__components {
+      display: none;
+    }
+
+    .hamburger__container {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .team__collaborators {
+      flex-direction: column;
+    }
+
+    .contact__github {
+      margin-bottom: 3em;
+    }
+
+    .team__name {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
   }
 
-  .logo__title {
-    display: none;
+  @media all and (max-width: 550px) {
+
+    .hamburger__container {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .register__title,
+    .login__title {
+      font-size: 1.9rem;
+    }
+
+    .register__paragraph,
+    .login__paragraph {
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+      padding-bottom: 0.5rem;
+      max-width: 70rem;
+      padding: 0 2em;
+    }
+
+    .form__container {
+      min-width: 15rem;
+      padding: 2em 1.2em;
+      margin: 2em 0 1em 0;
+    }
+
+    .form__button {
+      padding: 1em 1.5em;
+    }
+
   }
-}
+
+  @media all and (max-width: 550px) {
+
+    .logo {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .logo__title {
+      display: none;
+    }
+  }
