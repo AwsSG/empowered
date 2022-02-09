@@ -1149,7 +1149,7 @@ footer {
   .hero__content {
     width: 100%;
     margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -1200,7 +1200,6 @@ footer {
     margin: 2em auto;
   }
 
-
   .reason__section--title,
   .usage__section--title,
   .privacy__section--title {
@@ -1247,6 +1246,16 @@ footer {
     width: 2rem;
     height: 2rem;
   }
+
+  .hero__content--title,
+  .about__title {
+    font-size: 2.3rem;
+  }
+
+  .hero__image {
+    height: 17rem;
+  }
+
 
   .register__title,
   .login__title {
