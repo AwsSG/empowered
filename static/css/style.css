@@ -298,12 +298,11 @@ body {
 }
 
 .flash__messages {
-  width: 100%;
+  width: 90%;
   margin: 1em auto;
   display: flex;
-  background-color: var(--clr-accent--100);
-  padding: 2em;
-  padding: 1em 0;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,6 +313,9 @@ body {
   font-weight: 900;
   font-size: 1.5rem;
   font-style: italic;
+  background-color: var(--clr-primary--500);
+  padding: 1em 3em;
+  border-radius: var(--br);
 }
 
 /* ----- Blog ----- */
