@@ -1164,7 +1164,7 @@ footer {
   }
 
   .hero__content--paragraph {
-    max-width: 30rem;
+    max-width: 35rem;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -1176,11 +1176,52 @@ footer {
     margin-left: 0.2em;
   }
 
-  /*  */
   .hero__image {
     width: 100%;
     height: 25rem;
     background-position: center;
+  }
+
+  .reason,
+  .privacy {
+    flex-direction: column;
+  }
+
+  .usage {
+    flex-direction: column-reverse;
+  }
+
+
+  .reason__content,
+  .usage__content,
+  .privacy__content {
+    width: 100%;
+    max-width: 35rem;
+    margin: 2em auto;
+  }
+
+
+  .reason__section--title,
+  .usage__section--title,
+  .privacy__section--title {
+    padding-bottom: 0;
+    font-size: 1.7rem;
+    margin-bottom: 0.7em;
+  }
+
+  .reason__section--paragraph,
+  .usage__section--paragraph,
+  .privacy__section--paragraph {
+    font-size: 1.4rem;
+  }
+
+  /* Reason to use */
+  .reason__image,
+  .usage__image,
+  .privacy__image {
+    width: 100%;
+    height: 15rem;
+    margin-left: 0;
   }
 
   .team__collaborators {
