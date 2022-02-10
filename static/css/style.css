@@ -21,7 +21,7 @@
   --br-elements: 0.8em;
 }
 
-/* 91b199 */
+/* 5dbcd2 */
 
 
 /*------ Global Settings------*/
@@ -298,12 +298,11 @@ body {
 }
 
 .flash__messages {
-  width: 100%;
+  width: 90%;
   margin: 1em auto;
   display: flex;
-  background-color: var(--clr-accent--100);
-  padding: 2em;
-  padding: 1em 0;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,6 +313,9 @@ body {
   font-weight: 900;
   font-size: 1.5rem;
   font-style: italic;
+  background-color: var(--clr-primary--500);
+  padding: 1em 3em;
+  border-radius: var(--br);
 }
 
 /* ----- Blog ----- */
@@ -669,6 +671,7 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 2em;
 }
 
 .hero__content--title {
@@ -740,7 +743,6 @@ select {
   font-family: var(--ff-accent);
 }
 
-/* Reason to use */
 .reason,
 .usage,
 .privacy {
@@ -749,7 +751,7 @@ select {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding: 2em 4em 4em 4em;
+  padding: 2em 4em 3em 4em;
 }
 
 .reason__content,
@@ -762,14 +764,6 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.reason__image {
-  width: 50%;
-  background-image: url('../images/about1.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 
@@ -791,14 +785,23 @@ select {
   max-width: 70rem;
 }
 
-/* How to use */
+/* Reason to use */
+.reason__image {
+  width: 50%;
+  background-image: url('../images/about1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
+/* How to use */
 .usage__image {
   width: 50%;
   background-image: url('../images/about2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-left: 2em;
 }
 
 /* Privacy */
@@ -883,7 +886,7 @@ select {
   margin: 2rem 0;
   text-align: center;
   font-weight: 900;
-  color: var(--clr-accent--900);
+  color: var(--clr-primary--900);
   padding: 0 2em;
 }
 
@@ -912,7 +915,7 @@ select {
   align-items: center;
   padding: 3em 2em;
   margin: 2em 0 1em 0;
-  background-color: var(--clr-primary--500);
+  background-color: var(--clr-accent--100);
   border-radius: var(--br);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
@@ -941,7 +944,7 @@ select {
   padding: 1em 1.5em;
   border-radius: var(--br);
   color: var(--clr-primary--100);
-  border: 2px solid var(--clr-primary--100);
+  border: 2px solid #80c0ce;
 }
 
 input:focus {
@@ -964,15 +967,25 @@ input:not(:placeholder-shown) {
 }
 
 .form__button {
-  background-color: var(--clr-primary--100);
+  background-color: var(--clr-primary--700);
   border-radius: var(--br);
   text-transform: uppercase;
   color: var(--clr-neutral--900);
 }
 
 .form__button:hover {
-  background-color: var(--clr-primary--300);
+  background-color: var(--clr-primary--900);
   color: black;
+}
+
+.login__paragraph a,
+.register__paragraph a {
+  color: var(--clr-primary--900);
+}
+
+.login__paragraph a:hover,
+.register__paragraph a:hover {
+  text-decoration: underline;
 }
 
 /* Error */
@@ -1067,6 +1080,58 @@ footer {
 
 /* ----- Media ----- */
 
+@media all and (max-width: 1348px) {
+  .hero__content--title {
+    font-size: 2.8rem;
+    padding-bottom: 4vh;
+  }
+
+  .hero__content--paragraph {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    max-width: 95%;
+  }
+
+  .about__title {
+    font-size: 2.8rem;
+  }
+
+  .reason,
+  .usage,
+  .privacy {
+    padding: 2em 4em 0 4em;
+  }
+}
+
+@media all and (max-width: 1039px) {
+  .btn__register a {
+    font-size: 1.2rem;
+  }
+
+  .hero__container {
+    padding: 2em;
+  }
+
+  .reason,
+  .usage,
+  .privacy {
+    padding: 1em 2em 0 2em;
+  }
+
+  .reason__section--paragraph,
+  .usage__section--paragraph,
+  .privacy__section--paragraph {
+    font-size: 1.3rem;
+    line-height: 1.35;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media all and (max-width: 62.5em) {
 
   .logo {
@@ -1087,6 +1152,87 @@ footer {
     display: block;
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  .hero__container {
+    flex-direction: column-reverse;
+  }
+
+  .hero__content {
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero__content--title {
+    font-size: 3rem;
+    padding-bottom: 3vh;
+  }
+
+  .hero__content--paragraph {
+    max-width: 35rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .buttons__container {
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 0.2em;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+  }
+
+  .reason,
+  .privacy {
+    flex-direction: column;
+  }
+
+  .usage {
+    flex-direction: column-reverse;
+  }
+
+
+  .reason__content,
+  .usage__content,
+  .privacy__content {
+    width: 100%;
+    max-width: 35rem;
+    margin: 2em auto;
+  }
+
+  .reason__section--title,
+  .usage__section--title,
+  .privacy__section--title {
+    padding-bottom: 0;
+    font-size: 1.7rem;
+    margin-bottom: 0.7em;
+  }
+
+  .reason__section--paragraph,
+  .usage__section--paragraph,
+  .privacy__section--paragraph {
+    font-size: 1.4rem;
+  }
+
+  /* Reason to use */
+  .reason__image,
+  .usage__image,
+  .privacy__image {
+    width: 100%;
+    height: 15rem;
+    margin-left: 0;
   }
 
   .team__collaborators {
@@ -1112,6 +1258,16 @@ footer {
     width: 2rem;
     height: 2rem;
   }
+
+  .hero__content--title,
+  .about__title {
+    font-size: 2.3rem;
+  }
+
+  .hero__image {
+    height: 17rem;
+  }
+
 
   .register__title,
   .login__title {
