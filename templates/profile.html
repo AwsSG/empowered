@@ -14,6 +14,11 @@
 <section class="scale">
   <!-- Profile form -->
   <form method="POST" action="{{ url_for('profile') }}" class="profile__form">
+    <div class="btn__info--container" id="btn__info">
+      <div class="btn__info--icon" aria-label="go to instructions">
+        <i class="fas fa-info-circle"></i>
+      </div>
+    </div>
     <div class="scale__emojis">
       <label for="angry">
         <input type="radio" name="rating" class="angry" id="angry" value="1" />

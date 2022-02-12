@@ -326,7 +326,7 @@ body {
 .blog__heading {
   width: inherit;
   max-width: 120rem;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   color: var(--clr-neutral--900);
@@ -341,9 +341,11 @@ body {
 }
 
 .blog__heading--incentive {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
+  color: var(--clr-primary--600);
+  font-family: var(--ff-accent);
 }
 
 .blog__heading--day span {
@@ -357,7 +359,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2em 0.5em;
+  padding: 0 0.5em 2em 0.5em;
   margin-bottom: 3em;
 }
 
@@ -371,12 +373,42 @@ body {
 }
 
 .profile__form {
-  margin: 3em 0 2em 0;
+  margin: 0 0 2em 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 0.5em;
+  padding: 0 0.5em;
+}
+
+.btn__info--container {
+  width: 100%;
+  max-width: 45rem;
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: end;
+
+}
+
+.btn__info--icon {
+  padding: 1em;
+  border-radius: var(--br);
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
+  -webkit-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
+  -moz-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.424);
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.btn__info--icon i {
+  font-size: 2.5rem;
+  color: var(--clr-primary--600);
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.btn__info--icon:hover,
+.btn__info--icon:hover i {
+  background-color: var(--clr-primary--600);
+  color: white;
 }
 
 .scale__emojis {
@@ -599,14 +631,13 @@ select {
 
 /* Link to calendar */
 .btn__calendar--link {
-  background-color: var(--clr-primary--100);
-  color: var(--clr-neutral--900);
+  background-color: var(--clr-primary--300);
+  color: white;
 }
 
 .btn__calendar--link:hover {
-  background-color: var(--clr-primary--300);
+  background-color: var(--clr-primary--100);
   color: var(--clr-neutral--900);
-  color: white;
 }
 
 
