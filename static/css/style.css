@@ -413,31 +413,18 @@ body {
 
 
 /* Modal */
-/* .overlay {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
-  z-index: 5;
-} */
-
-.overlay--hidden {
-  /* display: none; */
-}
-
 .modal {
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   width: 43rem;
-  height: 35rem;
-  background-color: yellow;
+  height: 20rem;
+  background-color: var(--clr-primary--600);
   border-radius: var(--br);
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.7);
 }
@@ -447,7 +434,7 @@ body {
   top: 1.1rem;
   right: 1.9rem;
   font-size: 4rem;
-  color: var(--clr-neutral-100);
+  color: white;
   cursor: pointer;
   border: none;
   background: none;
@@ -459,36 +446,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-
 }
-
-/* .modal__info ul li {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
-  font-weight: 400;
-} */
 
 .modal__info--item {
   display: flex;
-  background-color: #0494ec;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.modal__info--item:not(:last-child) {
+  margin-bottom: 0.3em;
+}
+
+.info__image {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
 }
 
 .modal--hidden {
   display: none;
 }
 
-
-
-
-
-
-
-
-
+/* Scale emojis */
 .scale__emojis {
   max-width: 80rem;
   margin: 0 auto;

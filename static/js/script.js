@@ -57,7 +57,7 @@ $(document).ready(function () {
     }
   });
   $('#btn-info').click(function () {
-    // need to remove class modal--hidden
+    // Call for modal
     $('#info').removeClass('modal--hidden');
   });
   $('#close-modal').click(function () {
