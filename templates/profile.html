@@ -98,4 +98,39 @@
       <a href="{{ url_for('calendar') }}" class="btn btn__calendar--link">View emotional history</a>
     </div>
   </section>
+
+
+  <!--Modal window for instructions-->
+
+  <aside class="modal modal--hidden" id="modal">
+    <button class="close-modal" id="close-modal">&times;</button>
+    <div class="modal__info">
+      <ul>
+        <li class="modal__info--item">
+          <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji" class="emoji__image">
+          <div class="info__content">angry</div>
+        </li>
+        <li class="modal__info--item">
+          <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji"
+            class="emoji__image">
+          <div class="info__content">depressed</div>
+        </li>
+        <li class="modal__info--item">
+          <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji"
+            class="emoji__image">
+          <div class="info__content">stressed</div>
+        </li>
+        <li class="modal__info--item">
+          <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji"
+            class="emoji__image">
+          <div class="info__content">content</div>
+        </li>
+        <li class="modal__info--item">
+          <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji" class="emoji__image">
+          <div class="info__content">happy</div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <div class="overlay overlay--hidden" id="overlay"></div>
   {% endblock %}
