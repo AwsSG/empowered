@@ -13,11 +13,11 @@ cal.init({
   subDomain: "day",
   data: data222,
   minDate: new Date(2022, 0),
-  maxDate: new Date(2025, 0),
-  domainGutter: 10,
-  domainMargin: [30, 90, 30, 0],
-  domainDynamicDimension: true,
-  subDomain: "x_day",
+  maxDate: new Date(2023, 0),
+  domainGutter: 0,
+  domainMargin: [30, 0, 30, 0],
+  // domainDynamicDimension: true,
+  // subDomain: "x_day",
   legend: [1, 2, 3, 4, 5],
   legendCellSize: 35,
   legendMargin: [50, 0, 50, 90],
@@ -27,6 +27,9 @@ cal.init({
     lower: "less than {min} {name}",
     inner: "between {down} and {up} {name}",
     upper: "more than {max} {name}"
+  },
+  label: {
+    position: "top"
   },
   previousSelector: "#previousSelector-a-previous",
   nextSelector: "#previousSelector-a-next",
