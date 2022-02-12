@@ -26,6 +26,9 @@ $(document).ready(function () {
     if (!$(target).is('#dropdown') && !$(target).parents().is('.nav__options')) {
       $('.nav__options').slideUp();
     }
+    if (!$(target).is('#info') && !$(target).is('#btn-info') && !$(target).is('.icon')) {
+      $('#info').addClass('modal--hidden');
+    }
   });
 
   // Control blog notes input
@@ -53,12 +56,20 @@ $(document).ready(function () {
       $(".invalid__password").addClass("password__hidden");
     }
   });
-  $('.datepicker').datepicker({
-    format: "dd mmmm, yyyy",
-    yearRange: 3,
-    showClearBtn: true,
-    i18n: {
-      done: "Select"
-    }
+  $('#btn-info').click(function () {
+    // need to remove class modal--hidden
+    $('#info').removeClass('modal--hidden');
   });
+  $('#close-modal').click(function () {
+    $('#info').addClass('modal--hidden');
+  });
+
+  // $('.datepicker').datepicker({
+  //   format: "dd mmmm, yyyy",
+  //   yearRange: 3,
+  //   showClearBtn: true,
+  //   i18n: {
+  //     done: "Select"
+  //   }
+  // });
 });
