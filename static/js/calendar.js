@@ -3,6 +3,15 @@ const date = new Date();
 const calMonth = document.querySelector('.date-month');
 const calDay = document.querySelector('.date-day');
 const calDays = document.querySelector('.date-days');
+date.setDate(1);
+const lastDayOfMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+const lastDayOfPrevMonth = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+const dayOfWeek = date.getDay();
+const firstDayIndex = date.getDay();
+const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
+const nextMonthDays = 7 - lastDayIndex - 1;
+console.log(lastDayOfMonth, lastDayOfPrevMonth, nextMonthDays);
+
 
 const months = [
   'January',
@@ -20,20 +29,46 @@ const months = [
 ]
 
 const month = date.getMonth() + 1;
-const firstDayIndex = date.getDay();
+// const firstDayIndex = date.getDay();
 
 console.log(date, month, firstDayIndex);
 
 
 document.addEventListener('DOMContentLoaded', function () {
+  fillCalendar();
+});
+
+
+const fillCalendar = function () {
+
+
+
   // Set month and day
   calMonth.textContent = months[month - 1];
   calDay.textContent = date.toDateString();
 
   // Create days
-  const days = [];
-  for (let i = 1; i <= 31; i++) {
-    calDays.innerHTML += `<div class="date-day">${i}</div>`;
+  let days = "";
+
+  for (let x = firstDayIndex; x > 0; x--) {
+    days += `<div class="prev-date">${lastDayOfPrevMonth - x + 1}</div>`;
   }
 
-});
+  for (let i = 1; i <= lastDayOfMonth; i++) {
+    if (
+      i === new Date().getDate() &&
+      date.getMonth() === new Date().getMonth()
+    ) {
+      days += `<div class="today">${i}</div>`;
+    } else {
+      days += `<div>${i}</div>`;
+    }
+  }
+
+  for (let k = 1; k <= nextMonthDays; k++) {
+    days += `<div class="next-date">${k}</div>`;
+  }
+
+  calDays.innerHTML = days;
+  console.log(days)
+}
