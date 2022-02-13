@@ -2,10 +2,10 @@
 
 :root {
   /* --clr-primary--100: #0494EC; */
-  --clr-primary--100: #bc84dc;
-  --clr-primary--300: #ad52e2;
-  --clr-primary--500: #fce484;
-  --clr-primary--600: #74bb43;
+  --clr-primary--100: #CAE6E2;
+  --clr-primary--300: #5BB8B0;
+  --clr-primary--500: #5BB8B0;
+  --clr-primary--600: #477F79;
   --clr-primary--700: #44abeb;
   --clr-primary--900: #0494ec;
   --clr-neutral--100: #fafafa;
@@ -312,7 +312,7 @@ body {
   font-weight: 900;
   font-size: 1.5rem;
   font-style: italic;
-  background-color: var(--clr-primary--500);
+  background-color: var(--clr-primary--100);
   padding: 1em 3em;
   border-radius: var(--br);
 }
