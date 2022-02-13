@@ -23,3 +23,17 @@ const month = date.getMonth() + 1;
 const firstDayIndex = date.getDay();
 
 console.log(date, month, firstDayIndex);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Set month and day
+  calMonth.textContent = months[month - 1];
+  calDay.textContent = date.toDateString();
+
+  // Create days
+  const days = [];
+  for (let i = 1; i <= 31; i++) {
+    calDays.innerHTML += `<div class="date-day">${i}</div>`;
+  }
+
+});
