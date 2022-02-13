@@ -742,62 +742,119 @@ select {
   font-weight: 900;
 }
 
-.calendar__emoji--click {
-  max-width: 3rem;
-  padding-bottom: 1.2em;
+/* New Calendar */
+.cal__container {
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__itself {
+  width: 50rem;
+  height: 52rem;
+  background-color: #ddf8cb;
+  border-radius: var(--br);
+  border: 1px solid green;
+  margin-bottom: 5em;
+}
+
+.month {
   width: 100%;
-  margin: 0 auto;
+  height: 10rem;
+  background-color: var(--clr-primary--600);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
 }
 
-.calendar__text--click {
-  font-size: 1.2rem;
-  padding-bottom: 1.2em;
-  color: var(--clr-accent--900);
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
-.calendar__title--click {
-  padding-bottom: 1em;
+.month h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
   font-size: 1.6rem;
-  font-weight: 500;
 }
 
-.calendar__note--click {
-  font-style: italic;
+.weekdays {
+  width: 90%;
+  margin: 0 auto;
+  height: 5.5rem;
+  color: var(--clr-neutral--900);
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: repeat(7, 6rem);
+  grid-auto-flow: dense;
+  gap: 0.5rem;
 }
 
-.btn__calendar {
-  padding: 0.5em;
-  background-color: var(--clr-primary--100);
-  font-size: 1.2rem;
-  width: 5rem;
-  color: var(--clr-neutral--300);
-  box-shadow: none;
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-days {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, 6rem);
+  grid-auto-flow: dense;
+  gap: 0.5rem;
+
+}
+
+.date-days div {
+  height: 6rem;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  transition: background-color 0.2s;
+  border: 1px solid green;
+  color: black;
+}
+
+.date-days div:hover:not(.today) {
+  background-color: #46eb8b;
   cursor: pointer;
 }
 
-.btn__calendar:hover {
-  background-color: var(--clr-primary--300);
-  color: var(--clr-neutral--900);
+.prev-date,
+.next-date {
+  opacity: 0.5;
 }
 
-.calendar__note--click {
-  font-style: italic;
+.today {
+  background-color: var(--clr-primary--600);
 }
 
-.btn__calendar {
-  padding: 0.5em;
-  background-color: var(--clr-primary--100);
-  font-size: 1.2rem;
-  width: 5rem;
-  color: var(--clr-neutral--300);
-  box-shadow: none;
-  cursor: pointer;
-}
 
-.btn__calendar:hover {
-  background-color: var(--clr-primary--300);
-  color: var(--clr-neutral--900);
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----- Home Page ----- */
