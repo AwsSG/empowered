@@ -775,7 +775,7 @@ select {
   cursor: pointer;
 }
 
-.month h1 {
+.month h2 {
   font-size: 3rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -808,7 +808,7 @@ select {
   align-items: center;
 }
 
-.days {
+.date-days {
   width: 90%;
   margin: 0 auto;
   display: grid;
@@ -818,7 +818,7 @@ select {
 
 }
 
-.days div {
+.date-days div {
   height: 6rem;
   font-size: 1.7rem;
   display: flex;
@@ -829,7 +829,7 @@ select {
   color: black;
 }
 
-.days div:hover:not(.today) {
+.date-days div:hover:not(.today) {
   background-color: #46eb8b;
   cursor: pointer;
 }
