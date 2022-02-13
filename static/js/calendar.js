@@ -3,14 +3,11 @@ const date = new Date();
 const calMonth = document.querySelector('.date-month');
 const calDay = document.querySelector('.date-day');
 const calDays = document.querySelector('.date-days');
-date.setDate(1);
-const lastDayOfMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-const lastDayOfPrevMonth = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
-const dayOfWeek = date.getDay();
-const firstDayIndex = date.getDay();
-const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
-const nextMonthDays = 7 - lastDayIndex - 1;
-console.log(lastDayOfMonth, lastDayOfPrevMonth, nextMonthDays);
+
+// console.log(lastDayOfMonth, lastDayOfPrevMonth, nextMonthDays);
+
+const prevMonth = document.getElementById('prev-month');
+const nextMonth = document.getElementById('next-month');
 
 
 const months = [
@@ -31,16 +28,36 @@ const months = [
 const month = date.getMonth() + 1;
 // const firstDayIndex = date.getDay();
 
-console.log(date, month, firstDayIndex);
+// console.log(date, month, firstDayIndex);
 
 
 document.addEventListener('DOMContentLoaded', function () {
+  date.setDate(1);
+  prevMonth.addEventListener('click', function () {
+    console.log('click')
+    date.setMonth(date.getMonth() - 1);
+    fillCalendar();
+  })
+  nextMonth.addEventListener('click', function () {
+    console.log('click')
+    date.setMonth(date.getMonth() + 1);
+    fillCalendar();
+  })
+
+
   fillCalendar();
+
 });
 
 
 const fillCalendar = function () {
 
+  const lastDayOfMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+  const lastDayOfPrevMonth = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+  const dayOfWeek = date.getDay();
+  const firstDayIndex = date.getDay();
+  const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
+  const nextMonthDays = 7 - lastDayIndex - 1;
 
 
   // Set month and day
