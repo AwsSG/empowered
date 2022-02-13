@@ -330,8 +330,7 @@ Create a local copy of the GitHub repository by following one of the two process
 ---
 ## Credits
 
-* [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
-* [SheCodes](https://www.csscolorpalettes.com/palettes/1268) for providing a myriad of color scheme to choose from as we did;
+* [ColorSpace](https://mycolor.space/?hex=%230494EC&sub=1) for providing a myriad of color scheme to choose from as we did;
 * [Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
 * [emojis on the hero image](https://www.canva.com/)
 * [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness) All team images used in footer belong to the respective team member.
