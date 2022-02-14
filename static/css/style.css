@@ -818,29 +818,21 @@ select {
   grid-auto-flow: dense;
   gap: 0.5rem;
   margin-bottom: 2em;
-
-
 }
 
 .date-days .date__emoji {
   height: 6rem;
   font-size: 1.7rem;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: background-color 0.2s;
   border: 1px solid green;
   color: black;
-  position: relative;
-  padding-left: 0.2em;
 }
 
-.cal__emoji {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
 
-}
 
 .date-days div:hover:not(.today) {
   background-color: var(--clr-primary--500);
