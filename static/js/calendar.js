@@ -64,7 +64,7 @@ const fillCalendar = function () {
 
   // Fill in days of previous month
   for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div data-day="${dataAttributeMonth - 1}/${lastDayOfPrevMonth - x + 1}/${date.getFullYear()}" class="prev-date">${lastDayOfPrevMonth - x + 1}</div>`;
+    days += `<div data-day="${dataAttributeMonth - 1}/${lastDayOfPrevMonth - x + 1}/${date.getFullYear()}" class="prev-date date__emoji">${lastDayOfPrevMonth - x + 1}</div>`;
   }
 
   // Fill in days of current month
@@ -73,18 +73,49 @@ const fillCalendar = function () {
       i === new Date().getDate() &&
       date.getMonth() === new Date().getMonth()
     ) {
-      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="today">${i}</div>`;
+      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="today date__emoji">${i}</div>`;
     } else {
-      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}">${i}</div>`;
+      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="date__emoji">${i}</div>`;
     }
   }
 
   // Fill in days of next month
   for (let k = 1; k <= nextMonthDays; k++) {
-    days += `<div data-day="${dataAttributeMonth + 1}/${k}/${date.getFullYear()}" class="next-date">${k}</div>`;
+    days += `<div data-day="${dataAttributeMonth + 1}/${k}/${date.getFullYear()}" class="next-date date__emoji">${k}</div>`;
   }
 
   // Add days to calendar
   calDays.innerHTML = days;
   console.log(calDays);
 }
+
+calDays.addEventListener('click', (e) => {
+
+  console.log(e.target.closest("div").dataset.day);
+
+  for (let item of dataArray) {
+    if (item.date === e.target.closest("div").dataset.day) {
+      dateNote = item.date
+      getNote = item.note;
+      getEmoji = item.emoji;
+      console.log(dateNote, getNote, getEmoji);
+      emojiImage = "";
+      if (getEmoji === 1) {
+        emojiImage = `<img src="static/images/emojis/angry.png" alt="">`;
+      } else if (getEmoji === 2) {
+        emojiImage = `<img src="static/images/emojis/depressed.png" alt="">`;
+      } else if (getEmoji === 3) {
+        emojiImage = `<img src="static/images/emojis/stressed.png" alt="">`;
+      } else if (getEmoji === 4) {
+        emojiImage = `<img src="static/images/emojis/content.png" alt="">`;
+      } else if (getEmoji === 5) {
+        emojiImage = `<img src="static/images/emojis/happy.png" alt="">`;
+      }
+
+      document.querySelector(".note__container--date").textContent = dateNote;
+      document.querySelector('.note__container--text').textContent = getNote;
+      document.querySelector('.note__container--emoji').innerHTML = emojiImage;
+    }
+
+  }
+});
