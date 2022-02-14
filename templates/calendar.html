@@ -42,57 +42,63 @@
 
   <!-- </div> -->
 
-</section>
-<div class="cal__container">
-  <div class="calendar__itself">
-    <div class="month">
-      <i class="fas fa-angle-left" id="prev-month"></i>
-      <div class="date">
-        <h2 class="date-month"></h2>
-        <p class="date-day"></p>
+
+  <div class="cal__container">
+    <div class="calendar__itself">
+      <div class="month">
+        <i class="fas fa-angle-left" id="prev-month"></i>
+        <div class="date">
+          <h2 class="date-month"></h2>
+          <p class="date-day"></p>
+          <p id="date-to-check"></p>
+        </div>
+        <i class="fas fa-angle-right" id="next-month"></i>
       </div>
-      <i class="fas fa-angle-right" id="next-month"></i>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="date-days"></div>
     </div>
-    <div class="weekdays">
-      <div>Sun</div>
-      <div>Mon</div>
-      <div>Tue</div>
-      <div>Wed</div>
-      <div>Thu</div>
-      <div>Fri</div>
-      <div>Sat</div>
-    </div>
-    <div class="date-days"></div>
   </div>
-</div>
+
+  <div class="note">
+    <h3>Your notes</h3>
+    <div class="note__container">
+      <div class="note__container--date"></div>
+      <div class="note__container--emoji" style="height: 2rem; width: 2rem;"></div>
+      <div class="note__container--text"></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block extra_js %}
+
 <script>
 
-  // let data222 = {};
-  // let date0;
-  // let dataArray = []
-  // let emoji_number;
-  // let tempDate;
+  let data222 = {};
+  let date0;
+  let dataArray = []
+  let emoji_number;
+  let tempDate;
 
-  // {% for emoji in emoji_tracker %}
 
-  // date0 = {{ emoji.datetime }}
-  // emoji_number = {{ emoji.emoji }}
-  // data222[`${date0}`] = emoji_number
-  // console.log(data222)
+  {% for emoji in emoji_tracker %}
+  tempDate = new Date({{ emoji.datetime }} * 1000)
+  console.log(tempDate)
+  dataArray.push({
+    date: tempDate.toLocaleDateString("en-US"),
+    emoji: {{ emoji.emoji }},
+    note: "{{ emoji.note }}"
+  })
+  {% endfor %}
 
-  // {% endfor %}
-
-  // {% for emoji in emoji_tracker %}
-  // tempDate = new Date({{ emoji.datetime }} * 1000)
-  // dataArray.push({
-  //   date: tempDate.toLocaleDateString("en-US"),
-  //   emoji: {{ emoji.emoji }},
-  //   note: "{{ emoji.note }}"
-  // })
-  // {% endfor %}
-
-  // console.log(dataArray)
+  console.log(dataArray)
 
 </script>
-
 {% endblock %}
