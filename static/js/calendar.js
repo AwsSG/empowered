@@ -61,7 +61,7 @@ const fillCalendar = function () {
 
 
   // Set month and day
-  calMonth.textContent = months[month - 1];
+  calMonth.textContent = months[date.getMonth()];
   calDay.textContent = date.toDateString();
 
   // Create days

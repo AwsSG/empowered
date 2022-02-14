@@ -716,6 +716,7 @@ select {
   padding: 2em 0;
   border-radius: var(--br);
   font-size: 2em;
+  font-family: var(--ff-accent);
 }
 
 .calendar__scale {

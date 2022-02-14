@@ -65,34 +65,37 @@
     <div class="date-days"></div>
   </div>
 </div>
+
+{% endblock %}
+{% block extra_js %}
+
 <script>
 
-  // let data222 = {};
-  // let date0;
-  // let dataArray = []
-  // let emoji_number;
-  // let tempDate;
+  let data222 = {};
+  let date0;
+  let dataArray = []
+  let emoji_number;
+  let tempDate;
 
-  // {% for emoji in emoji_tracker %}
+  {% for emoji in emoji_tracker %}
 
-  // date0 = {{ emoji.datetime }}
-  // emoji_number = {{ emoji.emoji }}
-  // data222[`${date0}`] = emoji_number
-  // console.log(data222)
+  date0 = {{ emoji.datetime }}
+  emoji_number = {{ emoji.emoji }}
+  data222[`${date0}`] = emoji_number
+  console.log(data222)
 
-  // {% endfor %}
+  {% endfor %}
 
-  // {% for emoji in emoji_tracker %}
-  // tempDate = new Date({{ emoji.datetime }} * 1000)
-  // dataArray.push({
-  //   date: tempDate.toLocaleDateString("en-US"),
-  //   emoji: {{ emoji.emoji }},
-  //   note: "{{ emoji.note }}"
-  // })
-  // {% endfor %}
+  {% for emoji in emoji_tracker %}
+  tempDate = new Date({{ emoji.datetime }} * 1000)
+  dataArray.push({
+    date: tempDate.toLocaleDateString("en-US"),
+    emoji: {{ emoji.emoji }},
+    note: "{{ emoji.note }}"
+  })
+  {% endfor %}
 
-  // console.log(dataArray)
+  console.log(dataArray)
 
 </script>
-
 {% endblock %}
