@@ -66,7 +66,7 @@ const fillCalendar = function () {
 
   // Fill in days of previous month
   for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div data-day="${dataAttributeMonth - 1}/${lastDayOfPrevMonth - x + 1}/${date.getFullYear()}" class="prev-date date__emoji">${lastDayOfPrevMonth - x + 1}</div>`;
+    days += `<div data-day="${dataAttributeMonth - 1}/${lastDayOfPrevMonth - x + 1}/${date.getFullYear()}" class="prev-date date__emoji"><div></div>${lastDayOfPrevMonth - x + 1}</div>`;
   }
 
   // Fill in days of current month
@@ -75,15 +75,15 @@ const fillCalendar = function () {
       i === new Date().getDate() &&
       date.getMonth() === new Date().getMonth()
     ) {
-      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="today date__emoji">${i}</div>`;
+      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="today date__emoji"><div></div>${i}</div>`;
     } else {
-      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="date__emoji">${i}</div>`;
+      days += `<div data-day="${dataAttributeMonth}/${i}/${date.getFullYear()}" class="date__emoji"><div></div>${i}</div>`;
     }
   }
 
   // Fill in days of next month
   for (let k = 1; k <= nextMonthDays; k++) {
-    days += `<div data-day="${dataAttributeMonth + 1}/${k}/${date.getFullYear()}" class="next-date date__emoji">${k}</div>`;
+    days += `<div data-day="${dataAttributeMonth + 1}/${k}/${date.getFullYear()}" class="next-date date__emoji"><div></div>${k}</div>`;
   }
 
   // Add days to calendar
@@ -97,18 +97,19 @@ const fillCalendar = function () {
         getEmoji = item.emoji;
         emojiImage = "";
         if (getEmoji === 1) {
-          emojiImage = `<img src="static/images/emojis/angry.png" style="height: 1rem; width: 1rem;" alt="Angry Face">`;
+          emojiImage = `<img src="static/images/emojis/angry.png" style="height: 2rem; width: 2rem;" alt="Angry Face" class="cal__emoji">`;
         } else if (getEmoji === 2) {
-          emojiImage = `<img src="static/images/emojis/depressed.png" alt="Sad Face">`;
+          emojiImage = `<img src="static/images/emojis/depressed.png" style="height: 2rem; width: 2rem;"  alt="Sad Face" class="cal__emoji">`;
         } else if (getEmoji === 3) {
-          emojiImage = `<img src="static/images/emojis/stressed.png" alt="Stressed Face">`;
+          emojiImage = `<img src="static/images/emojis/stressed.png" style="height: 2rem; width: 2rem;"  alt="Stressed Face" class="cal__emoji">`;
         } else if (getEmoji === 4) {
-          emojiImage = `<img src="static/images/emojis/content.png" alt="Smiling Face">`;
+          emojiImage = `<img src="static/images/emojis/content.png" style="height: 2rem; width: 2rem;"  alt="Smiling Face" class="cal__emoji">`;
         } else if (getEmoji === 5) {
-          emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
+          emojiImage = `<img src="static/images/emojis/happy.png" style="height: 2rem; width: 2rem;"  alt="Upside down happy Face" class="cal__emoji">`;
         }
+        // get element child
 
-        element.innerHTML = emojiImage;
+        element.firstChild.innerHTML = emojiImage;
       }
 
     }

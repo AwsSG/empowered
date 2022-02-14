@@ -806,8 +806,9 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
+
 
 .date-days {
   width: 90%;
@@ -818,9 +819,10 @@ select {
   gap: 0.5rem;
   margin-bottom: 2em;
 
+
 }
 
-.date-days div {
+.date-days .date__emoji {
   height: 6rem;
   font-size: 1.7rem;
   display: flex;
@@ -829,6 +831,15 @@ select {
   transition: background-color 0.2s;
   border: 1px solid green;
   color: black;
+  position: relative;
+  padding-left: 0.2em;
+}
+
+.cal__emoji {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+
 }
 
 .date-days div:hover:not(.today) {
