@@ -692,12 +692,12 @@ select {
 
 /* Link to calendar */
 .btn__calendar--link {
-  background-color: var(--clr-primary--300);
+  background-color: var(--clr-primary--600);
   color: white;
 }
 
 .btn__calendar--link:hover {
-  background-color: var(--clr-primary--100);
+  background-color: var(--clr-primary--500);
   color: var(--clr-neutral--900);
 }
 
@@ -752,8 +752,7 @@ select {
 
 .calendar__itself {
   width: 50rem;
-  height: 52rem;
-  background-color: #ddf8cb;
+  background-color: var(--clr-primary--100);
   border-radius: var(--br);
   border: 1px solid green;
   margin-bottom: 5em;
@@ -806,6 +805,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .date-days {
@@ -815,6 +815,7 @@ select {
   grid-template-columns: repeat(7, 6rem);
   grid-auto-flow: dense;
   gap: 0.5rem;
+  margin-bottom: 2em;
 
 }
 
@@ -830,7 +831,7 @@ select {
 }
 
 .date-days div:hover:not(.today) {
-  background-color: #46eb8b;
+  background-color: var(--clr-primary--500);
   cursor: pointer;
 }
 
@@ -903,7 +904,7 @@ select {
 }
 
 .btn__register {
-  background-color: var(--clr-primary--900);
+  background-color: var(--clr-primary--600);
   transition: background-color .15s ease-in-out;
 }
 
@@ -914,7 +915,7 @@ select {
 }
 
 .btn__register:hover {
-  background-color: var(--clr-primary--700);
+  background-color: var(--clr-primary--500);
 }
 
 .btn__register a:hover {
