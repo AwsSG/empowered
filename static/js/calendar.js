@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Fill calendar on page load
   fillCalendar();
+
+
 });
 
 
@@ -87,6 +89,30 @@ const fillCalendar = function () {
   // Add days to calendar
   calDays.innerHTML = days;
   console.log(calDays);
+
+  document.querySelectorAll('.date__emoji').forEach(function (element) {
+    for (let item of dataArray) {
+      if (item.date === element.dataset.day) {
+
+        getEmoji = item.emoji;
+        emojiImage = "";
+        if (getEmoji === 1) {
+          emojiImage = `<img src="static/images/emojis/angry.png" style="height: 1rem; width: 1rem;" alt="Angry Face">`;
+        } else if (getEmoji === 2) {
+          emojiImage = `<img src="static/images/emojis/depressed.png" alt="Sad Face">`;
+        } else if (getEmoji === 3) {
+          emojiImage = `<img src="static/images/emojis/stressed.png" alt="Stressed Face">`;
+        } else if (getEmoji === 4) {
+          emojiImage = `<img src="static/images/emojis/content.png" alt="Smiling Face">`;
+        } else if (getEmoji === 5) {
+          emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
+        }
+
+        element.innerHTML = emojiImage;
+      }
+
+    }
+  })
 }
 
 calDays.addEventListener('click', (e) => {
@@ -101,15 +127,15 @@ calDays.addEventListener('click', (e) => {
       console.log(dateNote, getNote, getEmoji);
       emojiImage = "";
       if (getEmoji === 1) {
-        emojiImage = `<img src="static/images/emojis/angry.png" alt="">`;
+        emojiImage = `<img src="static/images/emojis/angry.png" alt="Angry Face">`;
       } else if (getEmoji === 2) {
-        emojiImage = `<img src="static/images/emojis/depressed.png" alt="">`;
+        emojiImage = `<img src="static/images/emojis/depressed.png" alt="Sad Face">`;
       } else if (getEmoji === 3) {
-        emojiImage = `<img src="static/images/emojis/stressed.png" alt="">`;
+        emojiImage = `<img src="static/images/emojis/stressed.png" alt="Stressed Face">`;
       } else if (getEmoji === 4) {
-        emojiImage = `<img src="static/images/emojis/content.png" alt="">`;
+        emojiImage = `<img src="static/images/emojis/content.png" alt="Smiling Face">`;
       } else if (getEmoji === 5) {
-        emojiImage = `<img src="static/images/emojis/happy.png" alt="">`;
+        emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
       }
 
       document.querySelector(".note__container--date").textContent = dateNote;
