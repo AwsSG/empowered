@@ -117,7 +117,7 @@ def profile():
         emoji = {
             "user": session["user"],
             "datetime": int(time.mktime(datetime.today().timetuple())),
-            "emoji": int(request.form.get("emoji")),
+            "emoji": int(request.form.get("rating")),
             "note": request.form.get("note"),
         }
         mongo.db.tracker.insert_one(emoji)
