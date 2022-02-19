@@ -1243,47 +1243,57 @@ footer {
   background-color: var(--clr-primary--900);
 }
 
-.footer__team {
+.footer__content {
   width: 100%;
   max-width: 120rem;
-  margin: 0 auto;
-  padding: 3em 0;
+  margin: 1em auto;
+  padding: 3em 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.3fr 1fr;
+  gap: 2rem;
+}
+
+.footer__logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  font-weight: 900;
+  font-size: 2em;
+  display: flex;
+}
+
+.footer__logo i {
+  margin-right: 1em;
+}
+
+.footer__team {
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 /* Team Name */
-.team__name {
-  padding: 1em;
-  font-size: 1.3rem;
-  letter-spacing: 0.02rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .team__name--header {
-  font-size: 1.8rem;
-  color: var(--clr-neutral--900);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--clr-neutral--300);
   font-weight: 900;
 }
 
 
 /* Team Members */
 .team__collaborators {
-  display: flex;
-  max-width: 80rem;
   margin: 0 auto;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2.5em 4em;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__github {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  /* text-align: center; */
   font-size: 0.75rem;
 }
 
