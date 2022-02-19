@@ -3,9 +3,13 @@
 
 <section class="calendar">
   <!-- Calendar Header -->
-  <h2 class="calendar__heading">Here is your records</h2>
+  <div class="calendar__heading">
+    <h2>Here are your records:</h2>
+    <p class="note__title">Click on the day to see notes</p>
+  </div>
+
   <!-- Emojis scale -->
-  <ul class="calendar__scale">
+  <!-- <ul class="calendar__scale">
     <li class="calendar__scale--emoji">
       <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
     </li>
@@ -24,7 +28,7 @@
     <li class="calendar__scale--emoji">
       <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
     </li>
-  </ul>
+  </ul> -->
   <!-- Calendar navigation buttons -->
   <!-- <div id="previousSelector-a" class="calendar__btns--container">
     <button id="previousSelector-a-previous" class="btn btn__calendar">Back </button> &nbsp
@@ -66,9 +70,8 @@
       <div class="date-days"></div>
     </div>
   </div>
-
   <div class="note">
-    <h3>Your notes</h3>
+    <!-- <h3 class="note__title"></h3> -->
     <div class="note__container">
       <div class="note__container--date"></div>
       <div class="note__container--emoji" style="height: 2rem; width: 2rem;"></div>

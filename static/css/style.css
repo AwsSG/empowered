@@ -2,7 +2,7 @@
 
 :root {
   /* --clr-primary--100: #0494EC; */
-  --clr-primary--100: #CAE6E2;
+  --clr-primary--100: #cae6e2;
   --clr-primary--300: #5BB8B0;
   --clr-primary--500: #5BB8B0;
   --clr-primary--600: #477F79;
@@ -704,7 +704,7 @@ select {
 
 /* ----- Calendar Page ----- */
 .calendar {
-  padding: 2em;
+  /* padding: 2em; */
   text-align: center;
 }
 
@@ -713,10 +713,15 @@ select {
   display: flex;
   flex-direction: column;
   color: var(--clr-accent--900);
-  padding: 2em 0;
+  padding: 1em 0;
   border-radius: var(--br);
   font-size: 2em;
   font-family: var(--ff-accent);
+}
+
+.note__title {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .calendar__scale {
@@ -756,7 +761,7 @@ select {
   background-color: var(--clr-primary--100);
   border-radius: var(--br);
   border: 1px solid green;
-  margin-bottom: 5em;
+  /* margin-bottom: 1em; */
 }
 
 .month {
@@ -832,8 +837,6 @@ select {
   color: black;
 }
 
-
-
 .date-days div:hover:not(.today) {
   background-color: var(--clr-primary--500);
   cursor: pointer;
@@ -848,19 +851,36 @@ select {
   background-color: var(--clr-primary--600);
 }
 
+/* Calendar Notes */
+.note {
+  margin: 4em auto;
+}
 
+.note__container {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--clr-primary--100);
+  border-radius: var(--br);
+  border: 1px solid green;
+  color: var(--clr-neutral--600);
+  padding: 1.5em;
+  font-size: 1.5rem;
+}
 
+.note__container--date {
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
 
-
-
-
-
-
-
-
-
-
-
+.note__container--text {
+  font-style: italic;
+}
 
 /* ----- Home Page ----- */
 /* Hero section */
