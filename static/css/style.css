@@ -704,7 +704,6 @@ select {
 
 /* ----- Calendar Page ----- */
 .calendar {
-  /* padding: 2em; */
   text-align: center;
 }
 
@@ -1428,6 +1427,52 @@ footer {
     grid-template-columns: 1fr 0.2fr 1fr;
     grid-template-rows: 0.3fr 1fr 0.3fr;
     gap: 2rem;
+  }
+}
+
+@media all and (max-width: 53.750em) {
+
+  /* ----- Calendar Page ----- */
+
+  .calendar__heading {
+    /* test */
+    color: red;
+    /* save */
+    font-size: 1.5rem;
+  }
+
+  /* save */
+  .note__title {
+    font-size: 1.4rem;
+  }
+
+  /* save */
+  .calendar__itself {
+    width: 35rem;
+  }
+
+  .month {
+    height: 8rem;
+  }
+
+  .month h2 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .month p {
+    font-size: 1.5rem;
+  }
+
+  .weekdays {
+    width: 100%;
+    height: 4rem;
+    grid-template-columns: repeat(7, 4.4rem);
+    padding: 0 0.5em;
+  }
+
+  .weekdays div {
+    font-size: 1.3rem;
   }
 }
 
