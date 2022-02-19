@@ -812,8 +812,6 @@ select {
   align-items: center;
 }
 
-
-
 .date-days {
   width: 90%;
   margin: 0 auto;
@@ -1433,20 +1431,14 @@ footer {
 @media all and (max-width: 53.750em) {
 
   /* ----- Calendar Page ----- */
-
   .calendar__heading {
-    /* test */
-    color: red;
-    /* save */
     font-size: 1.5rem;
   }
 
-  /* save */
   .note__title {
     font-size: 1.4rem;
   }
 
-  /* save */
   .calendar__itself {
     width: 35rem;
   }
@@ -1473,6 +1465,17 @@ footer {
 
   .weekdays div {
     font-size: 1.3rem;
+  }
+
+  .date-days {
+    width: 100%;
+    grid-template-columns: repeat(7, 4.4rem);
+    padding: 0 0.5em;
+  }
+
+  .date-days .date__emoji {
+    height: 4.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1577,6 +1580,57 @@ footer {
     width: 100%;
     height: 15rem;
     margin-left: 0;
+  }
+}
+
+@media all and (max-width: 632px) {
+
+  /* ----- Calendar Page ----- */
+  .calendar__heading {
+    font-size: 1.4rem;
+  }
+
+  .note__title {
+    font-size: 1.2rem;
+  }
+
+  .calendar__itself {
+    width: 27rem;
+  }
+
+  .month {
+    height: 7rem;
+  }
+
+  .month h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .month p {
+    font-size: 1.3rem;
+  }
+
+  .weekdays {
+    height: 3.5rem;
+    grid-template-columns: repeat(7, 3.6rem);
+    gap: 0.2rem;
+    padding: 0 0.2em;
+  }
+
+  .weekdays div {
+    font-size: 1.1rem;
+  }
+
+  .date-days {
+    grid-template-columns: repeat(7, 3.6rem);
+    gap: 0.2rem;
+    padding: 0 0.2em;
+  }
+
+  .date-days .date__emoji {
+    height: 4.4rem;
+    font-size: 1.2rem;
   }
 }
 
