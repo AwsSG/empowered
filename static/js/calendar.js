@@ -114,10 +114,11 @@ const fillCalendar = function () {
 
 calDays.addEventListener('click', (e) => {
 
-  console.log(e.target.closest("div").dataset.day);
-
   for (let item of dataArray) {
-    if (item.date === e.target.closest("div").dataset.day) {
+    if (item.date === e.target.closest("div").dataset.day ||
+      item.date === e.target.parentElement.parentElement.dataset.day ||
+      item.date === e.target.parentElement.dataset.day
+    ) {
       dateNote = item.date;
       getNote = item.note;
       getEmoji = item.emoji;
