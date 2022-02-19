@@ -19,11 +19,11 @@ const months = [
   'October',
   'November',
   'December',
-]
+];
 
 const monthsForData = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-]
+];
 
 document.addEventListener('DOMContentLoaded', function () {
   // Set date 
@@ -33,18 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
   prevMonth.addEventListener('click', function () {
     date.setMonth(date.getMonth() - 1);
     fillCalendar();
-  })
+  });
 
   // Listen for click on next month
   nextMonth.addEventListener('click', function () {
     date.setMonth(date.getMonth() + 1);
     fillCalendar();
-  })
+  });
 
   // Fill calendar on page load
   fillCalendar();
-
-
 });
 
 
@@ -91,7 +89,7 @@ const fillCalendar = function () {
   console.log(calDays);
 
   // Fill calendar with emojis
-  document.querySelectorAll('.date__emoji').forEach(function (element) {
+  document.querySelectorAll(".date__emoji").forEach(function (element) {
     for (let item of dataArray) {
       if (item.date === element.dataset.day) {
         getEmoji = item.emoji;
@@ -120,7 +118,7 @@ calDays.addEventListener('click', (e) => {
 
   for (let item of dataArray) {
     if (item.date === e.target.closest("div").dataset.day) {
-      dateNote = item.date
+      dateNote = item.date;
       getNote = item.note;
       getEmoji = item.emoji;
       console.log(dateNote, getNote, getEmoji);
@@ -136,13 +134,11 @@ calDays.addEventListener('click', (e) => {
       } else if (getEmoji === 5) {
         emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
       }
-      // document.querySelector('.calendar__itself').style.marginBottom = "0";
-      document.querySelector('.note__container').style.display = "flex";
 
+      document.querySelector(".note__container").style.display = "flex";
       document.querySelector(".note__container--date").textContent = dateNote;
-      document.querySelector('.note__container--text').textContent = `" ${getNote} "`;
-      document.querySelector('.note__container--emoji').innerHTML = emojiImage;
+      document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
+      document.querySelector(".note__container--emoji").innerHTML = emojiImage;
     }
-
   }
 });
