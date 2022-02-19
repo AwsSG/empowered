@@ -1279,7 +1279,6 @@ footer {
 .team__name--header {
   font-size: 1.5rem;
   color: white;
-  /* font-weight: 900; */
   margin-bottom: 0.5em;
 }
 
@@ -1423,6 +1422,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  .footer__content {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    gap: 2rem;
+  }
 }
 
 @media all and (max-width: 62.5em) {
@@ -1527,21 +1533,6 @@ footer {
     height: 15rem;
     margin-left: 0;
   }
-
-  .team__collaborators {
-    flex-direction: column;
-  }
-
-  .contact__github {
-    margin-bottom: 3em;
-  }
-
-  .team__name {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
 }
 
 @media all and (max-width: 550px) {
