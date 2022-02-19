@@ -1255,12 +1255,13 @@ footer {
 }
 
 .footer__logo {
-  grid-column: 1/2;
+  grid-column: 1/4;
   grid-row: 1/2;
   justify-self: center;
   font-weight: 900;
   font-size: 2em;
   display: flex;
+  color: white;
 }
 
 .footer__logo i {
@@ -1270,22 +1271,25 @@ footer {
 .footer__team {
   grid-column: 1/2;
   grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
 }
 
 /* Team Name */
 .team__name--header {
   font-size: 1.5rem;
   font-style: italic;
-  color: var(--clr-neutral--300);
+  color: white;
   font-weight: 900;
+  margin-bottom: 0.5em;
 }
-
 
 /* Team Members */
 .team__collaborators {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-left: 2em;
 }
 
 .contact__github {
@@ -1293,28 +1297,70 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  /* text-align: center; */
-  font-size: 0.75rem;
-}
-
-.image__holder {
-  width: 3rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 1px solid var(--clr-neutral--300);
-}
-
-.image__holder img {
-  border-radius: 50%;
-  object-fit: cover;
+  font-size: 1.25rem;
 }
 
 .coder__name {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.89);
+  margin-bottom: 0.4em;
+}
+
+.coder__name:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Social links */
+.footer__social {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer__links--social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__link--social:not(:last-child) {
+  margin-right: 1.2em;
+}
+
+/* Social links */
+.footer__link--social {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 1rem;
-  color: var(--clr-neutral--900);
-  font-weight: 700;
-  margin-top: 0.5em;
+}
+
+.footer__link--social a {
+  color: white;
+}
+
+.footer__link--social a i {
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer__link:hover,
+.footer__link:hover a,
+.footer__link--social:hover a {
+  color: var(--clr-accent--500);
+}
+
+.footer__link:hover .footer__icon {
+  filter: invert(38%) sepia(83%) saturate(4602%) hue-rotate(218deg) brightness(99%) contrast(96%);
+}
+
+.footer__link--social:hover {
+  border: 1px solid var(--clr-accent--500);
 }
 
 /* ----- Media ----- */
