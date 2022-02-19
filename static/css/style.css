@@ -8,8 +8,8 @@
   --clr-primary--600: #477F79;
   --clr-primary--700: #44abeb;
   --clr-primary--900: #0494ec;
-  --clr-neutral--100: #fafafa;
-  --clr-neutral--200: #d9fbdd;
+  --clr-neutral--100: #ffffff;
+  --clr-neutral--200: #ffffffe3;
   --clr-neutral--300: #333;
   --clr-neutral--900: #141414;
   --clr-accent--100: #b3ebf7b6;
@@ -1250,7 +1250,7 @@ footer {
   padding: 3em 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.3fr 1fr;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
   gap: 2rem;
 }
 
@@ -1278,9 +1278,8 @@ footer {
 /* Team Name */
 .team__name--header {
   font-size: 1.5rem;
-  font-style: italic;
   color: white;
-  font-weight: 900;
+  /* font-weight: 900; */
   margin-bottom: 0.5em;
 }
 
@@ -1289,7 +1288,6 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-left: 2em;
 }
 
 .contact__github {
@@ -1300,13 +1298,15 @@ footer {
   font-size: 1.25rem;
 }
 
-.coder__name {
+.coder__name,
+.project__repository {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.89);
+  color: var(--clr-neutral--200);
   margin-bottom: 0.4em;
 }
 
-.coder__name:hover {
+.coder__name:hover,
+.project__repository:hover {
   color: white;
   text-decoration: underline;
 }
@@ -1333,7 +1333,7 @@ footer {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid var(--clr-neutral--100);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1341,7 +1341,7 @@ footer {
 }
 
 .footer__link--social a {
-  color: white;
+  color: var(--clr-neutral--100);
 }
 
 .footer__link--social a i {
@@ -1352,16 +1352,24 @@ footer {
 .footer__link:hover,
 .footer__link:hover a,
 .footer__link--social:hover a {
-  color: var(--clr-accent--500);
-}
-
-.footer__link:hover .footer__icon {
-  filter: invert(38%) sepia(83%) saturate(4602%) hue-rotate(218deg) brightness(99%) contrast(96%);
+  color: var(--clr-neutral--200);
 }
 
 .footer__link--social:hover {
-  border: 1px solid var(--clr-accent--500);
+  border: 1px solid var(--clr-neutral--200);
 }
+
+/* Footer extra */
+.footer__extra {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--clr-neutral--100);
+}
+
 
 /* ----- Media ----- */
 
