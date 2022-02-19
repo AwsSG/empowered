@@ -832,8 +832,6 @@ select {
   color: black;
 }
 
-
-
 .date-days div:hover:not(.today) {
   background-color: var(--clr-primary--500);
   cursor: pointer;

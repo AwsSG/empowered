@@ -19,7 +19,7 @@
         <i class="fas fa-info-circle icon"></i>
       </div>
     </div>
-    <div class="scale__emojis">
+    <div class="scale__emojis" id="emoji">
       <label for="angry">
         <input type="radio" name="rating" class="angry" id="angry" value="1" />
         <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji" class="emoji__image">
@@ -45,14 +45,14 @@
       </label>
     </div>
     <!-- Emoji selection -->
-    <select id="emoji" name="emoji" required>
+    <!-- <select id="emoji" name="emoji" required>
       <option value="" disabled selected>Choose emoji</option>
       <option value="1">Angry</option>
       <option value="2">Depressed</option>
       <option value="3">Stressed</option>
       <option value="4">Content</option>
       <option value="5">Happy</option>
-    </select>
+    </select> -->
     <br>
     <!-- Blog notes Section -->
     <div class="blog__container" id="blog-container">
