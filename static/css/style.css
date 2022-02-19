@@ -2,7 +2,7 @@
 
 :root {
   /* --clr-primary--100: #0494EC; */
-  --clr-primary--100: #CAE6E2;
+  --clr-primary--100: #cae6e2;
   --clr-primary--300: #5BB8B0;
   --clr-primary--500: #5BB8B0;
   --clr-primary--600: #477F79;
@@ -761,7 +761,7 @@ select {
   background-color: var(--clr-primary--100);
   border-radius: var(--br);
   border: 1px solid green;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 .month {
@@ -852,29 +852,35 @@ select {
 }
 
 /* Calendar Notes */
-
-
+.note {
+  margin: 4em auto;
+}
 
 .note__container {
   width: 100%;
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 0 auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--clr-primary--100);
+  border-radius: var(--br);
+  border: 1px solid green;
+  color: var(--clr-neutral--600);
+  padding: 1.5em;
+  font-size: 1.5rem;
 }
 
+.note__container--date {
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
 
-
-
-
-
-
-
-
-
+.note__container--text {
+  font-style: italic;
+}
 
 /* ----- Home Page ----- */
 /* Hero section */

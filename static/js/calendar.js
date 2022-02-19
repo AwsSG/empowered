@@ -136,9 +136,11 @@ calDays.addEventListener('click', (e) => {
       } else if (getEmoji === 5) {
         emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
       }
+      // document.querySelector('.calendar__itself').style.marginBottom = "0";
+      document.querySelector('.note__container').style.display = "flex";
 
       document.querySelector(".note__container--date").textContent = dateNote;
-      document.querySelector('.note__container--text').textContent = getNote;
+      document.querySelector('.note__container--text').textContent = `" ${getNote} "`;
       document.querySelector('.note__container--emoji').innerHTML = emojiImage;
     }
 
