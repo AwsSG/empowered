@@ -1477,6 +1477,10 @@ footer {
     height: 4.4rem;
     font-size: 1.2rem;
   }
+
+  .note__container {
+    width: 35rem;
+  }
 }
 
 @media all and (max-width: 62.5em) {
@@ -1632,6 +1636,10 @@ footer {
     height: 4.4rem;
     font-size: 1.2rem;
   }
+
+  .note__container {
+    width: 27rem;
+  }
 }
 
 @media all and (max-width: 550px) {
@@ -1688,5 +1696,56 @@ footer {
 
   .logo__title {
     display: none;
+  }
+}
+
+@media all and (max-width: 472px) {
+
+  /* ----- Calendar Page ----- */
+  .calendar__heading {
+    font-size: 1.3rem;
+  }
+
+  .note__title {
+    font-size: 1.2rem;
+  }
+
+  .calendar__itself {
+    width: 20rem;
+  }
+
+  .month {
+    height: 7rem;
+  }
+
+  .month h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .month p {
+    font-size: 1rem;
+  }
+
+  .weekdays {
+    height: 3rem;
+    grid-template-columns: repeat(7, 2.6rem);
+  }
+
+  .weekdays div {
+    font-size: 0.9rem;
+  }
+
+  .date-days {
+    grid-template-columns: repeat(7, 2.6rem);
+  }
+
+  .date-days .date__emoji {
+    height: 3.4rem;
+    font-size: 1rem;
+  }
+
+  .note__container {
+    width: 20rem;
   }
 }
