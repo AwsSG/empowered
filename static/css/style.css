@@ -336,6 +336,7 @@ body {
   text-align: left;
   padding-bottom: 1.2em;
   margin-left: 2em;
+  color: var(--clr-neutral--300);
 }
 
 .blog__heading--incentive {
@@ -357,21 +358,26 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 0.5em 2em 0.5em;
-  margin-bottom: 3em;
+  padding: 0 0.5em 0 0.5em;
+  /* margin-bottom: 3em; */
 }
 
 .blog__container--title,
 .data__link--title {
   padding-bottom: 2em;
   font-size: 2rem;
-  color: var(--clr-accent--900);
+  color: var(--clr-primary--600);
+  font-family: var(--ff-accent);
   font-weight: 900;
   text-align: center;
 }
 
+.data__link--title {
+  max-width: 30rem;
+}
+
 .profile__form {
-  margin: 0 0 2em 0;
+  margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -399,14 +405,13 @@ body {
 
 .btn__info--icon i {
   font-size: 2.5rem;
-  color: var(--clr-primary--600);
+  color: var(--clr-neutral--100);
   transition: background-color .15s ease-in-out, color .15s ease-in-out;
 }
 
 .btn__info--icon:hover,
 .btn__info--icon:hover i {
   background-color: var(--clr-primary--600);
-  color: white;
 }
 
 
@@ -538,12 +543,12 @@ select {
 
 /* Profile Blog Styling */
 .blog__container {
-  margin: 3em 0 2em 0;
+  margin: 3em 0 0 0;
   width: 100%;
   display: none;
   flex-direction: column;
   align-items: center;
-  padding: 2em 0.5em;
+  padding: 1em 0.5em 0.5em 0.5em;
 }
 
 .blog__container--title {
@@ -599,13 +604,12 @@ select {
 }
 
 .blog__btn--submit {
-  background-color: var(--clr-accent--300);
-  color: var(--clr-neutral--900);
+  background-color: var(--clr-primary--600);
+  color: var(--clr-neutral--100);
 }
 
 .blog__btn--submit:hover {
-  background-color: var(--clr-accent--500);
-  color: var(--clr-neutral--100);
+  background-color: var(--clr-primary--500);
 }
 
 /* Suggestions */
@@ -622,7 +626,6 @@ select {
 
 .suggestions__details {
   width: 100%;
-
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -671,12 +674,13 @@ select {
 /* Profile link to Calendar Styling */
 .data__link {
   width: 100%;
-  margin: 5em auto;
+  margin: 3em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 9em;
 }
 
 .calendar__image {
@@ -696,7 +700,6 @@ select {
 
 .btn__calendar--link:hover {
   background-color: var(--clr-primary--500);
-  color: var(--clr-neutral--900);
 }
 
 
@@ -935,10 +938,6 @@ select {
 
 .btn__register:hover {
   background-color: var(--clr-primary--500);
-}
-
-.btn__register a:hover {
-  color: var(--clr-neutral--300);
 }
 
 .hero__image {
@@ -1389,6 +1388,10 @@ footer {
   .privacy {
     padding: 2em 4em 0 4em;
   }
+
+  .data__link--title {
+    padding-bottom: 0.5em;
+  }
 }
 
 @media all and (max-width: 1039px) {
@@ -1481,9 +1484,26 @@ footer {
   .note__container {
     width: 35rem;
   }
+
+  .suggestions__details {
+    padding: 1em 2em 0 2em;
+  }
 }
 
 @media all and (max-width: 62.5em) {
+  .suggestion__image {
+    display: none;
+  }
+
+  .suggestions {
+    width: 100%;
+    align-items: center;
+    margin: 1em 2em 0 2em;
+  }
+
+  .suggestion a {
+    font-size: 1.5rem;
+  }
 
   .logo {
     width: 4.5rem;
