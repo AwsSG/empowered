@@ -1159,6 +1159,7 @@ select {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  color: var(--clr-primary--600);
 }
 
 .form__input--textarea {
@@ -1196,7 +1197,6 @@ input:not(:placeholder-shown) {
 
 .form__button:hover {
   background-color: var(--clr-primary--500);
-  color: black;
 }
 
 .login__paragraph a,
@@ -1630,12 +1630,6 @@ footer {
   }
 
   .blog__form {
-    /* display: flex;
-    flex-direction: column; */
-    width: 90vw;
-  }
-
-  .blog__textarea {
     width: 90vw;
   }
 
@@ -1647,6 +1641,7 @@ footer {
   .suggestions {
     width: 100%;
     align-items: center;
+    text-align: center;
     margin: 1em 2em 0 2em;
   }
 
@@ -1752,6 +1747,10 @@ footer {
 
   .form__button {
     padding: 1em 1.5em;
+  }
+
+  .suggestion a {
+    font-size: 1.2rem;
   }
 
 }
