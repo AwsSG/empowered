@@ -1804,6 +1804,10 @@ footer {
   .logo__title {
     display: none;
   }
+
+  .btn.btn__calendar--link {
+    padding: 0.9em 1.7em;
+  }
 }
 
 @media all and (max-width: 472px) {
