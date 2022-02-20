@@ -22,9 +22,6 @@
   --br-elements: 0.8em;
 }
 
-/* 5dbcd2 */
-
-
 /*------ Global Settings------*/
 *,
 *::before,
@@ -245,7 +242,6 @@ body {
 }
 
 /* ----- Logo ----- */
-
 .logo__container--top {
   display: flex;
   align-items: center;
@@ -267,7 +263,6 @@ body {
 
 
 /* ----- Main ----- */
-
 .main {
   width: 100%;
   flex: 1 0 auto;
@@ -359,7 +354,6 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 0.5em 0 0.5em;
-  /* margin-bottom: 3em; */
 }
 
 .blog__container--title,
@@ -441,7 +435,6 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-
 }
 
 .modal__info ul {
@@ -494,7 +487,6 @@ body {
 input[type="radio"] {
   position: absolute;
   opacity: 0;
-
 }
 
 input[type="radio"]+img {
@@ -610,7 +602,6 @@ select {
 }
 
 /* Suggestions */
-
 .suggestions__container {
   width: 100%;
   max-width: 110rem;
@@ -667,7 +658,6 @@ select {
   color: var(--clr-primary--600);
 }
 
-
 /* Profile link to Calendar Styling */
 .data__link {
   width: 100%;
@@ -698,7 +688,6 @@ select {
 .btn__calendar--link:hover {
   background-color: var(--clr-primary--500);
 }
-
 
 /* ----- Calendar Page ----- */
 .calendar {
@@ -758,7 +747,6 @@ select {
   background-color: var(--clr-primary--100);
   border-radius: var(--br);
   border: 1px solid green;
-  /* margin-bottom: 1em; */
 }
 
 .month {
@@ -1127,7 +1115,6 @@ select {
 }
 
 /* ----- Form container ----- */
-
 .form__container {
   display: flex;
   width: 90%;
@@ -1228,7 +1215,6 @@ input:not(:placeholder-shown) {
 }
 
 /* ----- Footer ----- */
-
 footer {
   width: 100%;
   background-color: var(--clr-primary--900);
@@ -1363,7 +1349,6 @@ footer {
 
 
 /* ----- Media ----- */
-
 @media all and (max-width: 1348px) {
   .hero__content--title {
     font-size: 2.8rem;
@@ -1488,7 +1473,6 @@ footer {
 }
 
 @media all and (max-width: 62.5em) {
-
   .logo {
     width: 4.5rem;
     height: 4.5rem;
@@ -1740,7 +1724,6 @@ footer {
 }
 
 @media all and (max-width: 550px) {
-
   .hamburger__container {
     display: block;
     width: 2rem;
@@ -1755,7 +1738,6 @@ footer {
   .hero__image {
     height: 17rem;
   }
-
 
   .register__title,
   .login__title {
@@ -1786,16 +1768,13 @@ footer {
     font-size: 1.2rem;
   }
 
-
   /* Modal */
   .modal {
     width: 80vw;
   }
-
 }
 
 @media all and (max-width: 550px) {
-
   .logo {
     width: 3rem;
     height: 3rem;
