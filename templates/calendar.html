@@ -7,46 +7,7 @@
     <h2>Here are your records:</h2>
     <p class="note__title">Click on the day to see notes</p>
   </div>
-
-  <!-- Emojis scale -->
-  <!-- <ul class="calendar__scale">
-    <li class="calendar__scale--emoji">
-      <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji">
-    </li>
-
-    <li class="calendar__scale--emoji">
-      <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji">
-    </li>
-
-    <li class="calendar__scale--emoji">
-      <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji">
-    </li>
-
-    <li class="calendar__scale--emoji">
-      <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji">
-    </li>
-    <li class="calendar__scale--emoji">
-      <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji">
-    </li>
-  </ul> -->
-  <!-- Calendar navigation buttons -->
-  <!-- <div id="previousSelector-a" class="calendar__btns--container">
-    <button id="previousSelector-a-previous" class="btn btn__calendar">Back </button> &nbsp
-    <button id="previousSelector-a-next" class="btn btn__calendar"> Next </button>
-  </div> -->
-  <!-- Click day container -->
-  <!-- <div style="padding:10px; margin: 2em;">
-    <span id="onClick-placeholder">Click a date on the calendar</span>
-  </div>
-  <div style="padding:10px; margin: 2em;"> -->
-  <!-- Call-heatmap -->
-  <!-- <div id="cal-heatmap"> -->
-
-  <!-- </div>-->
-
-  <!-- </div> -->
-
-
+  <!-- Calendar container -->
   <div class="cal__container">
     <div class="calendar__itself">
       <div class="month">
@@ -70,8 +31,8 @@
       <div class="date-days"></div>
     </div>
   </div>
+  <!-- Note container -->
   <div class="note">
-    <!-- <h3 class="note__title"></h3> -->
     <div class="note__container">
       <div class="note__container--date"></div>
       <div class="note__container--emoji" style="height: 2rem; width: 2rem;"></div>
@@ -83,25 +44,20 @@
 {% block extra_js %}
 
 <script>
-
   let data222 = {};
   let date0;
   let dataArray = []
   let emoji_number;
   let tempDate;
 
-
   {% for emoji in emoji_tracker %}
   tempDate = new Date({{ emoji.datetime }} * 1000)
-  console.log(tempDate)
   dataArray.push({
     date: tempDate.toLocaleDateString("en-US"),
     emoji: {{ emoji.emoji }},
     note: "{{ emoji.note }}"
   })
   {% endfor %}
-
-  console.log(dataArray)
-
 </script>
+
 {% endblock %}

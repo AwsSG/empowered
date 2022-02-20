@@ -5,13 +5,12 @@
   <!-- Profile heading -->
   <div class="blog__heading">
     <div class="blog__heading--day">Today is <span>{{ today }}</span></div>
-    {% if last_entry != today %}
-    <h3 class="blog__heading--incentive">How do you feel today?</h3>
   </div>
 </section>
 
-
-<section class="scale">
+{% if last_entry != today %}
+<h3 class="blog__heading--incentive">How do you feel today?</h3>
+<div class="scale">
   <!-- Profile form -->
   <form method="POST" action="{{ url_for('profile') }}" class="profile__form">
     <div class="btn__info--container">
@@ -56,12 +55,12 @@
     <br>
     <!-- Blog notes Section -->
     <div class="blog__container" id="blog-container">
-      <h4 class="blog__container--title">Leave some notes to express why you feel so!</h4>
+      <h4 class="blog__container--title">Leave some notes to express your feelings!</h4>
       <div class="blog__form">
 
 
         <p class="blog__input">
-          <label for="content" class="blog__label">Add your thought here:</label>
+          <label for="content" class="blog__label"></label>
           <textarea id="note" name="note" class="blog__textarea" aria-label="Entry content"></textarea>
         </p>
         <!-- Submit form button -->
@@ -71,66 +70,67 @@
       </div>
     </div>
   </form>
-  <!-- suggestion box -->
-  {% else %}
-  <section class="suggestions__container">
-    <h4 class="data__link--title">Here are some suggestions based on how you feel today</h4>
-    <div class="suggestions__details">
-      <div class="suggestion__image"></div>
+</div>
 
-      <ul class="suggestions">
-        {% for suggestion in suggestions %}
-        <li class="suggestion">
-          <a href="{{ suggestion.link }}" target="_blank" rel="noopener" aria-label="Link to a suggestion website">{{
-            suggestion.title }}</a>
-        </li>
-        <br>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-  {% endif %}
-  <!-- Calendar link -->
-  <section class="data__link">
-    <h4 class="data__link--title">Review how your emotional history</h4>
-    <div class="calendar__image"></div>
-    <div class="data__link--check">
-      <a href="{{ url_for('calendar') }}" class="btn btn__calendar--link">View emotional history</a>
-    </div>
-  </section>
+<!-- suggestion box -->
+{% else %}
+<section class="suggestions__container">
+  <h4 class="data__link--title">Here are some suggestions based on how you feel today</h4>
+  <div class="suggestions__details">
+    <div class="suggestion__image"></div>
+    <ul class="suggestions">
+      {% for suggestion in suggestions %}
+      <li class="suggestion">
+        <a href="{{ suggestion.link }}" target="_blank" rel="noopener" aria-label="Link to a suggestion website">{{
+          suggestion.title }}</a>
+      </li>
+      <br>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+<!-- Calendar link -->
+<section class="data__link">
+  <h4 class="data__link--title">Review how your emotional history</h4>
+  <div class="calendar__image"></div>
+  <div class="data__link--check">
+    <a href="{{ url_for('calendar') }}" class="btn btn__calendar--link">View emotional history</a>
+  </div>
+</section>
 
 
-  <!--Modal window for instructions-->
+<!--Modal window for instructions-->
 
-  <aside class="modal modal--hidden" id="info">
-    <button class="close-modal" id="close-modal">&times;</button>
-    <div class="modal__info">
-      <ul>
-        <li class="modal__info--item">
-          <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji" class="info__image">
-          <div class="info__content">angry</div>
-        </li>
-        <li class="modal__info--item">
-          <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji"
-            class="info__image">
-          <div class="info__content">depressed</div>
-        </li>
-        <li class="modal__info--item">
-          <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji"
-            class="info__image">
-          <div class="info__content">stressed</div>
-        </li>
-        <li class="modal__info--item">
-          <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji"
-            class="info__image">
-          <div class="info__content">content</div>
-        </li>
-        <li class="modal__info--item">
-          <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji" class="info__image">
-          <div class="info__content">happy</div>
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <div class="overlay overlay--hidden" id="overlay"></div>
-  {% endblock %}
+<aside class="modal modal--hidden" id="info">
+  <button class="close-modal" id="close-modal">&times;</button>
+  <div class="modal__info">
+    <ul>
+      <li class="modal__info--item">
+        <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji" class="info__image">
+        <div class="info__content">angry</div>
+      </li>
+      <li class="modal__info--item">
+        <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji"
+          class="info__image">
+        <div class="info__content">depressed</div>
+      </li>
+      <li class="modal__info--item">
+        <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji"
+          class="info__image">
+        <div class="info__content">stressed</div>
+      </li>
+      <li class="modal__info--item">
+        <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji"
+          class="info__image">
+        <div class="info__content">content</div>
+      </li>
+      <li class="modal__info--item">
+        <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji" class="info__image">
+        <div class="info__content">happy</div>
+      </li>
+    </ul>
+  </div>
+</aside>
+<div class="overlay overlay--hidden" id="overlay"></div>
+{% endblock %}
