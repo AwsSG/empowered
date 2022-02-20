@@ -102,9 +102,8 @@ body {
 .navbar__components {
   display: flex;
   flex-direction: row;
-  color: var(--clr-neutral--900);
+  color: var(--clr-neutral--200);
   align-items: center;
-  font-weight: 600;
 }
 
 .navbar__item:not(:last-child) {
@@ -122,13 +121,12 @@ body {
 }
 
 .navbar__item a {
-  /* text-transform: uppercase; */
-  color: var(--clr-neutral--300);
+  color: var(--clr-neutral--200);
   font-size: 1.7rem;
 }
 
 .navbar__item a:hover {
-  color: var(--clr-neutral--900);
+  color: var(--clr-neutral--100);
 }
 
 .navbar__item a::before,
@@ -136,7 +134,7 @@ body {
 .mobile__item a::before {
   content: "";
   position: absolute;
-  background-color: var(--clr-neutral--900);
+  background-color: var(--clr-neutral--100);
   height: 4px;
   width: 0%;
   left: -7%;
@@ -157,15 +155,14 @@ body {
 
 /* Dropdown */
 .dropdown {
+  text-transform: capitalize;
   border-radius: var(--br);
   background-color: var(--clr-primary--900);
   cursor: pointer;
   padding: 0.8em 2em 0.7em 2em;
   position: relative;
-  text-transform: uppercase;
-  color: var(--clr-neutral--300);
+  color: var(--clr-neutral--200);
   font-size: 1.4rem;
-  font-weight: 600;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
@@ -177,7 +174,7 @@ body {
 }
 
 .nav__options {
-  padding: 1.1em 1.3em 0.5em 0.9em;
+  padding: 0.8em 1.3em 0.5em 0.9em;
   position: absolute;
   top: 107%;
   left: 0;
@@ -192,14 +189,13 @@ body {
 }
 
 .nav__option {
-  padding-bottom: 1em;
-  font-size: 1.7rem;
-  font-weight: 600;
+  padding-bottom: 0.7em;
+  font-size: 1.2rem;
   text-transform: capitalize;
 }
 
 .nav__options .btn__login {
-  margin-bottom: 1em;
+  margin-bottom: 0.4em;
 }
 
 .dropdown.open ul {
@@ -229,14 +225,14 @@ body {
 }
 
 .navbar__components--mobile li a {
-  color: var(--clr-neutral--300);
+  color: var(--clr-neutral--200);
   font-weight: 700;
-  text-transform: uppercase;
   position: relative;
+  text-transform: capitalize;
 }
 
 .mobile__item a:hover {
-  color: var(--clr-neutral--900);
+  color: var(--clr-neutral--100);
 }
 
 .navbar__components--mobile li:not(:last-child) {
@@ -264,7 +260,8 @@ body {
   text-transform: uppercase;
   margin-left: 1em;
   font-size: 1.5rem;
-  /* color: var(--clr-primary--900); */
+  color: var(--clr-neutral--100);
+  font-family: var(--ff-accent);
 }
 
 
@@ -1256,6 +1253,7 @@ footer {
   grid-row: 1/2;
   justify-self: center;
   font-weight: 900;
+  font-family: var(--ff-accent);
   font-size: 2em;
   display: flex;
   color: white;
