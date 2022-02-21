@@ -145,8 +145,13 @@ calDays.addEventListener('click', (e) => {
 
         document.querySelector(".note__container").style.display = "flex";
         document.querySelector(".note__container--date").textContent = dateNote;
-        document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
         document.querySelector(".note__container--emoji").innerHTML = emojiImage;
+        if (getNote !== "") {
+          document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
+        } else {
+          document.querySelector(".note__container--text").textContent = `You didn't write anything for this day.`;
+          ``;
+        }
       }
     }
   } else {
