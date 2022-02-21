@@ -1301,8 +1301,8 @@ footer {
 
 /* Social links */
 .footer__link--social {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.9rem;
+  height: 3.9rem;
   border-radius: 50%;
   border: 1px solid var(--clr-neutral--100);
   display: flex;
@@ -1316,8 +1316,9 @@ footer {
 }
 
 .footer__link--social a i {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
 }
 
 .footer__link:hover,
