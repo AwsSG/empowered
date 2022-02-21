@@ -49,9 +49,6 @@
   <header class="header">
     <nav class="navbar" id="navbar">
       <div class="logo__container--top">
-        <img src="{{ url_for('static', filename='images/logo.png') }}"
-          alt="Woman stood in side profile. She has a green silk scarf covering her eyes and the wind is blowing the scarf straight out behind her. The word Empower has been superimposed onto the scarf."
-          class="logo">
         <h1 class="logo__title">Empower</h1>
       </div>
       <!-- Navbar items -->
@@ -119,7 +116,6 @@
       <!-- flash messages -->
       <aside class="flash__messages--container">
         {% with messages = get_flashed_messages() %}
-
         {% if messages %}
         <div class="flash__messages">
           {% for message in messages %}
@@ -154,7 +150,6 @@
               <div class="coder__name">Aws Sabah Gheni</div>
             </a>
           </li>
-
           <li class="contact__github">
             <a href="https://github.com/IuliiaKonovalova" target="_blank" rel="noopener"
               aria-label="Visit Iuliia Konovalova github page">
@@ -201,8 +196,9 @@
           </li>
 
           <li class="footer__link--social">
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
-              <i class="fab fa-facebook-f"></i>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page"
+              style="margin-right: 0.9px;">
+              <i class=" fab fa-facebook-f"></i>
             </a>
           </li>
         </ul>
@@ -210,15 +206,12 @@
 
       <div class="footer__extra">
         <p class="footer__copyright">
-          &copy; 2022 Hackathon. For educational purposes only.
+          &copy; January 2022 Hackathon.
         </p>
         <a href="https://github.com/AwsSG/empowered" target="_blank" rel="noopener"
           aria-label="Visit project repository">
           <div class="project__repository">Link to GitHub repository</div>
         </a>
-        <p>
-          <!--  -->
-        </p>
       </div>
     </div>
   </footer>
