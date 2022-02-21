@@ -112,34 +112,44 @@ const fillCalendar = function () {
   })
 }
 
+let entriesDates = dataArray.map(item => item.date);
+
 calDays.addEventListener('click', (e) => {
 
-  for (let item of dataArray) {
-    if (item.date === e.target.closest("div").dataset.day ||
-      item.date === e.target.parentElement.parentElement.dataset.day ||
-      item.date === e.target.parentElement.dataset.day
-    ) {
-      dateNote = item.date;
-      getNote = item.note;
-      getEmoji = item.emoji;
-      console.log(dateNote, getNote, getEmoji);
-      emojiImage = "";
-      if (getEmoji === 1) {
-        emojiImage = `<img src="static/images/emojis/angry.png" alt="Angry Face">`;
-      } else if (getEmoji === 2) {
-        emojiImage = `<img src="static/images/emojis/depressed.png" alt="Sad Face">`;
-      } else if (getEmoji === 3) {
-        emojiImage = `<img src="static/images/emojis/stressed.png" alt="Stressed Face">`;
-      } else if (getEmoji === 4) {
-        emojiImage = `<img src="static/images/emojis/content.png" alt="Smiling Face">`;
-      } else if (getEmoji === 5) {
-        emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
-      }
 
-      document.querySelector(".note__container").style.display = "flex";
-      document.querySelector(".note__container--date").textContent = dateNote;
-      document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
-      document.querySelector(".note__container--emoji").innerHTML = emojiImage;
+  if (entriesDates.includes(e.target.closest("div").dataset.day) ||
+    entriesDates.includes(e.target.parentElement.parentElement.dataset.day) ||
+    entriesDates.includes(e.target.parentElement.dataset.day)) {
+    console.log(e.target.closest("div").dataset.day);
+    for (let item of dataArray) {
+      if (item.date === e.target.closest("div").dataset.day ||
+        item.date === e.target.parentElement.parentElement.dataset.day ||
+        item.date === e.target.parentElement.dataset.day
+      ) {
+        dateNote = item.date;
+        getNote = item.note;
+        getEmoji = item.emoji;
+        console.log(dateNote, getNote, getEmoji);
+        emojiImage = "";
+        if (getEmoji === 1) {
+          emojiImage = `<img src="static/images/emojis/angry.png" alt="Angry Face">`;
+        } else if (getEmoji === 2) {
+          emojiImage = `<img src="static/images/emojis/depressed.png" alt="Sad Face">`;
+        } else if (getEmoji === 3) {
+          emojiImage = `<img src="static/images/emojis/stressed.png" alt="Stressed Face">`;
+        } else if (getEmoji === 4) {
+          emojiImage = `<img src="static/images/emojis/content.png" alt="Smiling Face">`;
+        } else if (getEmoji === 5) {
+          emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
+        }
+
+        document.querySelector(".note__container").style.display = "flex";
+        document.querySelector(".note__container--date").textContent = dateNote;
+        document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
+        document.querySelector(".note__container--emoji").innerHTML = emojiImage;
+      }
     }
+  } else {
+    document.querySelector(".note__container").style.display = "none";
   }
 });
