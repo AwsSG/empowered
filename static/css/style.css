@@ -1470,6 +1470,25 @@ footer {
   .suggestions__details {
     padding: 1em 2em 0 2em;
   }
+
+  .footer {
+    background-color: #477F79;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team__name--header {
+    text-align: center;
+  }
+
+  .contact__github {
+    align-items: center;
+  }
 }
 
 @media all and (max-width: 62.5em) {
