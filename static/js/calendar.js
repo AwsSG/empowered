@@ -86,7 +86,6 @@ const fillCalendar = function () {
 
   // Add days to calendar
   calDays.innerHTML = days;
-  console.log(calDays);
 
   // Fill calendar with emojis
   document.querySelectorAll(".date__emoji").forEach(function (element) {
@@ -115,13 +114,13 @@ const fillCalendar = function () {
 let entriesDates = dataArray.map(item => item.date);
 
 calDays.addEventListener('click', (e) => {
-
-
+  // Check if the date is in the dataArray
   if (entriesDates.includes(e.target.closest("div").dataset.day) ||
     entriesDates.includes(e.target.parentElement.parentElement.dataset.day) ||
     entriesDates.includes(e.target.parentElement.dataset.day)) {
-    console.log(e.target.closest("div").dataset.day);
+    // loop through dataArray to find the date
     for (let item of dataArray) {
+      // Get data for a day
       if (item.date === e.target.closest("div").dataset.day ||
         item.date === e.target.parentElement.parentElement.dataset.day ||
         item.date === e.target.parentElement.dataset.day
@@ -129,8 +128,8 @@ calDays.addEventListener('click', (e) => {
         dateNote = item.date;
         getNote = item.note;
         getEmoji = item.emoji;
-        console.log(dateNote, getNote, getEmoji);
         emojiImage = "";
+        // Check if emoji is 1, 2, 3, 4, or 5 and set emoji image
         if (getEmoji === 1) {
           emojiImage = `<img src="static/images/emojis/angry.png" alt="Angry Face">`;
         } else if (getEmoji === 2) {
@@ -142,10 +141,11 @@ calDays.addEventListener('click', (e) => {
         } else if (getEmoji === 5) {
           emojiImage = `<img src="static/images/emojis/happy.png" alt="Upside down happy Face">`;
         }
-
+        // Set the date, emoji and note
         document.querySelector(".note__container").style.display = "flex";
         document.querySelector(".note__container--date").textContent = dateNote;
         document.querySelector(".note__container--emoji").innerHTML = emojiImage;
+        // Check if note is empty and set note
         if (getNote !== "") {
           document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
         } else {
@@ -154,6 +154,7 @@ calDays.addEventListener('click', (e) => {
         }
       }
     }
+    // Hide note if the date is not in the dataArray
   } else {
     document.querySelector(".note__container").style.display = "none";
   }
