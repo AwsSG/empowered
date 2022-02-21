@@ -247,16 +247,10 @@ body {
   align-items: center;
 }
 
-.logo {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-}
-
 .logo__title {
-  text-transform: uppercase;
-  margin-left: 1em;
-  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  margin-bottom: 0.2em;
   color: var(--clr-neutral--100);
   font-family: var(--ff-accent);
 }
@@ -1473,14 +1467,8 @@ footer {
 }
 
 @media all and (max-width: 62.5em) {
-  .logo {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-  }
-
   .logo__title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .navbar__components {
@@ -1775,15 +1763,6 @@ footer {
 }
 
 @media all and (max-width: 550px) {
-  .logo {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .logo__title {
-    display: none;
-  }
-
   .btn.btn__calendar--link {
     padding: 0.9em 1.7em;
   }
