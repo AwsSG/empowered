@@ -2,7 +2,7 @@
 
 Empowered was developed as part of the January 2022 Hackathon: Accelerating the future of workforce well-being and mindfulness, presented by Code Institute and Soda Social.
 
-![Empower Website](static/images/empowerwebsite.png)
+![Empower Website](documentation/mockup.png)
 
 [Click Here to view the deployed site.](https://empowere.herokuapp.com/)
 
