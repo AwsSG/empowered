@@ -182,6 +182,27 @@ Registration Page has a form which allows the user to register for the website a
   ![Registration Page Error](documentation/features/register_error.png)
 
 * **Login Page**
+Login Page has a form which allows the user to log in to the website.
+![Login Page image](documentation/features/login_page.png)
+
+* If the user inputs unsafe username or password, they will see the errors in order to increase user's safety:
+
+* **Profile Page**
+![Profile Page](documentation/features/profile_page.png)
+Profile Page consists:
+  - a date in the top left corner to remind the user which day is today and which day they are about to evaluate.
+  - a range of emojis to indicate the user's mood.
+  - an info button, which will show the instructions on the emojis. When the user clicks on the info button it will open a modal window with instructions on how to use the emojis.
+  ![Profile Page image](documentation/features/modal.png).
+  - Modal will be closed when the user clicks on the X button or outside of the modal window.
+  - It also contains a section with image and a button, which leads to the calendar page.
+  - When the user clicks on the chosen emoji, the user will note area, where he or she can add addition notes.
+  ![Profile Page image](documentation/features/note_container.png)
+  - The user may also choose not to add a note by leaving textarea empty and clicking on the note button to confirm the entry.
+
+* **Calendar Page**
+![Calendar Page image](documentation/features/calendar_page.png)
+
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
