@@ -8,12 +8,13 @@
       Empower is a site that allows you to log your emotional state every day. You also choose to add a journal entry to
       expand on why you feel this way.
     </p>
+    {% if not session.user %}
     <div class="buttons__container">
       <div class="btn__register btn">
         <a href="{{ url_for('register') }}">Get started</a>
       </div>
-
     </div>
+    {% endif %}
   </div>
   <div class="hero__image">
     <!-- <img src="{{ url_for('static', filename='images/hero2.png') }}"> -->

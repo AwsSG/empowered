@@ -65,23 +65,49 @@ As this would be quite personal information it was important that the user be ab
 When a user selects their emoji we will then provide a personalised recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to destress. 
 
 ### User Stories
+#### First Time Visitor Goals:
 
+1. As a **First Time Visitor**, I want to **easily understand the main purpose of the website**, so I can **learn more about this website**.
 
-1. As a user I want to be able to easily find out what the site does.
-2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
-3. As a user I want to be able to choose an appropriate emoticon to select as my emotional status for that day.
-4. As a user I would like to be able to add additional notes to my emoticon to allow me to express my state of mind.
-5. As a user I want to be able to view my previous emoticons and notes over a selected time frame to get an overview of my mental health.
+1. As a **First Time Visitor**, I want to **be able to easily navigate through the website**, so I can **find the content**.
 
-- - -
+1. As a **First Time Visitor**, I want to be able to **register my account**, so I can **learn benefits of the website as a user**.
+
+1. As a **First Time Visitor**, I want to **find the website useful**, so I can **use it according to my needs**.
+
+#### Registered User Goals:
+
+1. As a **Registered User**, I want to **be able to log in to my account**, so I can **have a personal account**.
+
+1. As a **Registered User**, I want to **be able easily login and logout**, so I can **access my personal account information**.
+
+1. As a **Registered User**, I want to **be able to view my profile**, so I can **see my personal information**.
+
+1. As a **Registered User**, I want to **be able to choose an appropriate emoticon to select as my emotional status for that day**, so I can **evaluate my emotions for a day**.
+
+1. As a **Registered User**, I want to **be able to add additional notes to my emoticon to allow me to express my state of mind**, so I can **understand why I felt so over time**.
+
+1. As a **Registered User**, I want to **be able to view my previous emotions**, so I can **evaluate my emotions over time**.
+
+1. As a **Registered User**, I want to **be able to view my journal entries**, so I can **see my daily entries**.
+
+1. As a **Registered User**, I want to **be able to view my calendar**, so I can **see my daily entries**.
+
+1. As a **Registered User**, I want to **be able to view my recommendations**, so I can **see my daily entries**.
+
+---
 
 ## Design
 
 ### Colour Scheme
 
-![Colour Scheme for the Website](documentation/colourscheme.png)
+![Colour Scheme for the Website](documentation/design/colourscheme.png)
 
-We researched colour theory and colour psychology to find what colour palettes may be beneficial to someone who may be struggling with their mental health. We discovered that light blues are associated with peace, sincerity and gentleness. Darker blues are representative of power, strength and dependability. Greens are associated with growth and have a calming presence.  
+The main design of the website is based on the colour scheme of the website. The colour scheme is based on the colour scheme of the 2015 American computer-animated film: [Inside Out](https://www.imdb.com/title/tt2096673/) since this file was fundamentally based on 5 core emotions that people may experience in their lives. Therefore, we made a choice not only to use the colours of the film but also to use the images of the main characters of the film.
+
+*More information on this movie you can find on [wikipedia](https://en.wikipedia.org/wiki/Inside_Out_(2015_film))*
+
+Moreover, we researched colour theory and colour psychology to find what colour palettes may be beneficial to someone who may be struggling with their mental health. We discovered that blue are associated with peace, sincerity and gentleness. Darker blues are representative of power, strength and dependability. Greens are associated with growth and have a calming presence.  
 
 We feel that this colour palette has a nice balance between the blues and greens to promote calm and peacefulness on the site. The choice of green also ties in with the use of the colour green in the mental health awareness ribbon.
 
@@ -90,7 +116,17 @@ We feel that this colour palette has a nice balance between the blues and greens
 
 ### Typography
 
-We have used sans-serif as our font.
+[Main Font: Roboto](https://fonts.google.com/#main-content)
+
+![Roboto](documentation/design/roboto_font_family.png)
+
+- Roboto Google Font was used as the main font of the website in order to increase readability of the content on the pages.
+
+[Accent Font: Rowdies](https://fonts.google.com/specimen/Rowdies?query=rowd)
+
+![Rowdies](documentation/design/rowdies_font_family.png)
+
+- Rowdies Google Font was used to attract viewers' attention to the company's logo, to make an accent on the strong points of the website, and to incentivize visitors to use our website on a regular basis.
 
 ### Imagery
 
@@ -110,9 +146,18 @@ The website is comprised of a home page, a log in page, a registration page, a p
 
 * All Pages on the website have:
   * A navigation bar which allows the user to navigate to the home page from every page on the website, and other navigational links.
-  ![Navbar image](documentation/navbar.png)
-  * A footer which contains the hackathon team name and images of the team which link to their GitHub accounts.
-  ![Footer image](documentation/footer.png)
+    - If the user is not logged in, the navigation bar will only have a logo, link to the home page, and get started button.
+    ![Navbar image User Logout](documentation/features/navbar.png)
+    - if the user clicks on the get started button, they will see a dropdown menu with 2 options: log in or register. After clicking on on of the options, the user will be redirected to the appropriate page.
+    ![Navbar image User Login](documentation/features/navbar_get_started.png)
+    - When the user is logged in, the navigation bar will have a logo, a profile button, a calendar button, a log out button, and a link to the home page. After clicking on on of the options, the user will be redirected to the appropriate page.
+    ![Navbar image User Login](documentation/features/navbar_user_login.png)
+    - On the mobile version of the website, the navigation bar will have a hamburger menu icon which will allow the user to see the navigation options.
+    ![Navbar image User Login](documentation/features/navbar_mobile.png)
+  * A footer which contains logo, the hackathon team members, references to 2022 January Hackathon, link to the repository, and social links.
+  ![Footer image](documentation/features/footer.png)
+    - On the mobile version of the website, the footer will have a following look:
+    ![Footer image mobile](documentation/features/footer_mobile.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.

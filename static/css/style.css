@@ -410,9 +410,9 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 65%;
+  top: 31rem;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, 0);
   width: 43rem;
   height: 20rem;
   background-color: var(--clr-primary--600);
@@ -1469,10 +1469,6 @@ footer {
 
   .suggestions__details {
     padding: 1em 2em 0 2em;
-  }
-
-  .footer {
-    background-color: #477F79;
   }
 
   .footer__content {
