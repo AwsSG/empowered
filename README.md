@@ -116,7 +116,17 @@ We feel that this colour palette has a nice balance between the blues and greens
 
 ### Typography
 
-We have used sans-serif as our font.
+[Main Font: Roboto](https://fonts.google.com/#main-content)
+
+![Roboto](documentation/design/roboto_font_family.png)
+
+- Roboto Google Font was used as the main font of the website in order to increase readability of the content on the pages.
+
+[Accent Font: Rowdies](https://fonts.google.com/specimen/Rowdies?query=rowd)
+
+![Rowdies](documentation/design/rowdies_font_family.png)
+
+- Rowdies Google Font was used to attract viewers' attention to the company's logo, to make an accent on the strong points of the website, and to incentivize visitors to use our website on a regular basis.
 
 ### Imagery
 
