@@ -410,9 +410,9 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 65%;
+  top: 31rem;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, 0);
   width: 43rem;
   height: 20rem;
   background-color: var(--clr-primary--600);
