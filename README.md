@@ -101,7 +101,7 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 ### Colour Scheme
 
-![Colour Scheme for the Website](documentation/colourscheme.png)
+![Colour Scheme for the Website](documentation/design/colourscheme.png)
 
 The main design of the website is based on the colour scheme of the website. The colour scheme is based on the colour scheme of the 2015 American computer-animated film: [Inside Out](https://www.imdb.com/title/tt2096673/) since this file was fundamentally based on 5 core emotions that people may experience in their lives. Therefore, we made a choice not only to use the colours of the film but also to use the images of the main characters of the film.
 
