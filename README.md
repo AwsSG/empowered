@@ -172,7 +172,16 @@ The home page has:
   ![AboutSection image](documentation/features/about_us_2.png)
   * Testimonials section, which contains a list of testimonials from users who have used Empower to improve their mental health and show the benefits that other people can get from this website.
   ![TestimonialsSection image](documentation/features/testimonials.png)
-  
+
+* **Registration Page**
+
+Registration Page has a form which allows the user to register for the website and message explaining how to become a suer as well as reassuring a suer that their privacy would be protected.
+![Registration Page image](documentation/features/registration_page.png)
+
+* If the user inputs unsafe username or password, they will see the errors in order to increase user's safety:
+  ![Registration Page Error](documentation/features/register_error.png)
+
+* **Login Page**
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
