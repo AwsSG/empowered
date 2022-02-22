@@ -103,7 +103,11 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 ![Colour Scheme for the Website](documentation/colourscheme.png)
 
-We researched colour theory and colour psychology to find what colour palettes may be beneficial to someone who may be struggling with their mental health. We discovered that light blues are associated with peace, sincerity and gentleness. Darker blues are representative of power, strength and dependability. Greens are associated with growth and have a calming presence.  
+The main design of the website is based on the colour scheme of the website. The colour scheme is based on the colour scheme of the 2015 American computer-animated film: [Inside Out](https://www.imdb.com/title/tt2096673/) since this file was fundamentally based on 5 core emotions that people may experience in their lives. Therefore, we made a choice not only to use the colours of the film but also to use the images of the main characters of the film.
+
+*More information on this movie you can find on [wikipedia](https://en.wikipedia.org/wiki/Inside_Out_(2015_film))*
+
+Moreover, we researched colour theory and colour psychology to find what colour palettes may be beneficial to someone who may be struggling with their mental health. We discovered that blue are associated with peace, sincerity and gentleness. Darker blues are representative of power, strength and dependability. Greens are associated with growth and have a calming presence.  
 
 We feel that this colour palette has a nice balance between the blues and greens to promote calm and peacefulness on the site. The choice of green also ties in with the use of the colour green in the mental health awareness ribbon.
 
