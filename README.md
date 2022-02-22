@@ -146,9 +146,9 @@ The website is comprised of a home page, a log in page, a registration page, a p
 
 * All Pages on the website have:
   * A navigation bar which allows the user to navigate to the home page from every page on the website, and other navigational links.
-  ![Navbar image](documentation/navbar.png)
+  ![Navbar image](documentation/features/navbar.png)
   * A footer which contains the hackathon team name and images of the team which link to their GitHub accounts.
-  ![Footer image](documentation/footer.png)
+  ![Footer image](documentation/features/footer.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
