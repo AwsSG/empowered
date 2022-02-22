@@ -75,13 +75,27 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 1. As a **First Time Visitor**, I want to **find the website useful**, so I can **use it according to my needs**.
 
+#### Registered User Goals:
 
-2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
-3. As a user I want to be able to choose an appropriate emoticon to select as my emotional status for that day.
-4. As a user I would like to be able to add additional notes to my emoticon to allow me to express my state of mind.
-5. As a user I want to be able to view my previous emoticons and notes over a selected time frame to get an overview of my mental health.
+1. As a **Registered User**, I want to **be able to log in to my account**, so I can **have a personal account**.
 
-- - -
+1. As a **Registered User**, I want to **be able easily login and logout**, so I can **access my personal account information**.
+
+1. As a **Registered User**, I want to **be able to view my profile**, so I can **see my personal information**.
+
+1. As a **Registered User**, I want to **be able to choose an appropriate emoticon to select as my emotional status for that day**, so I can **evaluate my emotions for a day**.
+
+1. As a **Registered User**, I want to **be able to add additional notes to my emoticon to allow me to express my state of mind**, so I can **understand why I felt so over time**.
+
+1. As a **Registered User**, I want to **be able to view my previous emotions**, so I can **evaluate my emotions over time**.
+
+1. As a **Registered User**, I want to **be able to view my journal entries**, so I can **see my daily entries**.
+
+1. As a **Registered User**, I want to **be able to view my calendar**, so I can **see my daily entries**.
+
+1. As a **Registered User**, I want to **be able to view my recommendations**, so I can **see my daily entries**.
+
+---
 
 ## Design
 
