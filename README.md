@@ -159,6 +159,30 @@ The website is comprised of a home page, a log in page, a registration page, a p
     - On the mobile version of the website, the footer will have a following look:
     ![Footer image mobile](documentation/features/footer_mobile.png)
 
+* **Home Page**
+![Home Page image](documentation/features/home_page.png)
+The home page has:
+  * HeroSection, which contains: A welcome incentivizing message which shortly explains why this website is essential for a user with a button "GET STARTED", which leads to registration page. It also has an image of the Inside Out emotional characters to welcome users' emotions.
+  ![HeroSection image](documentation/features/hero_section.png)
+  * About section, which contains a thorough information on the benefits of using this website constantly. It has to section:
+    - "Why should I use Empower", which explains why this website is essential for a user wo cope with their emotions.
+    - "How can I use Empower", which explains how to use this website on a daily basis and how to withdraw benefits form the website in a long run.
+    - "Can anyone else see my information?", which explains that user's privacy is crucial for us and user's data will never be reviewed be anybody, including the creators of the website.
+  ![AboutSection image](documentation/features/about_us_1.png)
+  ![AboutSection image](documentation/features/about_us_2.png)
+  * Testimonials section, which contains a list of testimonials from users who have used Empower to improve their mental health and show the benefits that other people can get from this website.
+  ![TestimonialsSection image](documentation/features/testimonials.png)
+
+* **Registration Page**
+
+Registration Page has a form which allows the user to register for the website and message explaining how to become a suer as well as reassuring a suer that their privacy would be protected.
+![Registration Page image](documentation/features/registration_page.png)
+
+* If the user inputs unsafe username or password, they will see the errors in order to increase user's safety:
+  ![Registration Page Error](documentation/features/register_error.png)
+
+* **Login Page**
+
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
 
