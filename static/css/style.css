@@ -1471,10 +1471,6 @@ footer {
     padding: 1em 2em 0 2em;
   }
 
-  .footer {
-    background-color: #477F79;
-  }
-
   .footer__content {
     display: flex;
     flex-direction: column;

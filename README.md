@@ -146,9 +146,18 @@ The website is comprised of a home page, a log in page, a registration page, a p
 
 * All Pages on the website have:
   * A navigation bar which allows the user to navigate to the home page from every page on the website, and other navigational links.
-  ![Navbar image](documentation/features/navbar.png)
-  * A footer which contains the hackathon team name and images of the team which link to their GitHub accounts.
+    - If the user is not logged in, the navigation bar will only have a logo, link to the home page, and get started button.
+    ![Navbar image User Logout](documentation/features/navbar.png)
+    - if the user clicks on the get started button, they will see a dropdown menu with 2 options: log in or register. After clicking on on of the options, the user will be redirected to the appropriate page.
+    ![Navbar image User Login](documentation/features/navbar_get_started.png)
+    - When the user is logged in, the navigation bar will have a logo, a profile button, a calendar button, a log out button, and a link to the home page. After clicking on on of the options, the user will be redirected to the appropriate page.
+    ![Navbar image User Login](documentation/features/navbar_user_login.png)
+    - On the mobile version of the website, the navigation bar will have a hamburger menu icon which will allow the user to see the navigation options.
+    ![Navbar image User Login](documentation/features/navbar_mobile.png)
+  * A footer which contains logo, the hackathon team members, references to 2022 January Hackathon, link to the repository, and social links.
   ![Footer image](documentation/features/footer.png)
+    - On the mobile version of the website, the footer will have a following look:
+    ![Footer image mobile](documentation/features/footer_mobile.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
