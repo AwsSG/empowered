@@ -65,9 +65,17 @@ As this would be quite personal information it was important that the user be ab
 When a user selects their emoji we will then provide a personalised recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to destress. 
 
 ### User Stories
+#### First Time Visitor Goals:
+
+1. As a **First Time Visitor**, I want to **easily understand the main purpose of the website**, so I can **learn more about this website**.
+
+1. As a **First Time Visitor**, I want to **be able to easily navigate through the website**, so I can **find the content**.
+
+1. As a **First Time Visitor**, I want to be able to **register my account**, so I can **learn benefits of the website as a user**.
+
+1. As a **First Time Visitor**, I want to **find the website useful**, so I can **use it according to my needs**.
 
 
-1. As a user I want to be able to easily find out what the site does.
 2. As a user I want to ensure that my personal information (login details and feelings log) will be kept secure and private.
 3. As a user I want to be able to choose an appropriate emoticon to select as my emotional status for that day.
 4. As a user I would like to be able to add additional notes to my emoticon to allow me to express my state of mind.
