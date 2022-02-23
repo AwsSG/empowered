@@ -409,6 +409,14 @@ Create a local copy of the GitHub repository by following one of the two process
             entriesDates.includes(e.target.parentElement.dataset.day)) {}
       ```
 
+1. Calendar notes were showing special characters instead of " ' ":
+![Calendar Notes](documentation/bugs/typing_bug.png)
+
+    *Solution:* Change textContent to innerHTML.
+
+      ```javascript
+        document.querySelector(".note__container--text").innerHTML = `" ${getNote} "`;
+      ```
 ### Known Bugs
 
 1. The cal-heatmap calendar is not responsive. There for the user can find it a bit messy, but to reduce misleading for the user, the navigation buttons were implemented
