@@ -216,6 +216,7 @@ Calendar page consist:
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
 
+---
 ### Accessibility
 
 We have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
@@ -224,7 +225,7 @@ We have been mindful during coding to ensure that the website is as accessible f
 * Using descriptive alt attributes on images on the site.
 * Ensuring that there is a sufficient colour contrast throughout the site.
 
-- - -
+---
 
 ## Technologies Used
 
@@ -245,24 +246,14 @@ We have been mindful during coding to ensure that the website is as accessible f
 - [Git](https://git-scm.com/) - was used for the version control of the website.
 - [GitHub](https://github.com/) - was used to host the code of the website.
 - [GIMP](https://www.gimp.org/) - was used to make and resize images for the README file.
-* [Cal-heatmap](https://cal-heatmap.com/) for providing resources for our application;
+- [Mongo DB](https://www.mongodb.com/) - was used to store the data.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+- [Tiny PNG](https://tinypng.com/) To compress images.
+- [Favicon.io](https://favicon.io/) To create favicon.
+- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+- [Shields.io](https://shields.io/) To add badges to the README.
 
-Mongo DB 
-
-Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-
-[Tiny PNG](https://tinypng.com/) To compress images.
-
-[Favicon.io](https://favicon.io/) To create favicon.
-
-[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
-
-[Shields.io](https://shields.io/) To add badges to the README.
-
-[Canva](https://www.canva.com/) To edit images.
-
-- - -
-
+---
 ## Deployment & Local Development
 
 ---
