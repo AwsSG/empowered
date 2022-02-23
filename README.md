@@ -423,7 +423,9 @@ Create a local copy of the GitHub repository by following one of the two process
 ---
 ## Credits
 
+* [Pete Docter](https://en.wikipedia.org/wiki/Pete_Docter) for creating such a wonderful film "Inside Out", which inspired us to choose the main characters from his creation as main theme of our project.
 * [ColorSpace](https://mycolor.space/?hex=%230494EC&sub=1) for providing a myriad of color scheme to choose from as we did;
+* [Code And Create channel](https://www.youtube.com/watch?v=o1yMqPyYeAo&t=1299s0) for givind us the inspiration to use single month calendar representation in this project;
 * [pngfind](https://pngfind.com/) for providing a myriad of images to choose from as we did;
 * [Heroku](https://dashboard.heroku.com/) for providing a platform to deploy our project;
 * [MongoDB](https://www.mongodb.com/) for providing a database to store our data;
@@ -447,4 +449,6 @@ Team Inside Out members of the January Hackathon 2022:
 We would like to acknowledge the following people who helped us along the way in completing this project:
 
 * [Dave Bowers](https://github.com/dnlbowers), our hackathon facilitator.
+* [CODE INSTITUTE](https://codeinstitute.net/), our event organizer.
+* [Trust in SODA](https://www.linkedin.com/company/trust-in-soda/), our event organizer.
 * Our families - for their patience and support while we disappeared for another long weekend of coding.
