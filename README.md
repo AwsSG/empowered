@@ -199,6 +199,8 @@ Profile Page consists:
   - When the user clicks on the chosen emoji, the user will note area, where he or she can add addition notes.
   ![Profile Page image](documentation/features/note_container.png)
   - The user may also choose not to add a note by leaving textarea empty and clicking on the note button to confirm the entry.
+  - When the suer submits their entries for a day, the suggestion box will appear. There will be some suggestions for a user to watch, read, or listen to according to the emotions that the user entered for a day.
+  ![Suggestion Box](documentation/features/suggestions.png)
 
 * **Calendar Page**
 ![Calendar Page image](documentation/features/calendar_page.png)
