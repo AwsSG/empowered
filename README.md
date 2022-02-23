@@ -436,12 +436,22 @@ Create a local copy of the GitHub repository by following one of the two process
 ### Collaborators
 
 Team Inside Out members of the January Hackathon 2022:
+* Iuliia Konovalova:
+  - [GitHub](https://github.com/IuliiaKonovalova)
+  - [LinkedIn](https://www.linkedin.com/in/iuliiakonovalova/)
+* Aws Sabah Gheni:
+  - [GitHub](https://github.com/AwsSG)
+  - [LinkedIn](https://www.linkedin.com/in/aws-al-adhami/)
 
-* [Iuliia Konovalova](https://github.com/IuliiaKonovalova)
-* [Aws Sabah Gheni](https://github.com/AwsSG)
-* [Theo Wright](https://github.com/theopmw)
-* [Kera Cudmore](https://github.com/kera-cudmore)
-* [Anna](https://github.com/ANNAhabANNA)
+* Kera Cudmore:
+  - [GitHub](https://github.com/kera-cudmore)
+  - [LinkedIn](https://www.linkedin.com/in/keracudmore/)
+* Theo Wright:
+  - [GitHub](https://github.com/theopmw)
+  - [LinkedIn](https://www.linkedin.com/in/theowrightlondon/)
+* Anna:
+  - [GitHub](https://github.com/ANNAhabANNA)
+  - [LinkedIn](https://www.linkedin.com/in/anna-k-b182b445/)
 
 ---
 ### Acknowledgments
