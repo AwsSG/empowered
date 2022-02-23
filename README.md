@@ -202,6 +202,13 @@ Profile Page consists:
 
 * **Calendar Page**
 ![Calendar Page image](documentation/features/calendar_page.png)
+Calendar page consist:
+- Heading with a short instruction on how to use the calendar page.
+- A calendar with the days of the month.
+- 2 buttons to navigate to the previous and next month.
+![Calendar Page image](documentation/features/prev_month.png)
+- A note box. When the user click on a day with emoji, the note box will appear, and the user may see the previous entries with emoji. If the user didn't left any notes, the user will see a day, emoji, message "You didn't left any notes this day".
+![Calendar Page image](documentation/features/notes.png)
 
 
 * Future Implementations.
