@@ -367,29 +367,7 @@ Create a local copy of the GitHub repository by following one of the two process
 ## Bugs
 ### Solved Bugs
 
-1. The cal-heatmap did not displayed data from mongoDB.
-
-    *Solution:* Add additional code to calendar.html as the extension of calendar.js to transform the data to required format:
-
-    ```javascript
-
-        let data222 = {};
-        let date0;
-        let emoji_number;
-
-        {% for emoji in emoji_tracker %}
-
-        date0 = {{ emoji.datetime }}
-        emoji_number = {{ emoji.emoji }}
-        data222[`${date0}`] = emoji_number
-        console.log(data222)
-
-        {% endfor %}
-
-        console.log(dataArray)
-    ```
-
-1. The didn't represent the data of notes when clicking  on the day:
+1. The calendar didn't represent the data of notes when clicking  on the day:
 
     *Solution:* Add code to calendar.html and calendar.js in order to connect data
 
@@ -409,6 +387,26 @@ Create a local copy of the GitHub repository by following one of the two process
       {% endfor %}
 
       console.log(dataArray)
+      ```
+
+1. The babble js functionality didn't work: while clicking on the day number or emoji in the calendar, the 'click' eventListener didn't work.
+
+    *Solution:* Add if statement to target children elements through parent element.
+
+      ```javascript
+      if (item.date === e.target.closest("div").dataset.day ||
+          item.date === e.target.parentElement.parentElement.dataset.day ||
+          item.date === e.target.parentElement.dataset.day
+      )
+
+1. Notes notes in the calendar didn't disappear if the user clicked on the day without entries recorded:
+
+    *Solution:* Add code to calendar.html: variable "entriesDates" to store the dates of entries and if statement to check if the date is in the array.
+
+      ```javascript
+        if (entriesDates.includes(e.target.closest("div").dataset.day) ||
+            entriesDates.includes(e.target.parentElement.parentElement.dataset.day) ||
+            entriesDates.includes(e.target.parentElement.dataset.day)) {}
       ```
 
 ### Known Bugs
