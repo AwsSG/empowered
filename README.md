@@ -419,17 +419,16 @@ Create a local copy of the GitHub repository by following one of the two process
       ```
 ### Known Bugs
 
-1. The cal-heatmap calendar is not responsive. There for the user can find it a bit messy, but to reduce misleading for the user, the navigation buttons were implemented
-
-1. The user can only use select - options to pick an emoji as flask can retrieve data of value only from input, select when options are implemented.
 
 ---
 ## Credits
 
 * [ColorSpace](https://mycolor.space/?hex=%230494EC&sub=1) for providing a myriad of color scheme to choose from as we did;
-* [Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
-* [emojis on the hero image](https://www.canva.com/)
-* [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness) All team images used in footer belong to the respective team member.
+* [pngfind](https://pngfind.com/) for providing a myriad of images to choose from as we did;
+* [Heroku](https://dashboard.heroku.com/) for providing a platform to deploy our project;
+* [MongoDB](https://www.mongodb.com/) for providing a database to store our data;
+* [CODE INSTITUTE](https://codeinstitute.net/) for organizing such event like HACKATHONS where students are encourage to learn and grow;
+* [GitHub](https://github.com/) for providing a platform to host our repository and to collaborate with other developers; 
 
 ---
 ### Collaborators
