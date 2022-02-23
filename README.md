@@ -209,9 +209,10 @@ Calendar page consist:
 - A calendar with the days of the month.
 - 2 buttons to navigate to the previous and next month.
 ![Calendar Page image](documentation/features/prev_month.png)
-- A note box. When the user click on a day with emoji, the note box will appear, and the user may see the previous entries with emoji. If the user didn't left any notes, the user will see a day, emoji, message "You didn't left any notes this day".
+- A note box. When the user click on a day with emoji, the note box will appear, and the user may see the previous entries with emoji.
 ![Calendar Page image](documentation/features/notes.png)
-
+- If the user didn't left any notes, the user will see a day, emoji, message "You didn't left any notes this day".
+![Calendar Page image](documentation/features/no_notes.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
@@ -393,7 +394,6 @@ Create a local copy of the GitHub repository by following one of the two process
     *Solution:* Add code to calendar.html and calendar.js in order to connect data
 
       ```javascript
-      let date0;
       let dataArray = []
       let emoji_number;
       let tempDate;
