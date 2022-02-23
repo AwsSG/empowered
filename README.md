@@ -209,9 +209,10 @@ Calendar page consist:
 - A calendar with the days of the month.
 - 2 buttons to navigate to the previous and next month.
 ![Calendar Page image](documentation/features/prev_month.png)
-- A note box. When the user click on a day with emoji, the note box will appear, and the user may see the previous entries with emoji. If the user didn't left any notes, the user will see a day, emoji, message "You didn't left any notes this day".
+- A note box. When the user click on a day with emoji, the note box will appear, and the user may see the previous entries with emoji.
 ![Calendar Page image](documentation/features/notes.png)
-
+- If the user didn't left any notes, the user will see a day, emoji, message "You didn't left any notes this day".
+![Calendar Page image](documentation/features/no_notes.png)
 
 * Future Implementations.
   * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
@@ -366,34 +367,11 @@ Create a local copy of the GitHub repository by following one of the two process
 ## Bugs
 ### Solved Bugs
 
-1. The cal-heatmap did not displayed data from mongoDB.
-
-    *Solution:* Add additional code to calendar.html as the extension of calendar.js to transform the data to required format:
-
-    ```javascript
-
-        let data222 = {};
-        let date0;
-        let emoji_number;
-
-        {% for emoji in emoji_tracker %}
-
-        date0 = {{ emoji.datetime }}
-        emoji_number = {{ emoji.emoji }}
-        data222[`${date0}`] = emoji_number
-        console.log(data222)
-
-        {% endfor %}
-
-        console.log(dataArray)
-    ```
-
-1. The didn't represent the data of notes when clicking  on the day:
+1. The calendar didn't represent the data of notes when clicking  on the day:
 
     *Solution:* Add code to calendar.html and calendar.js in order to connect data
 
       ```javascript
-      let date0;
       let dataArray = []
       let emoji_number;
       let tempDate;
@@ -411,19 +389,48 @@ Create a local copy of the GitHub repository by following one of the two process
       console.log(dataArray)
       ```
 
+1. The babble js functionality didn't work: while clicking on the day number or emoji in the calendar, the 'click' eventListener didn't work.
+
+    *Solution:* Add if statement to target children elements through parent element.
+
+      ```javascript
+      if (item.date === e.target.closest("div").dataset.day ||
+          item.date === e.target.parentElement.parentElement.dataset.day ||
+          item.date === e.target.parentElement.dataset.day
+      )
+
+1. Notes notes in the calendar didn't disappear if the user clicked on the day without entries recorded:
+
+    *Solution:* Add code to calendar.html: variable "entriesDates" to store the dates of entries and if statement to check if the date is in the array.
+
+      ```javascript
+        if (entriesDates.includes(e.target.closest("div").dataset.day) ||
+            entriesDates.includes(e.target.parentElement.parentElement.dataset.day) ||
+            entriesDates.includes(e.target.parentElement.dataset.day)) {}
+      ```
+
+1. Calendar notes were showing special characters instead of " ' ":
+![Calendar Notes](documentation/bugs/typing_bug.png)
+
+    *Solution:* Change textContent to innerHTML.
+
+      ```javascript
+        document.querySelector(".note__container--text").innerHTML = `" ${getNote} "`;
+      ```
 ### Known Bugs
 
-1. The cal-heatmap calendar is not responsive. There for the user can find it a bit messy, but to reduce misleading for the user, the navigation buttons were implemented
-
-1. The user can only use select - options to pick an emoji as flask can retrieve data of value only from input, select when options are implemented.
 
 ---
 ## Credits
 
+* [Pete Docter](https://en.wikipedia.org/wiki/Pete_Docter) for creating such a wonderful film "Inside Out", which inspired us to choose the main characters from his creation as main theme of our project.
 * [ColorSpace](https://mycolor.space/?hex=%230494EC&sub=1) for providing a myriad of color scheme to choose from as we did;
-* [Hero image for home page](https://www.rawpixel.com/image/2303032/free-illustration-vector-mental-health-self-love-meditation)
-* [emojis on the hero image](https://www.canva.com/)
-* [Logo image](https://www.rawpixel.com/image/3282346/free-photo-image-mental-health-woman-tiredness) All team images used in footer belong to the respective team member.
+* [Code And Create channel](https://www.youtube.com/watch?v=o1yMqPyYeAo&t=1299s0) for givind us the inspiration to use single month calendar representation in this project;
+* [pngfind](https://pngfind.com/) for providing a myriad of images to choose from as we did;
+* [Heroku](https://dashboard.heroku.com/) for providing a platform to deploy our project;
+* [MongoDB](https://www.mongodb.com/) for providing a database to store our data;
+* [CODE INSTITUTE](https://codeinstitute.net/) for organizing such event like HACKATHONS where students are encourage to learn and grow;
+* [GitHub](https://github.com/) for providing a platform to host our repository and to collaborate with other developers; 
 
 ---
 ### Collaborators
@@ -442,4 +449,6 @@ Team Inside Out members of the January Hackathon 2022:
 We would like to acknowledge the following people who helped us along the way in completing this project:
 
 * [Dave Bowers](https://github.com/dnlbowers), our hackathon facilitator.
+* [CODE INSTITUTE](https://codeinstitute.net/), our event organizer.
+* [Trust in SODA](https://www.linkedin.com/company/trust-in-soda/), our event organizer.
 * Our families - for their patience and support while we disappeared for another long weekend of coding.

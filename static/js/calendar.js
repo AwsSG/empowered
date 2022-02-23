@@ -147,7 +147,7 @@ calDays.addEventListener('click', (e) => {
         document.querySelector(".note__container--emoji").innerHTML = emojiImage;
         // Check if note is empty and set note
         if (getNote !== "") {
-          document.querySelector(".note__container--text").textContent = `" ${getNote} "`;
+          document.querySelector(".note__container--text").innerHTML = `" ${getNote} "`;
         } else {
           document.querySelector(".note__container--text").textContent = `You didn't write anything for this day.`;
           ``;
