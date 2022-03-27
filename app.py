@@ -6,6 +6,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 from datetime import datetime
 import time
+import random
 
 if os.path.exists("env.py"):
     import env
@@ -105,8 +106,9 @@ def profile():
             user[-1]["datetime"]).date().strftime("%d/%m/%y")
         # get last entry emoji
         emoji_num = int(user[-1]["emoji"])
-        # get resources that corrosponds with emoji number
-        suggestions = list(mongo.db.resources.find({"emoji": emoji_num}))
+        # get random resources that corrosponds with emoji number
+        random_range = list(mongo.db.resources.find({"emoji": emoji_num}))
+        suggestions = random.sample(random_range, 4)
     else:
         suggestions = []
         last_entry = 0
