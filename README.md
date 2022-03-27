@@ -97,6 +97,16 @@ When a user selects their emoji we will then provide a personalised recommendati
 
 ---
 
+## Strategy
+
+Developed for those who wish to make track their emotional status over time and learn how to control their feelings.
+
+At present, the site is provided with a calendar and a recommendation system. The calendar allows the user to view their previous emotions and the recommendation system allows the user to see a recommendation based on their current emotional state.
+
+Potential advertisers are encouraged to get in touch to offer their articles and service as long as it is in line of sites main idea to serve people as a platform to record, track, and control their feelings.
+
+---
+
 ## Design
 
 ### Colour Scheme
@@ -419,6 +429,7 @@ Create a local copy of the GitHub repository by following one of the two process
       ```
 ### Known Bugs
 
+None
 
 ---
 ## Credits
