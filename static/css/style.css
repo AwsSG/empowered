@@ -1342,6 +1342,14 @@ footer {
   color: var(--clr-neutral--100);
 }
 
+.footer__suggestions {
+  margin-bottom: 1em;
+}
+
+.project__repository i {
+  margin-left: 0.5em;
+}
+
 
 /* ----- Media ----- */
 @media all and (max-width: 1348px) {

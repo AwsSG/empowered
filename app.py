@@ -1,4 +1,3 @@
-from crypt import methods
 import os
 from flask import (
     Flask, flash, render_template,
@@ -6,8 +5,6 @@ from flask import (
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 from datetime import datetime
-from bson.objectid import ObjectId
-import json
 import time
 import random
 

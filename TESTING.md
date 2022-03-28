@@ -36,7 +36,7 @@
 | Navbar - Log out link - mobile view | logs you out | clicked link | 
 | Footer - Team Image - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 | Footer - Team Image - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Iuliaa Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Team Image - Iuliia Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 | Footer - Team Image - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 | Footer - Team Image - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 | Profile Page - Choose emoji drown down menu | When a selection is made that choice is displayed | Clicked each menu option | Each option displated the choice made | Pass |
