@@ -19,7 +19,34 @@
 
 # **Testing**
 
-### **Navigation** 
+Usability was tested with the below user acceptance testing, sent to new users to ensure testing from different users, on different devices and browsers to ensure issues were caught and where possible fixed during development.
+
+
+|             | User Action | Expected result  | Y/N | Comment |
+|-------------|-------------|------------------|-----|---------|
+|Sign Up      |             |                  |     |         |
+|1            | Click GET STARTED button in home page | Sign up page | Y | Sign up page opens |
+|2            | Click on GET STARTED from navbar | Dropdown menu with 2 options login/signup | Y | User will choose between 2 options |
+|3            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
+|4            | Enter valid username and password | Profile page | Y | User is signed up |
+|5            | Enter valid username and password | Profile page | Y | User is logged in |
+| Log In      |             |                  |     |         |
+|1            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
+|2            | Click on login from dropdown menu | Login page | Y | Login page opens |
+|3            | Enter valid username and password | Profile page | Y | User is signed up |
+|4            | Click on login from dropdown menu | Login page | Y | Login page opens |
+|Log Out      |             |                  |     |         |
+|1            | Click on logout button | Home page | Y | User is logged out |
+|2            | Click browser back button | You are still logged out | Y | session is ended |
+
+
+
+
+
+
+
+
+
 
 | Feature      | Expected          | Testing  | Result | Pass/Fail |
 |-------------|-------------|-----|----------|:----:|
@@ -34,10 +61,11 @@
 | Navbar - Log in link in drop down menu - mobile view | Navigates to log in page | Clicked link | Taken to log in page  | Pass |
 | Navbar - Register link in drop down menu - mobile view | Navigates to register page | Clicked Link | Taken to register page | Pass |
 | Navbar - Log out link - mobile view | logs you out | clicked link | 
-| Footer - Team Image - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Iuliia Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Name - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Name - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Name - Iuliia Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Name - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
+| Footer - Name - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 | Footer - Team Image - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
 | Profile Page - Choose emoji drown down menu | When a selection is made that choice is displayed | Clicked each menu option | Each option displated the choice made | Pass |
 | Profile page - add note button | adds note | clicked button | Banner displays showing "Your feelings were recorded successfully" | Pass |
