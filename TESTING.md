@@ -3,19 +3,18 @@
 ## **Contents**
 
 * [**Testing**](#testing)
-  * [**Navigation**](#navigation)
-  * [**Advent Calendar Door**](#advent-calendar-door)
-  * [**Pop Up Box Puzzle Instructions**](#pop-up-box-puzzle-instructions)
-  * [**Github image links**](#github-image-links)
-  * [**Github image links**](#github-image-links)
-  * [**Validator testing**](#Validator-testing)
-    * [**HTML Validation**](#HTML-Validation)
-    * [**CSS Validation**](#CSS-Validation)
-    * [**JS Validation**](#JS-Validation)
-  * [**Lighthouse report**](#Lighthouse-Report)
-  * [**Compatibility**](#Compatibility)
-  * [**Responsiveness**](#Responsiveness)
-  * [**Functionality**](#Functionality)
+* [**Advent Calendar Door**](#advent-calendar-door)
+* [**Pop Up Box Puzzle Instructions**](#pop-up-box-puzzle-instructions)
+* [**Github image links**](#github-image-links)
+* [**Github image links**](#github-image-links)
+* [**Validator testing**](#Validator-testing)
+  * [**HTML Validation**](#HTML-Validation)
+  * [**CSS Validation**](#CSS-Validation)
+  * [**JS Validation**](#JS-Validation)
+* [**Lighthouse report**](#Lighthouse-Report)
+* [**Compatibility**](#Compatibility)
+* [**Responsiveness**](#Responsiveness)
+* [**Functionality**](#Functionality)
 
 # **Testing**
 
@@ -61,11 +60,11 @@ Usability was tested with the below user acceptance testing, sent to new users t
 |12           | Click on links in suggestions box | new window opens | Y | Another window will opens with recommended website |
 |13           | Click on VIEW EMOTIONAL HISTORY button | Calendar Page | Y | User will be redirect to Calendar Page |
 |Calendar Page |             |                  |     |         |
-
-
-
-
-
+|1            | Click on CALENDAR button | Calendar page | Y | User will be redirect to Calendar Page |
+|2            | Click on any day in calendar  with emoji | Notes box under calendar | Y | User will see a notes box left by the user and date when the notes were left. If user did not add any notes but left only emoji, user would see phrase "You didn't write anything for this day." |
+|3            | Click on any day in calendar without emoji | - | Y | As user didn't make any entries on this day, nothing was recorded. |
+|4            | Click on **<** button in calendar's header | Month before in calendar | Y | User will see the previous month in the calendar |
+|5            | Click on **>** button in calendar's header | Month after in calendar | Y | User will see the next month in the calendar |
 
 [Back to contents](#contents)
 
