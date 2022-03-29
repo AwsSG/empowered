@@ -26,16 +26,16 @@ Usability was tested with the below user acceptance testing, sent to new users t
 |-------------|-------------|------------------|-----|---------|
 |Sign Up      |             |                  |     |         |
 |1            | Click GET STARTED button in home page | Sign up page | Y | Sign up page opens |
-|2            | Click on GET STARTED from navbar | Dropdown menu with 2 options login/signup | Y | User will choose between 2 options |
+|2            | Click on GET STARTED from navbar | Dropdown menu with 2 options login/signUp | Y | User will choose between 2 options |
 |3            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
 |4            | Enter valid username and password | Profile page | Y | User is signed up |
 |5            | Enter valid username and password | Profile page | Y | User is logged in |
 |6            | Click login link | LogIn page | Y | User will be redirected to logIn page |
 | Log In      |             |                  |     |         |
-|1            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
+|1            | Click on GET STARTED button in home page | Sign up page | Y | Sign up page opens |
 |2            | Click on login from dropdown menu | Login page | Y | Login page opens |
 |3            | Enter valid username and password | Profile page | Y | User is signed up |
-|4            | Click on login from dropdown menu | Login page | Y | Login page opens |
+|4            | Click Register link | Register page | Y | User will be redirected to Register page |
 |Log Out      |             |                  |     |         |
 |1            | Click on logout button | Home page | Y | User is logged out |
 |2            | Click browser back button | You are still logged out | Y | session is ended |
@@ -46,9 +46,21 @@ Usability was tested with the below user acceptance testing, sent to new users t
 |4            | Click on Theo Wright | Github page | Y | Theo Wright page opens |   
 |5            | Click on Anna | Github page | Y | Aws Sabah Gheni page opens |
 |6            | Click on Link to GitHub repository | Github page | Y | Project repository page opens |
-
-
-
+|Profile Page |             |                  |     |         |
+|1            | Click on info icon | Modal window | Y | Modal window opens with the instructions |
+|2            | Click on close icon | Profile Page | Y | Modal window closes |
+|3            | Click on outside of the modal window | Profile page | Y | Modal window closes |
+|4            | Click on any emoji | Note box | Y | Note box opens under emojis container |
+|5            | Type text in note box | Text in note box | Y | User will see notes until he/she hits add not button |
+|6            | Click on add note button | Profile page with suggestions | Y | User will have no chance to add any emoji or note for this day |
+|7            | Click on LogOut | Home page | Y | User logged out |
+|8            | Click on logIn | Home page | Y | User logged out |
+|9            | Click on GET STARTED button in home page | Sign up page | Y | Sign up page opens |
+|10           | Click on login from dropdown menu | Login page | Y | Login page opens |
+|11           | Enter valid username and password | Profile page | Y | User is signed up |
+|12           | Click on links in suggestions box | new window opens | Y | Another window will opens with recommended website |
+|13           | Click on VIEW EMOTIONAL HISTORY button | Calendar Page | Y | User will be redirect to Calendar Page |
+|Calendar Page |             |                  |     |         |
 
 
 
