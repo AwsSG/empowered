@@ -30,6 +30,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 |3            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
 |4            | Enter valid username and password | Profile page | Y | User is signed up |
 |5            | Enter valid username and password | Profile page | Y | User is logged in |
+|6            | Click login link | LogIn page | Y | User will be redirected to logIn page |
 | Log In      |             |                  |     |         |
 |1            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
 |2            | Click on login from dropdown menu | Login page | Y | Login page opens |
@@ -38,6 +39,13 @@ Usability was tested with the below user acceptance testing, sent to new users t
 |Log Out      |             |                  |     |         |
 |1            | Click on logout button | Home page | Y | User is logged out |
 |2            | Click browser back button | You are still logged out | Y | session is ended |
+|Footer Links  |             |                  |     |         |
+|1            | Click on Aws Sabah Gheni | Github page | Y | Aws Sabah Gheni page opens |
+|2            | Click on Iuliia Konovalova | Github page | Y | Iuliia Konovalova page opens |   
+|3            | Click on Kera Cudmore | Github page | Y | Kera Cudmore page opens |
+|4            | Click on Theo Wright | Github page | Y | Theo Wright page opens |   
+|5            | Click on Anna | Github page | Y | Aws Sabah Gheni page opens |
+|6            | Click on Link to GitHub repository | Github page | Y | Project repository page opens |
 
 
 
@@ -46,33 +54,6 @@ Usability was tested with the below user acceptance testing, sent to new users t
 
 
 
-
-
-| Feature      | Expected          | Testing  | Result | Pass/Fail |
-|-------------|-------------|-----|----------|:----:|
-| Code-Vent Calendar Page Title | To redirect to home page | Clicked Code-Vent Calendar Page Title | Title navigates to home page | Pass |
-| Navbar - Home link - desktop view | Redirect to home page | Clicked link | Navigates to home page | Pass |
-|Navbar - Log in/register button - desktop view | open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
-| Navbar - Log in link in drop down menu - desktop view| Navigates to log in page | Clicked link | Taken to log in page | Pass |
-| Navbar - Register link in drop down menu - desktop view | Navigates to register page | Clicked link | Taken to register page | Pass |
-| Navbar - Log out link - desktop view | logs you out | clicked link | logged out of profile | Pass |
-| Navbar - Hamburger Menu button - mobile view | Open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
-| Navbar - Home link in drop down menu - mobile view | Navigates to home page | Clicked link | Taken to home page | Pass |
-| Navbar - Log in link in drop down menu - mobile view | Navigates to log in page | Clicked link | Taken to log in page  | Pass |
-| Navbar - Register link in drop down menu - mobile view | Navigates to register page | Clicked Link | Taken to register page | Pass |
-| Navbar - Log out link - mobile view | logs you out | clicked link | 
-| Footer - Name - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Name - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Name - Iuliia Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Name - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Name - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Profile Page - Choose emoji drown down menu | When a selection is made that choice is displayed | Clicked each menu option | Each option displated the choice made | Pass |
-| Profile page - add note button | adds note | clicked button | Banner displays showing "Your feelings were recorded successfully" | Pass |
-| Profile page - View emotional history button | Navigates to my history | Clicked button | Taken to calendar page | Pass |
-| Calendar Page - Back Button | Moves the calendar back in time | Clicked button | Moves calendar back | Pass |
-| Calendar Page - next button | Moves the calendar forward in time | Clicked button | Moves calendar forwards | Pass |
-| Calendar Page - Calendar dates | When a date is selected you are shown the emoji you chose for that day and your log entry if made | Clicked on a date | Emoji and log displayed | Pass |
 
 [Back to contents](#contents)
 
