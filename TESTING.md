@@ -3,48 +3,68 @@
 ## **Contents**
 
 * [**Testing**](#testing)
-  * [**Navigation**](#navigation)
-  * [**Advent Calendar Door**](#advent-calendar-door)
-  * [**Pop Up Box Puzzle Instructions**](#pop-up-box-puzzle-instructions)
-  * [**Github image links**](#github-image-links)
-  * [**Github image links**](#github-image-links)
-  * [**Validator testing**](#Validator-testing)
-    * [**HTML Validation**](#HTML-Validation)
-    * [**CSS Validation**](#CSS-Validation)
-    * [**JS Validation**](#JS-Validation)
-  * [**Lighthouse report**](#Lighthouse-Report)
-  * [**Compatibility**](#Compatibility)
-  * [**Responsiveness**](#Responsiveness)
-  * [**Functionality**](#Functionality)
+* [**Advent Calendar Door**](#advent-calendar-door)
+* [**Pop Up Box Puzzle Instructions**](#pop-up-box-puzzle-instructions)
+* [**Github image links**](#github-image-links)
+* [**Github image links**](#github-image-links)
+* [**Validator testing**](#Validator-testing)
+  * [**HTML Validation**](#HTML-Validation)
+  * [**CSS Validation**](#CSS-Validation)
+  * [**JS Validation**](#JS-Validation)
+* [**Lighthouse report**](#Lighthouse-Report)
+* [**Compatibility**](#Compatibility)
+* [**Responsiveness**](#Responsiveness)
+* [**Functionality**](#Functionality)
 
 # **Testing**
 
-### **Navigation** 
+Usability was tested with the below user acceptance testing, sent to new users to ensure testing from different users, on different devices and browsers to ensure issues were caught and where possible fixed during development.
 
-| Feature      | Expected          | Testing  | Result | Pass/Fail |
-|-------------|-------------|-----|----------|:----:|
-| Code-Vent Calendar Page Title | To redirect to home page | Clicked Code-Vent Calendar Page Title | Title navigates to home page | Pass |
-| Navbar - Home link - desktop view | Redirect to home page | Clicked link | Navigates to home page | Pass |
-|Navbar - Log in/register button - desktop view | open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
-| Navbar - Log in link in drop down menu - desktop view| Navigates to log in page | Clicked link | Taken to log in page | Pass |
-| Navbar - Register link in drop down menu - desktop view | Navigates to register page | Clicked link | Taken to register page | Pass |
-| Navbar - Log out link - desktop view | logs you out | clicked link | logged out of profile | Pass |
-| Navbar - Hamburger Menu button - mobile view | Open menu to select either log in or register page | Clicked button | Drop down menu opens | Pass |
-| Navbar - Home link in drop down menu - mobile view | Navigates to home page | Clicked link | Taken to home page | Pass |
-| Navbar - Log in link in drop down menu - mobile view | Navigates to log in page | Clicked link | Taken to log in page  | Pass |
-| Navbar - Register link in drop down menu - mobile view | Navigates to register page | Clicked Link | Taken to register page | Pass |
-| Navbar - Log out link - mobile view | logs you out | clicked link | 
-| Footer - Team Image - Aws Sabah Gheni | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Theo Wright | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Iuliia Konovalova | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Kera Cudmore | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Footer - Team Image - Anna | Navigates to GitHub account in new tab | Clicked image | New tab opens to GitHub account | Pass |
-| Profile Page - Choose emoji drown down menu | When a selection is made that choice is displayed | Clicked each menu option | Each option displated the choice made | Pass |
-| Profile page - add note button | adds note | clicked button | Banner displays showing "Your feelings were recorded successfully" | Pass |
-| Profile page - View emotional history button | Navigates to my history | Clicked button | Taken to calendar page | Pass |
-| Calendar Page - Back Button | Moves the calendar back in time | Clicked button | Moves calendar back | Pass |
-| Calendar Page - next button | Moves the calendar forward in time | Clicked button | Moves calendar forwards | Pass |
-| Calendar Page - Calendar dates | When a date is selected you are shown the emoji you chose for that day and your log entry if made | Clicked on a date | Emoji and log displayed | Pass |
+
+|             | User Action | Expected result  | Y/N | Comment |
+|-------------|-------------|------------------|-----|---------|
+|Sign Up      |             |                  |     |         |
+|1            | Click GET STARTED button in home page | Sign up page | Y | Sign up page opens |
+|2            | Click on GET STARTED from navbar | Dropdown menu with 2 options login/signUp | Y | User will choose between 2 options |
+|3            | Click on REGISTER from navbar in dropdown menu| Register Page | Y | Register page opens |
+|4            | Enter valid username and password | Profile page | Y | User is signed up |
+|5            | Enter valid username and password | Profile page | Y | User is logged in |
+|6            | Click login link | LogIn page | Y | User will be redirected to logIn page |
+| Log In      |             |                  |     |         |
+|1            | Click on GET STARTED button in home page | Sign up page | Y | Sign up page opens |
+|2            | Click on login from dropdown menu | Login page | Y | Login page opens |
+|3            | Enter valid username and password | Profile page | Y | User is signed up |
+|4            | Click Register link | Register page | Y | User will be redirected to Register page |
+|Log Out      |             |                  |     |         |
+|1            | Click on logout button | Home page | Y | User is logged out |
+|2            | Click browser back button | You are still logged out | Y | session is ended |
+|Footer Links  |             |                  |     |         |
+|1            | Click on Aws Sabah Gheni | Github page | Y | Aws Sabah Gheni page opens |
+|2            | Click on Iuliia Konovalova | Github page | Y | Iuliia Konovalova page opens |   
+|3            | Click on Kera Cudmore | Github page | Y | Kera Cudmore page opens |
+|4            | Click on Theo Wright | Github page | Y | Theo Wright page opens |   
+|5            | Click on Anna | Github page | Y | Aws Sabah Gheni page opens |
+|6            | Click on Link to GitHub repository | Github page | Y | Project repository page opens |
+|Profile Page |             |                  |     |         |
+|1            | Click on info icon | Modal window | Y | Modal window opens with the instructions |
+|2            | Click on close icon | Profile Page | Y | Modal window closes |
+|3            | Click on outside of the modal window | Profile page | Y | Modal window closes |
+|4            | Click on any emoji | Note box | Y | Note box opens under emojis container |
+|5            | Type text in note box | Text in note box | Y | User will see notes until he/she hits add not button |
+|6            | Click on add note button | Profile page with suggestions | Y | User will have no chance to add any emoji or note for this day |
+|7            | Click on LogOut | Home page | Y | User logged out |
+|8            | Click on logIn | Home page | Y | User logged out |
+|9            | Click on GET STARTED button in home page | Sign up page | Y | Sign up page opens |
+|10           | Click on login from dropdown menu | Login page | Y | Login page opens |
+|11           | Enter valid username and password | Profile page | Y | User is signed up |
+|12           | Click on links in suggestions box | new window opens | Y | Another window will opens with recommended website |
+|13           | Click on VIEW EMOTIONAL HISTORY button | Calendar Page | Y | User will be redirect to Calendar Page |
+|Calendar Page |             |                  |     |         |
+|1            | Click on CALENDAR button | Calendar page | Y | User will be redirect to Calendar Page |
+|2            | Click on any day in calendar  with emoji | Notes box under calendar | Y | User will see a notes box left by the user and date when the notes were left. If user did not add any notes but left only emoji, user would see phrase "You didn't write anything for this day." |
+|3            | Click on any day in calendar without emoji | - | Y | As user didn't make any entries on this day, nothing was recorded. |
+|4            | Click on **<** button in calendar's header | Month before in calendar | Y | User will see the previous month in the calendar |
+|5            | Click on **>** button in calendar's header | Month after in calendar | Y | User will see the next month in the calendar |
 
 [Back to contents](#contents)
 
