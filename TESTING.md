@@ -102,6 +102,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 *  js files were checked by the official [JSHint](https://jshint.com/):
     * [script.js](documentation/testing/testing_hintjs_script.png);
     * [calendar.js](documentation/testing/testing_hintjs_calendar.png);
+Variables, which reported to be undefined were defined in template since they are needed to be received by the template.
 
 ### Python Validation
 Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into the validator.
