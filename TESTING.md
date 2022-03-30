@@ -102,6 +102,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 *  js files were checked by the official [JSHint](https://jshint.com/):
     * [script.js](documentation/testing/testing_hintjs_script.png);
     * [calendar.js](documentation/testing/testing_hintjs_calendar.png);
+Variables, which reported to be undefined were defined in template since they are needed to be received by the template.
 
 ### Python Validation
 Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into the validator.
@@ -115,23 +116,35 @@ No errors were found:
 
 ## Lighthouse Report
 
-![Lighthouse Report](documentation/testing/lighthousehome.png)
+- Home Page:
+    ![Home Page](documentation/testing/lighthouse/lighthouse_report_home_page.png)
 
+- Log In Page:
+    ![Log In Page](documentation/testing/lighthouse/lighthouse_report_login_page.png)
+
+- Register Page:
+    ![Register Page](documentation/testing/lighthouse/lighthouse_report_register_page.png)
+
+- Profile Page:
+    ![Profile Page](documentation/testing/lighthouse/lighthouse_report_profile_page.png)
+
+- Calendar Page:
+    ![Calendar Page](documentation/testing/lighthouse/lighthouse_report_calendar_page.png)
 ## Compatibility:
 
 + The app was tested on the following browsers: Chrome, Firefox, Brave, Edge:
 
   - Chrome:
 
-  ![Main Page](documentation/testing/browser_chrome.gif)
+  ![Main Page](documentation/testing/browser_chrome.png)
   
   - Firefox:
 
-  ![Main Page](documentation/testing/browser_firefox.gif)
+  ![Main Page](documentation/testing/browser_firefox.png)
 
-  - Safari:
+  - Brave:
 
-  ![Main Page](documentation/testing/browser_safari.gif)
+  ![Main Page](documentation/testing/browser_brave.png)
   
 
 ## Responsiveness:
@@ -142,24 +155,26 @@ No errors were found:
 
     - Mobile 320x480, 320x568, 360x640, 375x667, 384x640, 411x731, 414x736:
 
-     ![Mobile](documentation/responsiveness/responsiveness_mobile_devices.gif)
+     ![Mobile](documentation/testing/responsiveness/responsiveness_mobile_devices.gif)
 
       
   1. Tablets Screens:
 
     - Tablet 600x960, 768x1024, 800x1280, 1366x1024, 1600x900, 1680x1050, 1920x1080, 1920x1200:
         
-    ![Tablet](documentation/responsiveness/responsiveness_tablet_devices.gif)
+    ![Tablet](documentation/testing/responsiveness/responsiveness_tablet_devices.gif)
       
   1. Desktop Screens:
 
     - Desktop 1024x600, 1024x800, 1366x768, 1440x900:
         
-    ![Desktop](documentation/responsiveness/responsiveness_desktop_devices.gif)
+    ![Desktop](documentation/testing/responsiveness/responsiveness_desktop_devices.gif)
 
 
 ## Functionality:
 
 The functionality of the links in the app was checked as well by different users.
 
- ![Functionality](documentation/responsiveness/observe_functionality.gif)
+![Log In Functionality](documentation/testing/functionality/observe_log_functionality.gif)
+
+![Full Functionality](documentation/testing/functionality/observe_functionality.gif)

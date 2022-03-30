@@ -1,9 +1,9 @@
+/* jshint esversion: 8 */
 // Variables:
 const date = new Date();
 const calMonth = document.querySelector('.date-month');
 const calDay = document.querySelector('.date-day');
 const calDays = document.querySelector('.date-days');
-const month = date.getMonth() + 1;
 const prevMonth = document.getElementById('prev-month');
 const nextMonth = document.getElementById('next-month');
 const months = [
@@ -56,7 +56,7 @@ const fillCalendar = function () {
 
   // Set month and day
   calMonth.textContent = months[date.getMonth()];
-  dataAttributeMonth = monthsForData[date.getMonth()]
+  let dataAttributeMonth = monthsForData[date.getMonth()];
   calDay.textContent = date.toDateString();
 
   // Create days
@@ -106,10 +106,9 @@ const fillCalendar = function () {
         }
         element.lastChild.innerHTML = emojiImage;
       }
-
     }
-  })
-}
+  });
+};
 
 let entriesDates = dataArray.map(item => item.date);
 
@@ -150,7 +149,6 @@ calDays.addEventListener('click', (e) => {
           document.querySelector(".note__container--text").innerHTML = `" ${getNote} "`;
         } else {
           document.querySelector(".note__container--text").textContent = `You didn't write anything for this day.`;
-          ``;
         }
       }
     }
