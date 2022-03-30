@@ -123,15 +123,15 @@ No errors were found:
 
   - Chrome:
 
-  ![Main Page](documentation/testing/browser_chrome.gif)
+  ![Main Page](documentation/testing/browser_chrome.png)
   
   - Firefox:
 
-  ![Main Page](documentation/testing/browser_firefox.gif)
+  ![Main Page](documentation/testing/browser_firefox.png)
 
-  - Safari:
+  - Brave:
 
-  ![Main Page](documentation/testing/browser_safari.gif)
+  ![Main Page](documentation/testing/browser_brave.png)
   
 
 ## Responsiveness:
