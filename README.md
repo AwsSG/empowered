@@ -267,12 +267,11 @@ We have been mindful during coding to ensure that the website is as accessible f
 ---
 ## Deployment & Local Development
 
----
-## Deployment
+### Deployment
 
 - The program was deployed to [Heroku](https://dashboard.heroku.com).
 - The program can be reached by the [link](https://empowere.herokuapp.com/)
-### To deploy the project as an application that can be **run locally**:
+#### To deploy the project as an application that can be **run locally**:
 
 *Note:*
   1. This project requires you to have Python installed on your local PC:
