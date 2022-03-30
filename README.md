@@ -225,7 +225,7 @@ Calendar page consist:
 ![Calendar Page image](documentation/features/no_notes.png)
 
 * Future Implementations.
-  * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Due to the time constraints of the Hackathon, this was not a feature required to reach a minimum viable project.
+  * In future implementations we would like to provide the option for a user to be able to change their password or choose to delete their account completely. Moreover, we would love companies to take part of our project to participate in providing high quality suggestions to our users in order to improve their mood and feelings.
 
 ---
 ### Accessibility
@@ -267,12 +267,11 @@ We have been mindful during coding to ensure that the website is as accessible f
 ---
 ## Deployment & Local Development
 
----
-## Deployment
+### Deployment
 
 - The program was deployed to [Heroku](https://dashboard.heroku.com).
 - The program can be reached by the [link](https://empowere.herokuapp.com/)
-### To deploy the project as an application that can be **run locally**:
+#### To deploy the project as an application that can be **run locally**:
 
 *Note:*
   1. This project requires you to have Python installed on your local PC:
