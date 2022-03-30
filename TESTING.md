@@ -154,20 +154,20 @@ No errors were found:
 
     - Mobile 320x480, 320x568, 360x640, 375x667, 384x640, 411x731, 414x736:
 
-     ![Mobile](documentation/responsiveness/responsiveness_mobile_devices.gif)
+     ![Mobile](documentation/testing/responsiveness/responsiveness_mobile_devices.gif)
 
       
   1. Tablets Screens:
 
     - Tablet 600x960, 768x1024, 800x1280, 1366x1024, 1600x900, 1680x1050, 1920x1080, 1920x1200:
         
-    ![Tablet](documentation/responsiveness/responsiveness_tablet_devices.gif)
+    ![Tablet](documentation/testing/responsiveness/responsiveness_tablet_devices.gif)
       
   1. Desktop Screens:
 
     - Desktop 1024x600, 1024x800, 1366x768, 1440x900:
         
-    ![Desktop](documentation/responsiveness/responsiveness_desktop_devices.gif)
+    ![Desktop](documentation/testing/responsiveness/responsiveness_desktop_devices.gif)
 
 
 ## Functionality:
