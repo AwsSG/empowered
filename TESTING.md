@@ -174,4 +174,6 @@ No errors were found:
 
 The functionality of the links in the app was checked as well by different users.
 
- ![Functionality](documentation/responsiveness/observe_functionality.gif)
+![Log In Functionality](documentation/testing/functionality/observe_log_functionality.gif)
+
+![Full Functionality](documentation/testing/functionality/observe_functionality.gif)
