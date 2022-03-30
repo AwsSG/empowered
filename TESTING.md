@@ -115,8 +115,20 @@ No errors were found:
 
 ## Lighthouse Report
 
-![Lighthouse Report](documentation/testing/lighthousehome.png)
+- Home Page:
+    ![Home Page](documentation/testing/lighthouse/lighthouse_report_home_page.png)
 
+- Log In Page:
+    ![Log In Page](documentation/testing/lighthouse/lighthouse_report_login_page.png)
+
+- Register Page:
+    ![Register Page](documentation/testing/lighthouse/lighthouse_report_register_page.png)
+
+- Profile Page:
+    ![Profile Page](documentation/testing/lighthouse/lighthouse_report_profile_page.png)
+
+- Calendar Page:
+    ![Calendar Page](documentation/testing/lighthouse/lighthouse_report_calendar_page.png)
 ## Compatibility:
 
 + The app was tested on the following browsers: Chrome, Firefox, Brave, Edge:
