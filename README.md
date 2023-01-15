@@ -4,7 +4,7 @@ Empowered was developed as part of the January 2022 Hackathon: Accelerating the 
 
 ![Empower Website](documentation/mockup.png)
 
-[Click Here to view the deployed site.](https://empowere.herokuapp.com/)
+[Click Here to view the deployed site!](https://empowered.onrender.com/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/AwsSG/empowered?color=red)
 ![GitHub contributors](https://img.shields.io/github/contributors/AwsSG/empowered?color=orange)
@@ -269,8 +269,10 @@ We have been mindful during coding to ensure that the website is as accessible f
 
 ### Deployment
 
-- The program was deployed to [Heroku](https://dashboard.heroku.com).
-- The program can be reached by the [link](https://empowere.herokuapp.com/)
+- The app was deployed to [Render](https://render.com/).
+- The db was deployed to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- The program can be reached by the [link](https://empowered.onrender.com/).
+
 #### To deploy the project as an application that can be **run locally**:
 
 *Note:*
