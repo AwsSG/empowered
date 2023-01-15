@@ -4,7 +4,7 @@
 - The db was deployed to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 - The program can be reached by the [link](https://empowered.onrender.com/).
 
-#### To deploy the project as an application that can be **run locally**:
+## To deploy the project as an application that can be **run locally**:
 
 *Note:*
   1. This project requires you to have Python installed on your local PC:
@@ -35,9 +35,39 @@ Create a local copy of the GitHub repository by following one of the two process
       - `cd empowered`
       1. Run the command pip install -r requirements.txt
         - `pip3 install -r requirements.txt`
-     
-      
-### To deploy the project to Heroku so it can be run as a remote web application:
+
+- Create a MongoDB Atlas account if you don't already have one here [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+
+- Create a new cluster and database.
+- Set up a new user and password for the database.
+- Create a new collection called "users" and add the following documents to the collection:
+  - `{
+    "username": "test",
+    "password": "test",
+    "email": test@gmail.com"
+    }`
+
+- Create a new collection called "tracker" and add the following documents to the collection:
+  - `{
+    "username": "test",
+    "datetime": "(!!!!set to "DATE"!!!!)",
+    "emoji": "1",
+    "note": "note test"
+   }`
+
+- Create a new collection called "resources" and add the following documents to the collection:
+  - `{
+    "emoji": "1",
+    "link": "https://www.google.com/",
+    "title": "test link to google",
+    }`
+
+- Run the application:
+  - `python3 app.py`
+
+**The app was initially deployed to Heroku then moved to Render since Heroku has removed its free tier services from November 29 2022**
+
+## To deploy the project to Heroku:
 - Clone the repository:
   1. Open a folder on your computer with the terminal.
   1. Run the following command
