@@ -62,6 +62,9 @@ Create a local copy of the GitHub repository by following one of the two process
     "title": "test link to google",
     }`
 
+- Run the application:
+  - `python3 app.py`
+
 ### To deploy the project to Heroku so it can be run as a remote web application:
 - Clone the repository:
   1. Open a folder on your computer with the terminal.
