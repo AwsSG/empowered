@@ -124,7 +124,12 @@ def profile():
         return redirect(url_for("profile", today=today,
                 suggestions=suggestions, last_entry=last_entry))
 
-    return render_template("profile.html", today=today, suggestions=suggestions, last_entry=last_entry)
+    return render_template(
+        "profile.html",
+        today=today,
+        suggestions=suggestions,
+        last_entry=last_entry
+    )
 
 
 @app.route("/calendar")
