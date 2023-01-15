@@ -4,6 +4,8 @@
 - The db was deployed to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 - The program can be reached by the [link](https://empowered.onrender.com/).
 
+---
+
 ## To deploy the project as an application that can be **run locally**:
 
 *Note:*
@@ -64,6 +66,8 @@ Create a local copy of the GitHub repository by following one of the two process
 
 - Run the application:
   - `python3 app.py`
+
+---
 
 **The app was initially deployed to Heroku then moved to Render since Heroku has removed its free tier services from November 29 2022**
 
@@ -128,3 +132,89 @@ Create a local copy of the GitHub repository by following one of the two process
   1. Click "Open app" to launch the application inside a web page.
 
       - ![View Button](documentation/deployment/view_app.png)
+
+---
+
+## Render Deployment
+
+
+
+### Create a new app on Render
+
+Link to the deployed application on Render: [https://github.com/AwsSG/empowered](https://github.com/AwsSG/empowered)
+
+1. Create a new Render account if you don't already have one here [Render](https://render.com/).
+
+2. Create a new application on the following page here [New Render App](https://dashboard.render.com/), choose **Webserver**:
+
+    - ![New Render App](documentation/deployment/render_new_web_service.png)
+
+3. Select the GitHub option and connect the application to the repository you created.
+
+    - ![GitHub Option](documentation/deployment/render_configure_github_account.png)
+
+4. Search for the repository you created and click "Connect."
+
+    - ![Connect to GitHub](documentation/deployment/render_connect_repository.png)
+
+    - ![Connect to GitHub](documentation/deployment/render_connect_repository_connect.png)
+
+5. Create name for the application
+
+    - ![Create Application Name](documentation/deployment/render_create_name.png)
+
+6. Select the region where you want to deploy the application.
+
+    - ![Select Region](documentation/deployment/render_select_region.png)
+
+7. Select branch to deploy.
+
+    - ![Select Branch](documentation/deployment/render_select_branch.png)
+
+8. Select environment.
+
+    - ![Select Environment Variables](documentation/deployment/render_select_environment.png)
+
+9. Render build command: `pip install -r requirements.txt`
+
+
+
+10. Render start command: `python app.py`
+
+
+
+11. Select Free plan.
+
+    - ![Select Free Plan](documentation/deployment/render_payment_info.png)
+
+12. Click on "Advanced" settings.
+
+    - ![Advanced Settings](documentation/deployment/render_advanced_settings.png)
+
+13. Add the following environment variables:
+
+
+    | Ket | Value |
+    | --- | --- |
+    | IP | 0.0.0.0 |
+    | PORT | 5000 |
+    | SECRET_KEY | `<your secret key>` |
+    | MONGO_URI | `<your mongo uri>` |
+    | MONGO_DBNAME | `<your mongo db name>` |
+
+    - *The IP and PORT environment variables are required by Render to run the application.*
+    - *The SECRET_KEY environment variable is required by Flask to run the application.*
+    - *The MONGO_URI and MONGO_DBNAME environment variables are required by MongoDB to run the application.*
+
+
+22. Click "Create Web Service."
+
+    - ![Save Web Service](documentation/deployment/render_create_web_service.png)
+
+23. Wait for the completion of the deployment.
+
+24. You are ready to go!
+
+    - [https://empowered.onrender.com/](https://empowered.onrender.com/)
+
+---
