@@ -263,6 +263,7 @@ We have been mindful during coding to ensure that the website is as accessible f
 - [Favicon.io](https://favicon.io/) To create favicon.
 - [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 - [Shields.io](https://shields.io/) To add badges to the README.
+- [Render](https://render.com/) To deploy the website.
 
 ---
 ## Deployment 
@@ -344,7 +345,7 @@ None
 * [ColorSpace](https://mycolor.space/?hex=%230494EC&sub=1) for providing a myriad of color scheme to choose from as we did;
 * [Code And Create channel](https://www.youtube.com/watch?v=o1yMqPyYeAo&t=1299s0) for givind us the inspiration to use single month calendar representation in this project;
 * [pngfind](https://pngfind.com/) for providing a myriad of images to choose from as we did;
-* [Heroku](https://dashboard.heroku.com/) for providing a platform to deploy our project;
+* [Render](https://render.com/) for providing a platform to host our website;
 * [MongoDB](https://www.mongodb.com/) for providing a database to store our data;
 * [CODE INSTITUTE](https://codeinstitute.net/) for organizing such event like HACKATHONS where students are encourage to learn and grow;
 * [GitHub](https://github.com/) for providing a platform to host our repository and to collaborate with other developers; 
