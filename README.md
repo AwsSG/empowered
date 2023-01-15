@@ -298,8 +298,8 @@ Create a local copy of the GitHub repository by following one of the two process
 
   1. Install Python module dependencies:
      
-      1. Navigate to the folder madlib_with_python by executing the command:
-      - `cd madlib_with_python`
+      1. Navigate to the folder empowered by executing the command:
+      - `cd empowered`
       1. Run the command pip install -r requirements.txt
         - `pip3 install -r requirements.txt`
      
