@@ -11,32 +11,12 @@ Empowered was developed as part of the January 2022 Hackathon: Accelerating the 
 ![GitHub language count](https://img.shields.io/github/languages/count/AwsSG/empowered?color=yellow)
 ![GitHub top language](https://img.shields.io/github/languages/top/AwsSG/empowered?color=green)
 ![GitHub forks](https://img.shields.io/github/forks/AwsSG/empowered?style=social)
-![W3C Validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fempowere.herokuapp.com%2F)
 
+---
 
-## CONTENTS
+## About
 
-* [User Experience (UX)](#User-Experience-(UX))
-  * [Initial Discussion](#Initial-Discussion)
-  * [User Stories](#User-Stories)
-
-* [Design](#Design)
-  * [Colour Scheme](#Colour-Scheme)
-  * [Typography](#Typography)
-  * [Imagery](#Imagery)
-  * [Wireframes](#Wireframes)
-  * [Features](#Features)
-  * [Accessibility](#Accessibility)
-
-* [Technologies Used](#Technologies-Used)
-  * [Languages Used](#Languages-Used)
-  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-
-* [Deployment & Local Development](#Deployment-&-Local-Development)
-* [Testing](#Testing)  
-* [Credits](#Credits)
-* [Collaborators](#Collaborators)
-* [Acknowledgments](#Acknowledgments)
+Empowered is a website that allows users to track their mental health and well-being. Users can register an account and then log in to record their emotional state daily by choosing the emoji that best depicts how they are feeling. The user would also be able to add a journal entry to expand on their choice of emoji and to note anything they feel is having an effect on their mental health.
 
 - - -
 
@@ -44,7 +24,7 @@ Empowered was developed as part of the January 2022 Hackathon: Accelerating the 
 
 ### Initial Discussion
 
-The theme brief for the January 2022 Hackathon was to rethink solutions to help build an iniative to improve different aspects of mental health and well-being in 2022.
+The theme brief for the January 2022 Hackathon was to rethink solutions to help build an application to improve different aspects of mental health and well-being in 2022.
 
 The judging criteria:
 
@@ -60,9 +40,9 @@ We discussed several ideas for our project and decided to create a site that wou
 
 Users would then be able to view their previous emojis on a calendar which would allow them to track their well-being. It would also be a useful tool to be able to show to professionals should the user decide to seek further help. When the user selects an emoji logged in the calendar they would then be shown their journal entry for that day. 
 
-As this would be quite personal information it was important that the user be able to make a profile to keep this information private. By registering a profile the user would then be able to utilise the calendar feature.
+As this would be quite personal information it was important that the user be able to make a profile to keep this information private. By registering a profile the user would then be able to utilize the calendar feature.
 
-When a user selects their emoji we will then provide a personalised recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to destress. 
+When a user selects their emoji we will then provide a personalized recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to alleviate their stress. 
 
 ### User Stories
 #### First Time Visitor Goals:
@@ -263,6 +243,7 @@ We have been mindful during coding to ensure that the website is as accessible f
 - [Favicon.io](https://favicon.io/) To create favicon.
 - [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 - [Shields.io](https://shields.io/) To add badges to the README.
+- [Render](https://render.com/) To deploy the website.
 
 ---
 ## Deployment 
@@ -344,7 +325,7 @@ None
 * [ColorSpace](https://mycolor.space/?hex=%230494EC&sub=1) for providing a myriad of color scheme to choose from as we did;
 * [Code And Create channel](https://www.youtube.com/watch?v=o1yMqPyYeAo&t=1299s0) for givind us the inspiration to use single month calendar representation in this project;
 * [pngfind](https://pngfind.com/) for providing a myriad of images to choose from as we did;
-* [Heroku](https://dashboard.heroku.com/) for providing a platform to deploy our project;
+* [Render](https://render.com/) for providing a platform to host our website;
 * [MongoDB](https://www.mongodb.com/) for providing a database to store our data;
 * [CODE INSTITUTE](https://codeinstitute.net/) for organizing such event like HACKATHONS where students are encourage to learn and grow;
 * [GitHub](https://github.com/) for providing a platform to host our repository and to collaborate with other developers; 
