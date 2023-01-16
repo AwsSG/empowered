@@ -12,31 +12,6 @@ Empowered was developed as part of the January 2022 Hackathon: Accelerating the 
 ![GitHub top language](https://img.shields.io/github/languages/top/AwsSG/empowered?color=green)
 ![GitHub forks](https://img.shields.io/github/forks/AwsSG/empowered?style=social)
 
-
-## CONTENTS
-
-* [User Experience (UX)](#User-Experience-(UX))
-  * [Initial Discussion](#Initial-Discussion)
-  * [User Stories](#User-Stories)
-
-* [Design](#Design)
-  * [Colour Scheme](#Colour-Scheme)
-  * [Typography](#Typography)
-  * [Imagery](#Imagery)
-  * [Wireframes](#Wireframes)
-  * [Features](#Features)
-  * [Accessibility](#Accessibility)
-
-* [Technologies Used](#Technologies-Used)
-  * [Languages Used](#Languages-Used)
-  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-
-* [Deployment & Local Development](#Deployment-&-Local-Development)
-* [Testing](#Testing)  
-* [Credits](#Credits)
-* [Collaborators](#Collaborators)
-* [Acknowledgments](#Acknowledgments)
-
 - - -
 
 ## User Experience (UX)
