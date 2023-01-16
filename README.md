@@ -11,7 +11,6 @@ Empowered was developed as part of the January 2022 Hackathon: Accelerating the 
 ![GitHub language count](https://img.shields.io/github/languages/count/AwsSG/empowered?color=yellow)
 ![GitHub top language](https://img.shields.io/github/languages/top/AwsSG/empowered?color=green)
 ![GitHub forks](https://img.shields.io/github/forks/AwsSG/empowered?style=social)
-![W3C Validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fempowere.herokuapp.com%2F)
 
 
 ## CONTENTS
