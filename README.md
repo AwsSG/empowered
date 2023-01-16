@@ -12,13 +12,19 @@ Empowered was developed as part of the January 2022 Hackathon: Accelerating the 
 ![GitHub top language](https://img.shields.io/github/languages/top/AwsSG/empowered?color=green)
 ![GitHub forks](https://img.shields.io/github/forks/AwsSG/empowered?style=social)
 
+---
+
+## About
+
+Empowered is a website that allows users to track their mental health and well-being. Users can register an account and then log in to record their emotional state daily by choosing the emoji that best depicts how they are feeling. The user would also be able to add a journal entry to expand on their choice of emoji and to note anything they feel is having an effect on their mental health.
+
 - - -
 
 ## User Experience (UX)
 
 ### Initial Discussion
 
-The theme brief for the January 2022 Hackathon was to rethink solutions to help build an iniative to improve different aspects of mental health and well-being in 2022.
+The theme brief for the January 2022 Hackathon was to rethink solutions to help build an application to improve different aspects of mental health and well-being in 2022.
 
 The judging criteria:
 
@@ -34,9 +40,9 @@ We discussed several ideas for our project and decided to create a site that wou
 
 Users would then be able to view their previous emojis on a calendar which would allow them to track their well-being. It would also be a useful tool to be able to show to professionals should the user decide to seek further help. When the user selects an emoji logged in the calendar they would then be shown their journal entry for that day. 
 
-As this would be quite personal information it was important that the user be able to make a profile to keep this information private. By registering a profile the user would then be able to utilise the calendar feature.
+As this would be quite personal information it was important that the user be able to make a profile to keep this information private. By registering a profile the user would then be able to utilize the calendar feature.
 
-When a user selects their emoji we will then provide a personalised recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to destress. 
+When a user selects their emoji we will then provide a personalized recommendation for them based off of the selection they have made. So for example if a user is feeling sad they may be recommended a funny video clip or a positive affirmation, if they are feeling stressed they may receive a video on breathing techniques used to relax or a fun game to play to allow them to alleviate their stress. 
 
 ### User Stories
 #### First Time Visitor Goals:
