@@ -113,16 +113,15 @@
       <!-- flash messages -->
       <aside class="flash__messages--container">
         {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <div class="flash__messages">
-          {% for message in messages %}
-          <div class="flash__message">
-            <div class="flash__message--content">{{ message }}</div>
-          </div>
-          {% endfor %}
-
+          {% if messages %}
+            <div class="flash__messages">
+              {% for message in messages %}
+                <div class="flash__message">
+                  <div class="flash__message--content">{{ message }}</div>
+                </div>
+              {% endfor %}
+            </div>
           {% endif %}
-        </div>
         {% endwith %}
       </aside>
       <!-- Content block -->
@@ -134,15 +133,14 @@
   <!--Footer-->
   <footer class="footer">
     <div class="footer__content">
-
       <!-- Collaborators -->
-
-
       <div class="footer__logo--container">
         <div class="footer__logo">
           <div>Empower</div>
         </div>
-        <div class="project__repository">Link to GitHub repository<i class="fas fa-external-link-alt"></i></div>
+        <div class="project__repository">
+          Link to GitHub repository<i class="fas fa-external-link-alt"></i>
+        </div>
       </div>
 
       <div class="footer__extra">
@@ -151,10 +149,8 @@
         </p>
         <a href="https://github.com/AwsSG/empowered" target="_blank" rel="noopener"
           aria-label="Visit project repository" class="repo_link">
-
         </a>
       </div>
-
       <div class="footer__team">
         <div class="team__name--header">Created by:</div>
         <ul class="team__collaborators">
@@ -170,21 +166,18 @@
               <div class="coder__name">Iuliia Konovalova</div>
             </a>
           </li>
-
           <li class="contact__github">
             <a href="https://github.com/kera-cudmore" target="_blank" rel="noopener"
               aria-label="Visit Kera Cudmore github page">
               <div class="coder__name">Kera Cudmore</div>
             </a>
           </li>
-
           <li class="contact__github">
             <a href="https://github.com/theopmw" target="_blank" rel="noopener"
               aria-label="Visit Theo Wright github page">
               <div class="coder__name">Theo Wright</div>
             </a>
           </li>
-
           <li class="contact__github">
             <a href="https://github.com/ANNAhabANNA" target="_blank" rel="noopener" aria-label="Visit Anna github page">
               <div class="coder__name">Anna</div>
