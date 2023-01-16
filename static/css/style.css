@@ -321,6 +321,10 @@ body {
   border-radius: var(--br);
 }
 
+.blog__heading--title {
+  display: none;
+}
+
 .blog__heading--day {
   font-size: 1.8rem;
   text-align: left;
