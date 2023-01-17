@@ -74,22 +74,22 @@ Usability was tested with the below user acceptance testing, sent to new users t
 
 ### HTML Validation
 
-- No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator except jinja syntax.
+- No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator for the following pages:
 
     - Home page:
-* [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fempowere.herokuapp.com%2Fhome)
+* ![Home page html validation report](documentation/validation/html_validation_empowered_home.png)
 
     - Log In page:
-* [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fempowere.herokuapp.com%2Flogin)
+* ![Log In page html validation report](documentation/validation/html_validation_empowered_login.png)
 
     - Register page:
-* [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fempowere.herokuapp.com%2Fregister)
+* ![Register page html validation report](documentation/validation/html_validation_empowered_register.png)
 
     - Profile page:
-* [HTML](documentation/testing/profilehtmlvalidator.png)
+* ![Profile page html validation report](documentation/validation/html_validation_empowered_profile.png)
 
     - Calendar page:
-* [HTML](documentation/testing/calendarhtmlvalidator.png)
+* ![Calendar page html validation report](documentation/validation/html_validation_empowered_calendar.png)
 
 ### CSS Validation
 
