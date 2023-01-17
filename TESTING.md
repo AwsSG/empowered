@@ -94,7 +94,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 ### CSS Validation
 
 - No errors were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator: 
-    * [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmanni8436.github.io%2Fhackvent-calendar%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * ![CSS validation report](documentation/validation/css_validation.png)
 - The CSS validator shows the multiple warning regardless the use of webkit and clip property. However, everything works perfectly well without any issues.
 
 
