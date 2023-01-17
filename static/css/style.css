@@ -797,6 +797,10 @@ select {
   align-items: center;
 }
 
+.date-month {
+  display: none;
+}
+
 .date-days {
   width: 90%;
   margin: 0 auto;
