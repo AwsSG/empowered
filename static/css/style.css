@@ -876,7 +876,7 @@ select {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: start;
   padding: 0 4em;
 }
 
@@ -884,7 +884,6 @@ select {
   width: 50%;
   margin-top: 12vh;
   margin-bottom: 12vh;
-  font-display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
