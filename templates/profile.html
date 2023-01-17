@@ -4,6 +4,7 @@
 <section class="blog">
   <!-- Profile heading -->
   <div class="blog__heading">
+    <h2 class="blog__heading--title">How do you feel today?</h2>
     <div class="blog__heading--day">Today is <span>{{ today }}</span></div>
   </div>
 </section>
@@ -14,32 +15,32 @@
   <!-- Profile form -->
   <form method="POST" action="{{ url_for('profile') }}" class="profile__form">
     <div class="btn__info--container">
-      <div class="btn__info--icon" aria-label="go to instructions" id="btn-info">
+      <div class="btn__info--icon" id="btn-info">
         <i class="fas fa-info-circle icon"></i>
       </div>
     </div>
     <div class="scale__emojis" id="emoji">
       <label for="angry">
-        <input type="radio" name="rating" class="angry" id="angry" value="1" />
+        <input type="radio" name="rating" class="angry" id="angry" value="1">
         <img src="{{ url_for('static', filename='images/emojis/angry.png') }}" alt="angry emoji" class="emoji__image">
       </label>
       <label for="depressed">
-        <input type="radio" name="rating" class="depressed" id="depressed" value="2" />
+        <input type="radio" name="rating" class="depressed" id="depressed" value="2">
         <img src="{{ url_for('static', filename='images/emojis/depressed.png') }}" alt="depressed emoji"
           class="emoji__image">
       </label>
       <label for="stressed">
-        <input type="radio" name="rating" class="stressed" id="stressed" value="3" />
+        <input type="radio" name="rating" class="stressed" id="stressed" value="3">
         <img src="{{ url_for('static', filename='images/emojis/stressed.png') }}" alt="stressed emoji"
           class="emoji__image">
       </label>
       <label for="content">
-        <input type="radio" name="rating" class="content" id="content" value="4" />
+        <input type="radio" name="rating" class="content" id="content" value="4">
         <img src="{{ url_for('static', filename='images/emojis/content.png') }}" alt="content emoji"
           class="emoji__image">
       </label>
       <label for="happy">
-        <input type="radio" name="rating" class="happy" id="happy" value="5" />
+        <input type="radio" name="rating" class="happy" id="happy" value="5">
         <img src="{{ url_for('static', filename='images/emojis/happy.png') }}" alt="happy emoji" class="emoji__image">
       </label>
     </div>
