@@ -8,8 +8,8 @@ from datetime import datetime
 import time
 import random
 
-if os.path.exists("env.py"):
-    import env
+# if os.path.exists("env.py"):
+#     import env
 
 
 app = Flask(__name__)
